@@ -4,6 +4,7 @@
 \usepackage{tikz}
 \usepackage{amsfonts}
 \usepackage{amsmath}
+\usepackage{listings}
 
 \title{CSC263 Winter 2016, Assignment 3}
 \author{Connor Peet \#1001088208}
@@ -14,29 +15,96 @@
 \begin{document}
 \maketitle
 
+\lstset{
+    numbers=left
+}
+
 \begin{enumerate}
-\item [(1)] The worst input for the function is an array of integers, starting with $0$ and $1$, where each following integer is the sum of all previous integers, $[0, 1, 1, 2, 4, 8, ...]$. In this case, on an array with $n$ elements, the algorithm will take $b + a \times (n - 2) \times \sum_{i = 1}^{n - 1} i$ steps, where $a, b \in \mathbb{N}$. In the best case, the third element of the array is not $1$, causing the algorithm to terminate after a constant number of steps.
+\item [1.]
+    Annotating the procedure steps:
+
+    \begin{lstlisting}
+Procedure nothing(A)
+    A[1] := 0 # 1 step
+    A[2] := 1 # 1 step
+    for i = 3 to A.size do # multiply inside by (n - 2)
+        s := 0 # 1 step
+        for j = 1 to i - 1 do # multiply by (i - 1)
+            s := s + A[j] # 1 step
+        if A[i] is not equal to s then # 1 step
+            return
+
+    return
+    \end{lstlisting}
+
+    The worst input for the function is an array of integers, starting with $0$ and $1$, where each following integer is the sum of all previous integers, $[0, 1, 1, 2, 4, 8, ...]$. In this case, on an array with $n$ elements, the algorithm will not terminate until line 11 is reached and will take $2 + 2 \times (n - 2) \times \sum_{i = 1}^{n - 1} i$ steps.
+
+    In the best case, the third element of the array is not $1$, causing the algorithm to terminate after the constant number of steps regardless of the total input size.
     \begin{enumerate}
-    \item [(a)] The algorithm is \textbf{not} in $\mathcal{O}(n^2)$. Recall the formal definition of Big O:
+    \item [(a)] The algorithm \textbf{is not} in $\mathcal{O}(n^2)$. Recall the formal definition of Big O. Taken from the CSC165 course notes, where $T_P(n)$ is the worst-case running time on an input of size $n$, it can be said
         \begin{gather*}
-            \text{Iff f(n)} \in \mathcal{O}(g(n)), \\
-            \exists B \in \mathbb{N}, \exists c \in \mathbb{R}, c > 0, \forall n \in \mathbb{N}, n > B \implies f(n) \leq cg(n)
+            T_P(n) \in \mathcal{O}(g) \text{ iff} \\
+            \exists c \in \mathbb{R^+}, \exists B \in \mathbb{N}, \forall n \in \mathbb{N}, n \geq B \implies T_P(n) \leq cg(n)
         \end{gather*}
         \begin{itemize}
-        \item We know the algorithm takes $b, a \in \mathbb{N}, b + a \times (n - 2) \times \sum_{i = 1}^{n - 1} i$ steps.
-        \item The constants may be discarded: $(n - 2) \times \sum_{i = 1}^{n - 1} i < b + a \times (n - 2) \times \sum_{i = 1}^{n - 1} i$.
-        \item The summation can be evaluated: $(n - 2) \times \frac{(n - 1) n}{2}$.
-        \item Then, it can be distributed and further simplified: $\frac{1}{2} (n - 2) \times (n^2 - n) = \frac{1}{2} (n^3 - 3n^2 + 2n)$.
-        \item Then algorithm is $\mathcal O(n^3)$, not $\mathcal O(n^2)$.
+        \item We know the algorithm takes at most $2 + 2 \times (n - 2) \times \sum_{i = 1}^{n - 1} i$ steps. This is our worse-case running time.
+        \item The summation can be evaluated from known definitions: $2 + 2 (n - 2) \times \frac{(n - 1) n}{2}$.
+        \item The equation can be distributed: $2 + \frac{1}{2} (n - 2) \times (n^2 - n) = n^3 - 3n^2 + 2n + 2$.
+        \item Then $T_P$ has in a cubic relationship to the input size.
+        \item Then the algorithm is $\mathcal O(n^3)$, not $\mathcal O(n^2)$. A quick query on WolframAlpha lets us chose $c = 1$ and $B = 2$, which show this to be true.
         \end{itemize}
     \end{enumerate}
     \begin{enumerate}
-    \item [(a)] The algorithm is in $\Omega(n^2)$. Recall the formal definition of Big Omega:
+    \item [(a)] The algorithm \textbf{is} $\Omega(n^2)$. Recall the formal definition of Big Omega. Where $t_P(x)$ is the number of steps taken (running time) on input $x$,
         \begin{gather*}
-            \text{Iff f(n)} \in \Omega(g(n)), \\
-            \forall B \in \mathbb{N}, \forall c \in \mathbb{R}, \exists n \in \mathbb{N}, n \geq B \land f(n) < cg(n)
+            T_P(n) \in \Omega(g) \text{ iff} \\
+            \exists c \in \mathbb{R^+}, \exists B \in \mathbb{N}, \forall n \in \mathbb{N}, n \geq B \implies \\
+            \exists x \in \text{Set of Program Inputs}, size(x) = n \land t_P(x) \geq cg(n)
         \end{gather*}
+        \begin{itemize}
+        \item In other words, we should be able to chose a $c$ and $B$ such that, for all input sizes $n$ greater than $B$, we can find an input that takes at least $cg(n)$ steps.
+        \item In part (a) we showed that the worse input to the function takes $n^3 - 3n^2 + 2n + 2$ steps. This worst-case input $A_n$ can consistently be crafted for any given input size by the following procedure:
+            \begin{itemize}
+            \item If $n = 3$, then set $A_n = [0, 1, 1]$.
+            \item If $n > 3$, then set $A_n = A_{n - 1} \cup \{ Sum(A_{n - 1}) \}$.
+            \end{itemize}
+        \item Therefore, picking $c = 1$ and $B = 2$, the algorithm satisfies the definition and is in $\Omega(n^2)$.
+        \end{itemize}
+    \end{enumerate}
+
+\item [2.]
+    \begin{enumerate}
+    \item [(a)]
+        \begin{equation*}
+        \begin{aligned}
+            \textsc{Build-by-Inserts}([1, 2, 3, 2]) & \implies [3, 2, 2, 1] \\
+            \textsc{Build-Max-Heap}([1, 2, 3, 2]) & \implies [3, 1, 2, 2]
+        \end{aligned}
+        \end{equation*}
+    \item [(b)]
+        \begin{itemize}
+        \item The text states that \textsc{Max-Heap-Insert} runs in $\mathcal{O}(\log n)$ time.
+        \item Then we can annotate the function as follows:
+            \begin{lstlisting}
+\textsc{Build-by-Inserts}(A)
+    A.heap-size := 1 # 1 step
+    for i := 2..n do # multiply inside by (n - 1)
+        \textsc{Max-Heap-Insert}(A, A[i]) # at most log(n) steps
+            \end{lstlisting}
+        \item Then the function takes at most $1 + (n - 1) \log n$ steps, and is therefore in $\mathcal{O}(n \log n)$ time.
+        \item But, we still need to show that it's in $\Omega(n \log n)$ to assert that it's in $\Theta(n \log n)$.
+        \item \textsc{Max-Heap-Insert} is in $\Omega(\log n)$:
+            \begin{itemize}
+            \item The worst input of size $n$ to the function is an array of integers sorted from smallest to largest.
+            \item In this case, the while loop in \textsc{Heap-Increase-Key} runs $\lfloor \log_2 n \rfloor$ times.
+            \item Aside from the \textsc{Heap-Increase-Key} call, steps in \textsc{Max-Heap-Insert} are constant time.
+            \item Also $\lfloor \log_2 n \rfloor < \log n$ for $n \geq 8$.
+            \item Then \textsc{Max-Heap-Insert} is in $\Omega(\log n)$
+            \end{itemize}
+        \item The \textsc{Max-Heap-Insert} function is called about $n$ times.
+        \item Then the algorithm is in $\Omega(n \log n)$.
+        \item Then the algorithm is in $\Theta(n \log n)$.
+        \end{itemize}
     \end{enumerate}
 \end{enumerate}
-
 \end{document}
