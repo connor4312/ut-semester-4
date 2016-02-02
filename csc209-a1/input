@@ -1,0 +1,1387 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0  24464  2324 ?        Ss   Jan19   0:14 /sbin/init
+root         2  0.0  0.0      0     0 ?        S    Jan19   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        S    Jan19   2:10 [ksoftirqd/0]
+root         5  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/0:0H]
+root         8  0.0  0.0      0     0 ?        S    Jan19  17:39 [rcu_sched]
+root         9  0.0  0.0      0     0 ?        S    Jan19   7:45 [rcuos/0]
+root        10  0.0  0.0      0     0 ?        S    Jan19   1:14 [rcuos/1]
+root        11  0.0  0.0      0     0 ?        S    Jan19   4:02 [rcuos/2]
+root        12  0.0  0.0      0     0 ?        S    Jan19   0:43 [rcuos/3]
+root        13  0.0  0.0      0     0 ?        S    Jan19   2:20 [rcuos/4]
+root        14  0.0  0.0      0     0 ?        S    Jan19   0:43 [rcuos/5]
+root        15  0.0  0.0      0     0 ?        S    Jan19   3:38 [rcuos/6]
+root        16  0.0  0.0      0     0 ?        S    Jan19   0:51 [rcuos/7]
+root        17  0.0  0.0      0     0 ?        S    Jan19   3:33 [rcuos/8]
+root        18  0.0  0.0      0     0 ?        S    Jan19   1:14 [rcuos/9]
+root        19  0.0  0.0      0     0 ?        S    Jan19   3:19 [rcuos/10]
+root        20  0.0  0.0      0     0 ?        S    Jan19   0:42 [rcuos/11]
+root        21  0.0  0.0      0     0 ?        S    Jan19   0:30 [rcuos/12]
+root        22  0.0  0.0      0     0 ?        S    Jan19   0:10 [rcuos/13]
+root        23  0.0  0.0      0     0 ?        S    Jan19   0:34 [rcuos/14]
+root        24  0.0  0.0      0     0 ?        S    Jan19   0:12 [rcuos/15]
+root        25  0.0  0.0      0     0 ?        S    Jan19   0:33 [rcuos/16]
+root        26  0.0  0.0      0     0 ?        S    Jan19   0:04 [rcuos/17]
+root        27  0.0  0.0      0     0 ?        S    Jan19   0:31 [rcuos/18]
+root        28  0.0  0.0      0     0 ?        S    Jan19   0:08 [rcuos/19]
+root        29  0.0  0.0      0     0 ?        S    Jan19   0:22 [rcuos/20]
+root        30  0.0  0.0      0     0 ?        S    Jan19   1:18 [rcuos/21]
+root        31  0.0  0.0      0     0 ?        S    Jan19   0:35 [rcuos/22]
+root        32  0.0  0.0      0     0 ?        S    Jan19   0:11 [rcuos/23]
+root        33  0.0  0.0      0     0 ?        S    Jan19   0:31 [rcuos/24]
+root        34  0.0  0.0      0     0 ?        S    Jan19   0:05 [rcuos/25]
+root        35  0.0  0.0      0     0 ?        S    Jan19   0:39 [rcuos/26]
+root        36  0.0  0.0      0     0 ?        S    Jan19   0:05 [rcuos/27]
+root        37  0.0  0.0      0     0 ?        S    Jan19   0:37 [rcuos/28]
+root        38  0.0  0.0      0     0 ?        S    Jan19   0:04 [rcuos/29]
+root        39  0.0  0.0      0     0 ?        S    Jan19   1:29 [rcuos/30]
+root        40  0.0  0.0      0     0 ?        S    Jan19   0:15 [rcuos/31]
+root        41  0.0  0.0      0     0 ?        S    Jan19   1:46 [rcuos/32]
+root        42  0.0  0.0      0     0 ?        S    Jan19   1:38 [rcuos/33]
+root        43  0.0  0.0      0     0 ?        S    Jan19   1:30 [rcuos/34]
+root        44  0.0  0.0      0     0 ?        S    Jan19   0:16 [rcuos/35]
+root        45  0.0  0.0      0     0 ?        S    Jan19   0:36 [rcuos/36]
+root        46  0.0  0.0      0     0 ?        S    Jan19   0:16 [rcuos/37]
+root        47  0.0  0.0      0     0 ?        S    Jan19   0:28 [rcuos/38]
+root        48  0.0  0.0      0     0 ?        S    Jan19   0:12 [rcuos/39]
+root        49  0.0  0.0      0     0 ?        S    Jan19   0:23 [rcuos/40]
+root        50  0.0  0.0      0     0 ?        S    Jan19   0:05 [rcuos/41]
+root        51  0.0  0.0      0     0 ?        S    Jan19   2:02 [rcuos/42]
+root        52  0.0  0.0      0     0 ?        S    Jan19   0:17 [rcuos/43]
+root        53  0.0  0.0      0     0 ?        S    Jan19   2:04 [rcuos/44]
+root        54  0.0  0.0      0     0 ?        S    Jan19   1:05 [rcuos/45]
+root        55  0.0  0.0      0     0 ?        S    Jan19   1:49 [rcuos/46]
+root        56  0.0  0.0      0     0 ?        S    Jan19   0:24 [rcuos/47]
+root        57  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuos/48]
+root        58  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuos/49]
+root        59  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuos/50]
+root        60  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuos/51]
+root        61  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuos/52]
+root        62  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuos/53]
+root        63  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuos/54]
+root        64  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuos/55]
+root        65  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuos/56]
+root        66  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuos/57]
+root        67  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuos/58]
+root        68  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuos/59]
+root        69  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuos/60]
+root        70  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuos/61]
+root        71  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuos/62]
+root        72  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuos/63]
+root        73  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcu_bh]
+root        74  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/0]
+root        75  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/1]
+root        76  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/2]
+root        77  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/3]
+root        78  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/4]
+root        79  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/5]
+root        80  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/6]
+root        81  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/7]
+root        82  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/8]
+root        83  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/9]
+root        84  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/10]
+root        85  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/11]
+root        86  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/12]
+root        87  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/13]
+root        88  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/14]
+root        89  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/15]
+root        90  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/16]
+root        91  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/17]
+root        92  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/18]
+root        93  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/19]
+root        94  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/20]
+root        95  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/21]
+root        96  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/22]
+root        97  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/23]
+root        98  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/24]
+root        99  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/25]
+root       100  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/26]
+root       101  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/27]
+root       102  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/28]
+root       103  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/29]
+root       104  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/30]
+root       105  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/31]
+root       106  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/32]
+root       107  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/33]
+root       108  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/34]
+root       109  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/35]
+root       110  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/36]
+root       111  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/37]
+root       112  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/38]
+root       113  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/39]
+root       114  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/40]
+root       115  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/41]
+root       116  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/42]
+root       117  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/43]
+root       118  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/44]
+root       119  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/45]
+root       120  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/46]
+root       121  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/47]
+root       122  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/48]
+root       123  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/49]
+root       124  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/50]
+root       125  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/51]
+root       126  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/52]
+root       127  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/53]
+root       128  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/54]
+root       129  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/55]
+root       130  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/56]
+root       131  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/57]
+root       132  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/58]
+root       133  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/59]
+root       134  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/60]
+root       135  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/61]
+root       136  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/62]
+root       137  0.0  0.0      0     0 ?        S    Jan19   0:00 [rcuob/63]
+root       138  0.0  0.0      0     0 ?        S    Jan19   0:07 [migration/0]
+root       139  0.0  0.0      0     0 ?        S    Jan19   0:05 [watchdog/0]
+root       140  0.0  0.0      0     0 ?        S    Jan19   0:03 [watchdog/1]
+root       141  0.0  0.0      0     0 ?        S    Jan19   0:01 [migration/1]
+root       142  0.0  0.0      0     0 ?        S    Jan19   0:01 [ksoftirqd/1]
+root       144  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/1:0H]
+root       145  0.0  0.0      0     0 ?        S    Jan19   0:04 [watchdog/2]
+root       146  0.0  0.0      0     0 ?        S    Jan19   0:04 [migration/2]
+root       147  0.0  0.0      0     0 ?        S    Jan19   0:02 [ksoftirqd/2]
+root       149  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/2:0H]
+root       150  0.0  0.0      0     0 ?        S    Jan19   0:04 [watchdog/3]
+root       151  0.0  0.0      0     0 ?        S    Jan19   0:01 [migration/3]
+root       152  0.0  0.0      0     0 ?        S    Jan19   0:12 [ksoftirqd/3]
+root       154  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/3:0H]
+root       155  0.0  0.0      0     0 ?        S    Jan19   0:04 [watchdog/4]
+root       156  0.0  0.0      0     0 ?        S    Jan19   0:03 [migration/4]
+root       157  0.0  0.0      0     0 ?        S    Jan19   0:02 [ksoftirqd/4]
+root       159  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/4:0H]
+root       160  0.0  0.0      0     0 ?        S    Jan19   0:04 [watchdog/5]
+root       161  0.0  0.0      0     0 ?        S    Jan19   0:01 [migration/5]
+root       162  0.0  0.0      0     0 ?        S    Jan19   0:01 [ksoftirqd/5]
+root       164  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/5:0H]
+root       165  0.0  0.0      0     0 ?        S    Jan19   0:04 [watchdog/6]
+root       166  0.0  0.0      0     0 ?        S    Jan19   0:01 [migration/6]
+root       167  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/6]
+root       169  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/6:0H]
+root       170  0.0  0.0      0     0 ?        S    Jan19   0:03 [watchdog/7]
+root       171  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/7]
+root       172  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/7]
+root       174  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/7:0H]
+root       175  0.0  0.0      0     0 ?        S    Jan19   0:04 [watchdog/8]
+root       176  0.0  0.0      0     0 ?        S    Jan19   0:01 [migration/8]
+root       177  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/8]
+root       179  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/8:0H]
+root       180  0.0  0.0      0     0 ?        S    Jan19   0:04 [watchdog/9]
+root       181  0.0  0.0      0     0 ?        S    Jan19   0:03 [migration/9]
+root       182  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/9]
+root       184  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/9:0H]
+root       185  0.0  0.0      0     0 ?        S    Jan19   0:04 [watchdog/10]
+root       186  0.0  0.0      0     0 ?        S    Jan19   0:01 [migration/10]
+root       187  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/10]
+root       189  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/10:0H]
+root       190  0.0  0.0      0     0 ?        S    Jan19   0:03 [watchdog/11]
+root       191  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/11]
+root       192  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/11]
+root       194  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/11:0H]
+root       195  0.0  0.0      0     0 ?        S    Jan19   0:04 [watchdog/12]
+root       196  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/12]
+root       197  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/12]
+root       199  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/12:0H]
+root       201  0.0  0.0      0     0 ?        S    Jan19   0:03 [watchdog/13]
+root       202  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/13]
+root       203  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/13]
+root       205  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/13:0H]
+root       206  0.0  0.0      0     0 ?        S    Jan19   0:03 [watchdog/14]
+root       207  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/14]
+root       208  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/14]
+root       209  0.0  0.0      0     0 ?        S    Jan19   0:00 [kworker/14:0]
+root       210  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/14:0H]
+root       211  0.0  0.0      0     0 ?        S    Jan19   0:03 [watchdog/15]
+root       212  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/15]
+root       213  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/15]
+root       215  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/15:0H]
+root       216  0.0  0.0      0     0 ?        S    Jan19   0:04 [watchdog/16]
+root       217  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/16]
+root       218  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/16]
+root       220  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/16:0H]
+root       221  0.0  0.0      0     0 ?        S    Jan19   0:03 [watchdog/17]
+root       222  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/17]
+root       223  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/17]
+root       225  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/17:0H]
+root       226  0.0  0.0      0     0 ?        S    Jan19   0:04 [watchdog/18]
+root       227  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/18]
+root       228  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/18]
+root       230  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/18:0H]
+root       231  0.0  0.0      0     0 ?        S    Jan19   0:03 [watchdog/19]
+root       232  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/19]
+root       233  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/19]
+root       234  0.0  0.0      0     0 ?        S    Jan19   0:00 [kworker/19:0]
+root       235  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/19:0H]
+root       236  0.0  0.0      0     0 ?        S    Jan19   0:04 [watchdog/20]
+root       237  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/20]
+root       238  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/20]
+root       240  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/20:0H]
+root       241  0.0  0.0      0     0 ?        S    Jan19   0:04 [watchdog/21]
+root       242  0.0  0.0      0     0 ?        S    Jan19   0:06 [migration/21]
+root       243  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/21]
+root       245  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/21:0H]
+root       246  0.0  0.0      0     0 ?        S    Jan19   0:04 [watchdog/22]
+root       247  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/22]
+root       248  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/22]
+root       250  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/22:0H]
+root       251  0.0  0.0      0     0 ?        S    Jan19   0:03 [watchdog/23]
+root       252  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/23]
+root       253  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/23]
+root       254  0.0  0.0      0     0 ?        S    Jan19   0:00 [kworker/23:0]
+root       255  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/23:0H]
+root       256  0.0  0.0      0     0 ?        S    Jan19   0:04 [watchdog/24]
+root       257  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/24]
+root       258  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/24]
+root       260  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/24:0H]
+root       262  0.0  0.0      0     0 ?        S    Jan19   0:03 [watchdog/25]
+root       263  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/25]
+root       264  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/25]
+root       265  0.0  0.0      0     0 ?        S    Jan19   0:00 [kworker/25:0]
+root       266  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/25:0H]
+root       267  0.0  0.0      0     0 ?        S    Jan19   0:03 [watchdog/26]
+root       268  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/26]
+root       269  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/26]
+root       271  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/26:0H]
+root       272  0.0  0.0      0     0 ?        S    Jan19   0:03 [watchdog/27]
+root       273  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/27]
+root       274  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/27]
+root       276  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/27:0H]
+root       277  0.0  0.0      0     0 ?        S    Jan19   0:03 [watchdog/28]
+root       278  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/28]
+root       279  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/28]
+root       281  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/28:0H]
+root       282  0.0  0.0      0     0 ?        S    Jan19   0:03 [watchdog/29]
+root       283  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/29]
+root       284  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/29]
+root       286  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/29:0H]
+root       287  0.0  0.0      0     0 ?        S    Jan19   0:04 [watchdog/30]
+root       288  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/30]
+root       289  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/30]
+root       291  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/30:0H]
+root       292  0.0  0.0      0     0 ?        S    Jan19   0:03 [watchdog/31]
+root       293  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/31]
+root       294  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/31]
+root       296  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/31:0H]
+root       297  0.0  0.0      0     0 ?        S    Jan19   0:04 [watchdog/32]
+root       298  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/32]
+root       299  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/32]
+root       301  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/32:0H]
+root       302  0.0  0.0      0     0 ?        S    Jan19   0:04 [watchdog/33]
+root       303  0.0  0.0      0     0 ?        S    Jan19   0:05 [migration/33]
+root       304  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/33]
+root       305  0.0  0.0      0     0 ?        S    Jan19   0:00 [kworker/33:0]
+root       306  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/33:0H]
+root       307  0.0  0.0      0     0 ?        S    Jan19   0:04 [watchdog/34]
+root       308  0.0  0.0      0     0 ?        S    Jan19   0:01 [migration/34]
+root       309  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/34]
+root       311  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/34:0H]
+root       312  0.0  0.0      0     0 ?        S    Jan19   0:03 [watchdog/35]
+root       313  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/35]
+root       314  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/35]
+root       315  0.0  0.0      0     0 ?        S    Jan19   0:00 [kworker/35:0]
+root       316  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/35:0H]
+root       317  0.0  0.0      0     0 ?        S    Jan19   0:04 [watchdog/36]
+root       318  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/36]
+root       319  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/36]
+root       321  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/36:0H]
+root       323  0.0  0.0      0     0 ?        S    Jan19   0:03 [watchdog/37]
+root       324  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/37]
+root       325  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/37]
+root       327  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/37:0H]
+root       328  0.0  0.0      0     0 ?        S    Jan19   0:04 [watchdog/38]
+root       329  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/38]
+root       330  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/38]
+root       332  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/38:0H]
+root       333  0.0  0.0      0     0 ?        S    Jan19   0:03 [watchdog/39]
+root       334  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/39]
+root       335  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/39]
+root       337  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/39:0H]
+root       338  0.0  0.0      0     0 ?        S    Jan19   0:04 [watchdog/40]
+root       339  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/40]
+root       340  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/40]
+root       342  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/40:0H]
+root       343  0.0  0.0      0     0 ?        S    Jan19   0:03 [watchdog/41]
+root       344  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/41]
+root       345  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/41]
+root       346  0.0  0.0      0     0 ?        S    Jan19   0:00 [kworker/41:0]
+root       347  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/41:0H]
+root       348  0.0  0.0      0     0 ?        S    Jan19   0:04 [watchdog/42]
+root       349  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/42]
+root       350  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/42]
+root       352  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/42:0H]
+root       353  0.0  0.0      0     0 ?        S    Jan19   0:03 [watchdog/43]
+root       354  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/43]
+root       355  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/43]
+root       357  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/43:0H]
+root       358  0.0  0.0      0     0 ?        S    Jan19   0:04 [watchdog/44]
+root       359  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/44]
+root       360  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/44]
+root       362  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/44:0H]
+root       363  0.0  0.0      0     0 ?        S    Jan19   0:03 [watchdog/45]
+root       364  0.0  0.0      0     0 ?        S    Jan19   0:04 [migration/45]
+root       365  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/45]
+root       366  0.0  0.0      0     0 ?        S    Jan19   0:00 [kworker/45:0]
+root       367  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/45:0H]
+root       368  0.0  0.0      0     0 ?        S    Jan19   0:04 [watchdog/46]
+root       369  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/46]
+root       370  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/46]
+root       372  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/46:0H]
+root       373  0.0  0.0      0     0 ?        S    Jan19   0:03 [watchdog/47]
+root       374  0.0  0.0      0     0 ?        S    Jan19   0:00 [migration/47]
+root       375  0.0  0.0      0     0 ?        S    Jan19   0:00 [ksoftirqd/47]
+root       376  0.0  0.0      0     0 ?        S    Jan19   0:00 [kworker/47:0]
+root       377  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/47:0H]
+root       378  0.0  0.0      0     0 ?        S<   Jan19   0:00 [khelper]
+root       379  0.0  0.0      0     0 ?        S    Jan19   0:00 [kdevtmpfs]
+root       380  0.0  0.0      0     0 ?        S<   Jan19   0:00 [netns]
+root       381  0.0  0.0      0     0 ?        S<   Jan19   0:00 [writeback]
+root       382  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kintegrityd]
+root       383  0.0  0.0      0     0 ?        S<   Jan19   0:00 [bioset]
+root       384  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kworker/u133:0]
+root       389  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kblockd]
+root       390  0.0  0.0      0     0 ?        S<   Jan19   0:00 [ata_sff]
+root       391  0.0  0.0      0     0 ?        S    Jan19   0:00 [khubd]
+root       392  0.0  0.0      0     0 ?        S<   Jan19   0:00 [md]
+root       393  0.0  0.0      0     0 ?        S<   Jan19   0:00 [devfreq_wq]
+root       397  0.0  0.0      0     0 ?        S    Jan19   0:02 [khungtaskd]
+root       398  0.0  0.0      0     0 ?        S    Jan19   0:13 [kswapd0]
+root       399  0.0  0.0      0     0 ?        S    Jan19   0:04 [kswapd2]
+root       400  0.0  0.0      0     0 ?        S    Jan19   0:03 [kswapd4]
+root       401  0.0  0.0      0     0 ?        S    Jan19   0:03 [kswapd6]
+root       402  0.0  0.0      0     0 ?        SN   Jan19   1:05 [ksmd]
+root       403  0.0  0.0      0     0 ?        SN   Jan19   0:31 [khugepaged]
+root       404  0.0  0.0      0     0 ?        S    Jan19   0:00 [fsnotify_mark]
+root       405  0.0  0.0      0     0 ?        S    Jan19   0:00 [ecryptfs-kthrea]
+root       406  0.0  0.0      0     0 ?        S<   Jan19   0:00 [crypto]
+root       418  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kthrotld]
+root       420  0.0  0.0      0     0 ?        S    Jan19   1:57 [kworker/18:1]
+root       422  0.0  0.0      0     0 ?        S    Jan19   0:15 [kworker/21:1]
+root       425  0.0  0.0      0     0 ?        S    Jan19   1:21 [kworker/u128:1]
+root       444  0.0  0.0      0     0 ?        S<   Jan19   0:00 [deferwq]
+root       445  0.0  0.0      0     0 ?        S<   Jan19   0:00 [charger_manager]
+root       475  0.0  0.0      0     0 ?        S    Jan19   0:14 [kworker/20:2]
+root       585  0.0  0.0      0     0 ?        S    Jan19   0:00 [scsi_eh_0]
+root       588  0.0  0.0      0     0 ?        S    Jan19   0:00 [scsi_eh_1]
+root       592  0.0  0.0      0     0 ?        S    Jan19   0:00 [scsi_eh_2]
+root       596  0.0  0.0      0     0 ?        S    Jan19   0:00 [scsi_eh_3]
+root       737  0.0  0.0      0     0 ?        S    Jan31   1:43 [kworker/30:0]
+root       739  0.0  0.0      0     0 ?        S    Jan31   0:30 [kworker/32:0]
+root       743  0.0  0.0      0     0 ?        S    Jan19   0:00 [scsi_eh_4]
+root       747  0.0  0.0      0     0 ?        S    Jan19   0:00 [scsi_eh_5]
+root       839  0.0  0.0      0     0 ?        S    Jan19   0:13 [kworker/29:1]
+root       843  0.0  0.0      0     0 ?        S<   Jan19   0:00 [raid5wq]
+root       865  0.0  0.0      0     0 ?        S    Jan19   0:16 [kworker/27:1]
+root       897  0.0  0.0      0     0 ?        S<   Jan19   0:00 [bioset]
+root       898  0.0  0.0      0     0 ?        S    Jan19   4:37 [md0_raid1]
+root       914  0.0  0.0      0     0 ?        S    Jan19   0:07 [kworker/15:1]
+root       918  0.0  0.0      0     0 ?        S    Jan19   0:49 [kworker/45:1]
+root       924  0.0  0.0      0     0 ?        S    Jan19   0:24 [kworker/47:1]
+root       954  0.0  0.0      0     0 ?        S    Jan19   0:06 [jbd2/md0p2-8]
+root       955  0.0  0.0      0     0 ?        S<   Jan19   0:00 [ext4-rsv-conver]
+root       973  0.0  0.0      0     0 ?        S    Jan23   0:00 [kworker/42:2]
+root       974  0.0  0.0      0     0 ?        S    Jan23   0:19 [kworker/46:2]
+root      1032  0.0  0.0  17232   628 ?        S    Jan19   0:00 upstart-udev-bridge --daemon
+root      1036  0.0  0.0  22364  2028 ?        Ss   Jan19   0:00 /sbin/udevd --daemon
+root      1047  0.0  0.0      0     0 ?        S    Jan19   0:41 [kworker/35:1]
+root      1054  0.0  0.0      0     0 ?        S    Jan19   0:19 [jbd2/md0p5-8]
+root      1055  0.0  0.0      0     0 ?        S<   Jan19   0:00 [ext4-rsv-conver]
+root      1059  0.0  0.0      0     0 ?        S    Jan19   1:04 [jbd2/md0p4-8]
+root      1060  0.0  0.0      0     0 ?        S<   Jan19   0:00 [ext4-rsv-conver]
+root      1064  0.0  0.0      0     0 ?        S    Jan19   0:15 [jbd2/md0p6-8]
+root      1065  0.0  0.0      0     0 ?        S<   Jan19   0:00 [ext4-rsv-conver]
+root      1172  0.0  0.0      0     0 ?        S    Jan19   0:06 [kworker/17:1]
+root      1249  0.0  0.0      0     0 ?        S    Jan19   0:04 [kworker/31:1]
+root      1330  0.0  0.0      0     0 ?        S<   Jan19   0:00 [edac-poller]
+c4foppia  1444  0.0  0.0   4296   348 ?        Ss   Jan31   0:00 /tmp/VisualGDB-DisownTTY-r1
+g5vanben  1449  0.0  0.0  26416  1744 ?        SNs  Jan21   4:33 tmux
+g5vanben  1450  0.0  0.0  18308  2300 pts/11   Ss+  Jan21   0:00 -bash
+root      1466  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kpsmoused]
+root      1594  0.0  0.0  22360  1628 ?        S    Jan19   0:00 /sbin/udevd --daemon
+c2konomi  1600  0.0  0.0  18164  2148 pts/22   Ss+  Jan31   0:00 /var/shell/bash
+root      1608  0.0  0.0  22360  1632 ?        S    Jan19   0:00 /sbin/udevd --daemon
+root      1680  0.0  0.0      0     0 ?        S<   Jan19   0:00 [kvm-irqfd-clean]
+c5martin  1729  0.0  0.0  37520  4056 ?        Ss   Jan29   0:00 -zsh
+root      1759  0.0  0.0  19200  1072 ?        Ss   Jan19   0:01 rpcbind -w
+root      1773  0.0  0.0  15188   376 ?        S    Jan19   0:00 upstart-socket-bridge --daemon
+c5martin  1783  0.0  0.0  42112  4844 ?        Ss   Jan29   0:00 -zsh
+root      1830  0.0  0.0      0     0 ?        S<   Jan19   0:00 [rpciod]
+root      1850  0.0  0.0      0     0 ?        S<   Jan19   0:00 [nfsiod]
+statd     1855  0.0  0.0  21568  1464 ?        Ss   Jan19   0:00 rpc.statd -L
+root      1856  0.0  0.0 250236  8976 ?        Sl   Jan19   3:07 rsyslogd -c5
+72        1865  0.0  0.0  24292  1472 ?        Ss   Jan19   0:02 dbus-daemon --system --fork --activation=upstart
+root      1869  0.0  0.0  25644   788 ?        Ss   Jan19   0:00 rpc.idmapd
+root      1870  0.0  0.0  21188  1688 ?        Ss   Jan19   0:01 /usr/sbin/bluetoothd
+root      1881  0.0  0.0      0     0 ?        S<   Jan19   0:00 [krfcommd]
+root      1943  0.0  0.0  12932   956 tty4     Ss+  Jan19   0:00 /sbin/getty -8 38400 tty4
+root      1947  0.0  0.0  12932   804 tty5     Ss+  Jan19   0:00 /sbin/getty -8 38400 tty5
+root      1956  0.0  0.0  12932   968 tty2     Ss+  Jan19   0:00 /sbin/getty -8 38400 tty2
+root      1958  0.0  0.0  12932   960 tty3     Ss+  Jan19   0:00 /sbin/getty -8 38400 tty3
+root      1959  0.0  0.0   4400   608 ?        Ss   Jan19   0:00 /bin/sh /usr/bin/svscanboot
+root      1962  0.0  0.0  12928   956 tty6     Ss+  Jan19   0:00 /sbin/getty -8 38400 tty6
+root      1977  0.0  0.0  19112  1020 ?        Ss   Jan19   0:18 cron
+root      1982  0.0  0.0   4336   476 ?        S    Jan19   0:27 svscan /etc/service
+root      1983  0.0  0.0   4156   352 ?        S    Jan19   0:00 readproctitle service errors: 
+................................................................................................................................................................................................................................................................................................................................................................................................................
+root      1988  0.0  0.0   4168   316 ?        S    Jan19   0:00 supervise ntpd
+root      1989  0.0  0.0   4168   348 ?        S    Jan19   0:00 supervise log
+root      1990  0.0  0.0   4168   352 ?        S    Jan19   0:00 supervise cfexecd
+root      1991  0.0  0.0   4168   348 ?        S    Jan19   0:00 supervise log
+root      1992  0.0  0.0   4168   348 ?        S    Jan19   0:00 supervise publicfile-httpd
+root      1993  0.0  0.0   4168   352 ?        S    Jan19   0:00 supervise log
+root      1995  0.0  0.0   4168   348 ?        S    Jan19   0:00 supervise smartd
+root      1996  0.0  0.0   4168   340 ?        S    Jan19   0:00 supervise log
+root      1997  0.0  0.0   4168   352 ?        S    Jan19   0:00 supervise qmail-send
+root      1998  0.0  0.0   4168   352 ?        S    Jan19   0:00 supervise log
+root      1999  0.0  0.0   4168   348 ?        S    Jan19   0:00 supervise cfenvd
+root      2000  0.0  0.0   4168   348 ?        S    Jan19   0:00 supervise log
+nobody    2004  0.0  0.0   4304   636 ?        S    Jan19   0:00 logger -i -t ntpd -p daemon.info
+root      2005  0.0  0.0   5228   496 ?        S    Jan19   0:00 tcpserver -vDRHl0 -b50 -c100 128.100.31.200 80 httpd /var/publicfile/file
+nobody    2006  0.0  0.0   4304   592 ?        S    Jan19   0:00 logger -i -t publicfile-httpd -p daemon.info
+nobody    2008  0.0  0.0   4300   616 ?        S    Jan19   0:00 logger -p daemon.err -t cfexecd
+nobody    2009  0.0  0.0   4304   344 ?        S    Jan19   0:00 logger -i -t smartd -p daemon.info
+root      2010  0.0  0.0  19652  2212 ?        S    Jan19   0:01 smartd --no-fork --quit=errors --interval=1800 --configfile=/etc/smartd.conf --logfacility=daemon 
+--pidfile=/var/run/smartd.pid
+root      2011  0.0  0.0  27372  2908 ?        S    Jan19   1:44 cfenvd -F
+nobody    2012  0.0  0.0   4304   272 ?        S    Jan19   0:00 logger -p daemon.err -t cfenvd
+qmails    2017  0.0  0.0   2172   424 ?        S    Jan19   0:02 qmail-send
+qmaill    2019  0.0  0.0   2148   472 ?        S    Jan19   0:01 splogger qmail
+root      2034  0.0  0.0   5644  2132 ?        S    Jan19   7:55 /usr/sbin/and
+root      2041  0.0  0.0   2156   280 ?        S    Jan19   0:00 qmail-lspawn |dot-forward .forward?|preline procmail
+qmailr    2042  0.0  0.0   2152   296 ?        S    Jan19   0:01 qmail-rspawn
+qmailq    2044  0.0  0.0   2136   380 ?        S    Jan19   0:00 qmail-clean
+qmails    2045  0.0  0.0   2160   400 ?        S    Jan19   0:03 qmail-todo
+qmailq    2046  0.0  0.0   2136   376 ?        S    Jan19   0:00 qmail-clean
+root      2054  0.0  0.0 446580  1920 ?        Ssl  Jan19   1:33 /usr/sbin/automount
+root      2120  0.0  0.0      0     0 ?        S    Jan19   0:00 [lockd]
+lungj     2121  0.0  0.0  69640   836 ?        Ss   Jan19   0:00 svnserve -d --listen-port=5115 -r /u/lungj/csc207-repo
+daemon    2154  0.0  0.0  30872   676 ?        Ss   Jan19  16:25 lpd Waiting
+root      2188  0.0  0.0      0     0 ?        S<   Jan19   0:00 [nfsd4]
+root      2189  0.0  0.0      0     0 ?        S<   Jan19   0:00 [nfsd4_callbacks]
+root      2192  0.0  0.0      0     0 ?        S    Jan19   0:00 [nfsd]
+root      2193  0.0  0.0      0     0 ?        S    Jan19   0:00 [nfsd]
+root      2194  0.0  0.0      0     0 ?        S    Jan19   0:00 [nfsd]
+root      2195  0.0  0.0      0     0 ?        S    Jan19   0:00 [nfsd]
+root      2196  0.0  0.0      0     0 ?        S    Jan19   0:00 [nfsd]
+root      2197  0.0  0.0      0     0 ?        S    Jan19   0:00 [nfsd]
+root      2198  0.0  0.0      0     0 ?        S    Jan19   0:00 [nfsd]
+root      2199  0.0  0.0      0     0 ?        S    Jan19   0:00 [nfsd]
+root      2203  0.0  0.0  24008   944 ?        Ss   Jan19   0:00 /usr/sbin/rpc.mountd --manage-gids
+root      2247  0.2  0.0      0     0 ?        SN   Jan19  54:04 [kipmi0]
+root      2280  0.0  0.0  13364   712 ?        Ss   Jan19   0:00 /sbin/mdadm --monitor --pid-file /var/run/mdadm/monitor.pid --daemonise --scan --syslog
+c5zhanif  2304  0.0  0.0  24308  1640 ?        Ss   Jan27   0:00 SCREEN
+c5zhanif  2305  0.0  0.0  18764  2564 pts/53   Ss   Jan27   0:00 -var/shell/tcsh
+root      2694  0.0  0.0  12932   804 tty1     Ss+  Jan19   0:00 /sbin/getty -8 38400 tty1
+root      2993  0.0  0.0      0     0 ?        S    14:36   0:00 [kworker/u130:1]
+root      3000  0.0  0.0      0     0 ?        S    Jan30   0:00 [kworker/36:2]
+root      3001  0.0  0.0      0     0 ?        S    Jan30   0:00 [kworker/34:1]
+root      3003  0.0  0.0      0     0 ?        S    Jan30   0:00 [kworker/24:1]
+root      3004  0.0  0.0      0     0 ?        S    Jan30   0:00 [kworker/28:0]
+root      3495  0.0  0.0      0     0 ?        S    Jan30   0:00 [kworker/9:1]
+root      4268  0.0  0.0  88336  3820 ?        Ss   Jan20   0:00 sshd: tg [priv]
+tg        4270  0.0  0.0  88336  1852 ?        S    Jan20   0:00 sshd: tg@pts/4
+tg        4271  0.0  0.0  18132  2092 pts/4    Ss+  Jan20   0:00 -bash
+g5philip  4614  0.0  0.0  26416  1756 ?        SNs  Jan25   2:57 tmux
+g5philip  4615  0.0  0.0  18132  1976 pts/36   Ss+  Jan25   0:00 -bash
+c4rivest  4698  0.0  0.0  26704  2020 ?        Ss   Jan30   1:30 tmux
+c4rivest  4699  0.0  0.0  18164  1988 pts/50   Ss+  Jan30   0:00 -bash
+root      5121  0.0  0.0      0     0 ?        S    Jan31   0:00 [kworker/u128:0]
+root      5476  0.0  0.0  88336  3808 ?        Ss   Jan29   0:00 sshd: xan [priv]
+xan       5478  0.0  0.0  88612  2180 ?        S    Jan29   0:06 sshd: xan@pts/102
+xan       5479  0.0  0.0  18068  2068 pts/102  Ss+  Jan29   0:00 -bash
+root      5556  0.0  0.0      0     0 ?        S    Jan23   0:25 [kworker/22:0]
+root      5601  0.0  0.0      0     0 ?        S    Jan23   0:25 [kworker/26:2]
+root      5624  0.0  0.0      0     0 ?        S    Jan23   0:29 [kworker/15:2]
+root      5625  0.0  0.0      0     0 ?        S    Jan23   1:39 [kworker/31:2]
+c5martin  5756  0.0  0.0  41840  4468 ?        Ss   Jan29   0:00 -zsh
+c5martin  5928  0.0  0.0  37524  4032 ?        Ss   Jan29   0:00 -zsh
+c5zhanif  5994  0.0  0.0  18260  2248 pts/53   S+   Jan27   0:00 bash
+c5martin  6037  0.0  0.0  37524  4032 ?        Ss   Jan29   0:00 -zsh
+root      6054  0.0  0.0      0     0 ?        S    Jan30   0:03 [kworker/17:0]
+c5martin  6246  0.0  0.0  37524  4028 ?        Ss   Jan29   0:00 -zsh
+c5martin  6407  0.0  0.0  43548  6244 ?        Ss   Jan29   0:01 -zsh
+c4rivest  6816  0.0  0.0  18164  2128 pts/43   Ss   Jan30   0:00 -bash
+c4rivest  6906  0.0  0.0  18192  1316 pts/43   S+   Jan30   0:00 -bash
+c4rivest  6907  0.0  0.0   6504   624 pts/43   S+   Jan30   0:00 grep root
+c4rivest  6908  0.0  0.0   4316   352 pts/43   S+   Jan30   0:00 wc -l
+root      7044  0.0  0.0      0     0 ?        S    Jan30   0:33 [kworker/34:2]
+root      7046  0.0  0.0      0     0 ?        S    Jan30   0:25 [kworker/28:1]
+root      7048  0.0  0.0      0     0 ?        S    Jan30   0:55 [kworker/36:0]
+root      7471  0.0  0.0      0     0 ?        S    Jan29   1:06 [kworker/12:1]
+root      7524  0.0  0.0      0     0 ?        S    Jan30   0:37 [kworker/9:0]
+root      7525  0.0  0.0      0     0 ?        S    Jan30   0:01 [kworker/40:1]
+c4rivest  7550  0.0  0.0  17796  1168 pts/43   S+   Jan30   0:00 tmux
+c4rivest  7551  0.0  0.0  18172  2128 pts/88   Ss   Jan30   0:00 -bash
+root      7565  0.0  0.0      0     0 ?        S    Jan30   0:00 [kworker/43:1]
+c5martin  7631  0.0  0.0  37524  4032 ?        Ss   Jan29   0:00 -zsh
+c5martin  7684  0.0  0.0  43180  5844 ?        Ss   Jan29   0:00 -zsh
+root      7822  0.0  0.0  88356  3808 ?        Ss   14:49   0:00 sshd: c5parkje [priv]
+c5parkje  7835  0.0  0.0  88492  2012 ?        S    14:49   0:00 sshd: c5parkje@pts/205
+c5parkje  7836  0.0  0.0  18128  2128 pts/205  Ss+  14:49   0:00 -bash
+root      7911  0.0  0.0      0     0 ?        S    Jan29   0:00 [kworker/37:2]
+c4rivest  8517  0.0  0.0  97284  3084 pts/88   S+   Jan30   0:00 svn commit results.txt
+c4rivest  8518  0.0  0.0   4400   600 pts/88   S+   Jan30   0:00 sh -c /bin/vi svn-commit.tmp
+c4rivest  8519  0.0  0.0 169940  8048 pts/88   Sl+  Jan30   0:00 /bin/vi svn-commit.tmp
+root      8779  0.0  0.0  88352  3808 ?        Ss   Jan30   0:00 sshd: g4kamyar [priv]
+g4kamyar  8781  0.0  0.0  88352  1840 ?        S    Jan30   0:00 sshd: g4kamyar@pts/99
+g4kamyar  8782  0.0  0.0  18088  2064 pts/99   Ss+  Jan30   0:00 -bash
+root      9621  0.0  0.0  88352  3816 ?        Ss   14:59   0:00 sshd: g2lev [priv]
+g2lev     9623  0.0  0.0  88488  1852 ?        S    14:59   0:00 sshd: g2lev@pts/3
+g2lev     9624  0.0  0.0  18132  2100 pts/3    Ss+  14:59   0:00 -bash
+g3friedm 12916  0.0  0.0  24644  1948 ?        Ss   15:15   0:00 SCREEN
+g3friedm 12917  0.0  0.0   4396   600 pts/68   Ss   15:15   0:00 -
+g3friedm 12921  0.0  0.0  18200  2204 pts/68   S    15:15   0:00 bash
+c4foppia 13430  0.0  0.0   4296   348 ?        Ss   Jan31   0:00 /tmp/VisualGDB-DisownTTY-r1
+g3friedm 14068  0.0  0.0 170468  8960 pts/68   Sl+  15:18   0:00 vim list_sync.c
+root     14573  0.0  0.0      0     0 ?        S    15:19   0:01 [kworker/40:0]
+root     14576  0.0  0.0      0     0 ?        S    15:19   0:01 [kworker/13:2]
+g3chowd  14840  0.0  0.0  27548  2928 ?        SNs  Jan25   6:05 tmux
+g3chowd  14841  0.0  0.0  18168  2132 pts/31   Ss   Jan25   0:00 -bash
+g3chowd  14851  0.0  0.0 170016  8204 pts/31   Sl+  Jan25   0:00 vim enc.c
+g3chowd  14854  0.0  0.0  18168  2128 pts/39   Ss   Jan25   0:00 -bash
+g3chowd  14866  0.0  0.0 170016  8204 pts/39   Sl+  Jan25   0:00 vim d2r.c
+g3chowd  14876  0.0  0.0  18168  2148 pts/40   Ss   Jan25   0:00 -bash
+g3chowd  15005  0.0  0.0 170028  8092 pts/40   Sl+  Jan25   0:00 vim tmux-server-14599.log
+g3chowd  15008  0.0  0.0  18516  2492 pts/19   Ss+  Jan25   0:00 -bash
+g3chowd  15210  0.0  0.0  18168  2132 pts/44   Ss+  Jan25   0:00 -bash
+root     15219  0.0  0.0      0     0 ?        S    Jan25   0:50 [kworker/33:2]
+root     15223  0.0  0.0      0     0 ?        S    Jan25   0:32 [kworker/13:0]
+root     15224  0.0  0.0      0     0 ?        S    Jan25   0:00 [kworker/16:1]
+root     15229  0.0  0.0      0     0 ?        S    Jan25   0:09 [kworker/44:2]
+root     15231  0.0  0.0      0     0 ?        S    Jan25   0:00 [kworker/18:2]
+root     15232  0.0  0.0      0     0 ?        S    Jan25   0:16 [kworker/20:1]
+root     15234  0.0  0.0      0     0 ?        S    Jan25   0:28 [kworker/22:2]
+root     15235  0.0  0.0      0     0 ?        S    Jan25   0:31 [kworker/21:0]
+root     15236  0.0  0.0      0     0 ?        S    Jan25   0:21 [kworker/19:2]
+root     15237  0.0  0.0      0     0 ?        S    Jan25   0:13 [kworker/1:1]
+c4singhn 15881  0.0  0.0  26476  1800 ?        SNs  Jan23   4:10 tmux
+c4singhn 15882  0.0  0.0  18188  2144 pts/30   Ss+  Jan23   0:00 -bash
+g5sara   16081  0.0  0.0  26416  1832 ?        SNs  Jan25   2:54 tmux
+g5sara   16082  0.0  0.0  18128  2104 pts/18   Ss   Jan25   0:00 -bash
+g5sara   16180  0.0  0.0 170028  8212 pts/18   Sl+  Jan25   0:00 vim hogs.c
+root     16242  0.0  0.0      0     0 ?        S    Jan20   0:24 [kworker/32:1]
+root     16244  0.0  0.0      0     0 ?        S    Jan20   0:40 [kworker/16:2]
+root     16334  0.0  0.0      0     0 ?        S    Jan29   0:30 [kworker/26:1]
+root     16335  0.0  0.0      0     0 ?        S    Jan29   0:17 [kworker/27:2]
+root     16562  0.0  0.0  88352  3788 ?        Ss   15:25   0:00 sshd: c6ifemad [priv]
+c6ifemad 16575  0.0  0.0  90160  3744 ?        S    15:25   0:08 sshd: c6ifemad@pts/159
+c6ifemad 16576  0.0  0.0  18152  2136 pts/159  Ss+  15:25   0:00 -bash
+root     16789  0.0  0.0  88352  3756 ?        Ss   15:26   0:00 sshd: c5wangym [priv]
+c5wangym 16791  0.0  0.0  88492  2284 ?        S    15:26   0:00 sshd: c5wangym@notty
+c5wangym 16792  0.0  0.0  17776  1364 ?        Ss   15:26   0:00 tcsh -c /usr/lib/openssh/sftp-server
+c5wangym 16794  0.0  0.0  12908   940 ?        S    15:26   0:00 /usr/lib/openssh/sftp-server
+root     16820  0.0  0.0  88352  3788 ?        Ss   15:26   0:00 sshd: c5linkov [priv]
+c5linkov 16837  0.0  0.0  88352  1860 ?        S    15:26   0:00 sshd: c5linkov@pts/170
+c5linkov 16838  0.0  0.0  18776  2596 pts/170  Ss+  15:26   0:00 -tcsh
+root     17248  0.0  0.0  88336  3256 ?        Ss   Jan19   0:00 sshd: tg [priv]
+tg       17252  0.0  0.0  88476  1404 ?        S    Jan19   0:00 sshd: tg@pts/33
+tg       17253  0.0  0.0  18132  1908 pts/33   Ss+  Jan19   0:00 -bash
+root     17282  0.0  0.0  88336  3332 ?        Ss   Jan19   0:00 sshd: tg [priv]
+tg       17376  0.0  0.0  88476  1408 ?        S    Jan19   0:00 sshd: tg@pts/34
+tg       17377  0.0  0.0  18132  2088 pts/34   Ss   Jan19   0:00 -bash
+root     17384  0.0  0.0  88336  3672 ?        Ss   Jan19   0:00 sshd: tg [priv]
+tg       17388  0.0  0.0  88476  1728 ?        S    Jan19   0:00 sshd: tg@pts/35
+tg       17389  0.0  0.0  18132  2084 pts/35   Ss   Jan19   0:00 -bash
+root     17585  0.0  0.0  88352  3832 ?        Ss   15:31   0:00 sshd: c5wangym [priv]
+c5wangym 17593  0.0  0.0  88492  1864 ?        S    15:31   0:00 sshd: c5wangym@pts/174
+c5wangym 17594  0.0  0.0  18764  2580 pts/174  Ss+  15:31   0:00 -tcsh
+root     17781  0.0  0.0  88352  3812 ?        Ss   15:32   0:00 sshd: g5jennyz [priv]
+g5jennyz 17783  0.0  0.0  88352  1844 ?        S    15:32   0:00 sshd: g5jennyz@pts/49
+g5jennyz 17784  0.0  0.0  18136  2112 pts/49   Ss+  15:32   0:00 -bash
+root     17806  0.0  0.0  88352  3796 ?        Ss   15:32   0:00 sshd: g5mendoz [priv]
+g5mendoz 17812  0.0  0.0  88352  1848 ?        S    15:32   0:00 sshd: g5mendoz@pts/207
+g5mendoz 17813  0.0  0.0  18124  2096 pts/207  Ss+  15:32   0:00 -bash
+root     18601  0.0  0.0  88352  3792 ?        Ss   15:35   0:00 sshd: g4yuzhou [priv]
+g4yuzhou 18603  0.0  0.0  88352  1864 ?        S    15:35   0:00 sshd: g4yuzhou@pts/182
+g4yuzhou 18604  0.0  0.0  18140  2116 pts/182  Ss+  15:35   0:00 -bash
+g2kangbi 18656  0.0  0.0  24280  1560 ?        Ss   15:35   0:00 SCREEN
+g2kangbi 18657  0.0  0.0  18156  2152 pts/178  Ss   15:35   0:00 /var/shell/bash
+root     18809  0.0  0.0  88352  3800 ?        Ss   15:37   0:00 sshd: g5char [priv]
+g5char   18820  0.0  0.0  88352  1860 ?        S    15:37   0:00 sshd: g5char@pts/225
+g5char   18821  0.0  0.0  18124  2096 pts/225  Ss+  15:37   0:00 -bash
+root     19672  0.0  0.0      0     0 ?        S    Jan31   0:01 [kworker/5:0]
+g2kangbi 19754  0.0  0.0 170004  8172 pts/178  Sl+  15:41   0:00 vim list_sync.c
+g5zelin  20266 99.9  0.0   4168   480 ?        RN   Jan30 3011:53 prog
+root     20408  0.0  0.0  86268  3824 ?        Ss   15:44   0:00 sshd: g5kgl [priv]
+g5kgl    20410  0.0  0.0  87920  3612 ?        S    15:44   0:06 sshd: g5kgl@pts/177
+g5kgl    20411  0.0  0.0  18104  1980 pts/177  Ss   15:44   0:00 -bash
+g5kgl    20510  0.9  0.4 2464120 327024 pts/177 Sl+ 15:44   1:14 quartus
+g5kgl    20536  0.0  0.0      0     0 pts/177  Z+   15:44   0:00 [crashreporter] <defunct>
+root     20712  0.0  0.0  88336  3828 ?        Ss   15:45   0:00 sshd: g3force [priv]
+g3force  20736  0.0  0.0  88496  1860 ?        S    15:46   0:00 sshd: g3force@pts/114
+g3force  20737  0.0  0.0  18140  2132 pts/114  Ss+  15:46   0:00 -bash
+root     20867  0.0  0.0  88352  3800 ?        Ss   15:47   0:00 sshd: g2kangbi [priv]
+g2kangbi 20884  0.0  0.0  88352  1856 ?        S    15:47   0:00 sshd: g2kangbi@pts/105
+g2kangbi 20885  0.0  0.0  18108  2092 pts/105  Ss+  15:47   0:00 -bash
+root     20968  0.0  0.0  88352  3796 ?        Ss   15:48   0:00 sshd: c5escala [priv]
+c5escala 20972  0.0  0.0  88352  1860 ?        S    15:48   0:00 sshd: c5escala@pts/101
+c5escala 20973  0.0  0.0  18328  2128 pts/101  Ss   15:48   0:00 -tcsh
+c5escala 20985  0.0  0.0 171604  9688 pts/101  Sl+  15:48   0:00 vim train.twt
+root     21308  0.0  0.0  88352  3752 ?        Ss   15:50   0:00 sshd: g4brzuzy [priv]
+g4brzuzy 21310  0.0  0.0  88352  1628 ?        S    15:50   0:00 sshd: g4brzuzy
+root     21355  0.0  0.0  88352  3800 ?        Ss   15:50   0:00 sshd: c5cortez [priv]
+root     21360  0.0  0.0  88352  3792 ?        Ss   15:50   0:00 sshd: g5philip [priv]
+g5philip 21365  0.0  0.0  88352  2284 ?        S    15:50   0:00 sshd: g5philip@pts/103
+g5philip 21366  0.0  0.0  18184  2140 pts/103  Ss+  15:50   0:00 -bash
+c5cortez 21369  0.0  0.0  88352  1860 ?        S    15:50   0:00 sshd: c5cortez@pts/134
+c5cortez 21370  0.0  0.0  18100  2064 pts/134  Ss+  15:50   0:00 -bash
+root     21386  0.0  0.0  88352  3800 ?        Ss   15:50   0:00 sshd: g3mmcs [priv]
+g3mmcs   21402  0.0  0.0  88352  1856 ?        S    15:51   0:00 sshd: g3mmcs@pts/137
+g3mmcs   21403  0.0  0.0  18152  2108 pts/137  Ss   15:51   0:00 -bash
+g3mmcs   21445  0.0  0.0 170144  8452 pts/137  Sl+  15:51   0:00 vim list.c
+root     21467  0.0  0.0  88352  3796 ?        Ss   15:51   0:00 sshd: g2jieun [priv]
+g2jieun  21489  0.0  0.0  88352  1852 ?        S    15:51   0:00 sshd: g2jieun@pts/175
+g2jieun  21490  0.0  0.0  18232  2108 pts/175  Ss+  15:51   0:00 -tcsh
+root     21541  0.0  0.0  88352  3792 ?        Ss   15:51   0:00 sshd: c4yuthom [priv]
+c4yuthom 21559  0.0  0.0  88504  2008 ?        S    15:51   0:00 sshd: c4yuthom@pts/71
+c4yuthom 21560  0.0  0.0  12908   948 ?        Ss   15:51   0:00 /usr/lib/openssh/sftp-server
+root     21579  0.0  0.0      0     0 ?        S    Jan28   0:16 [kworker/29:2]
+root     21866  0.0  0.0  88352  3800 ?        Ss   15:54   0:00 sshd: g5tieuji [priv]
+g5tieuji 21945  0.0  0.0  88492  2096 ?        S    15:55   0:02 sshd: g5tieuji@pts/51
+g5tieuji 21946  0.0  0.0  18136  2108 pts/51   Ss+  15:55   0:00 -bash
+root     22022  0.0  0.0  88352  3800 ?        Ss   15:55   0:00 sshd: c4chapur [priv]
+c4chapur 22037  0.0  0.0  88716  2012 ?        S    15:55   0:00 sshd: c4chapur@pts/184
+c4chapur 22038  0.0  0.0  18116  2084 pts/184  Ss+  15:55   0:00 -bash
+root     22041  0.0  0.0 219904  4316 ?        Sl   Jan20   0:00 /usr/lib/upower/upowerd
+root     22082  0.0  0.0  88352  3768 ?        Ss   15:56   0:00 sshd: g4liange [priv]
+g4liange 22084  0.0  0.0  88492  1848 ?        S    15:56   0:00 sshd: g4liange@notty
+g4liange 22085  0.0  0.0  12776   736 ?        Ss   15:56   0:00 /usr/lib/openssh/sftp-server
+root     22097  0.0  0.0  88352  3796 ?        Ss   15:56   0:00 sshd: g4rekt [priv]
+g4rekt   22100  0.0  0.0  88352  1852 ?        S    15:56   0:00 sshd: g4rekt@pts/186
+g4rekt   22101  0.0  0.0  18136  2116 pts/186  Ss+  15:56   0:00 -bash
+root     22270  0.0  0.0  88356  3796 ?        Ss   15:58   0:00 sshd: g5aliyev [priv]
+g5aliyev 22316  0.3  0.0  91996  5644 ?        S    15:59   0:27 sshd: g5aliyev@pts/14
+g5aliyev 22318  0.0  0.0  18140  1988 pts/14   Ss   15:59   0:00 -bash
+g5aliyev 22327  0.9  0.4 2449356 318840 pts/14 Sl+  15:59   1:08 quartus
+g5aliyev 22357  0.0  0.0      0     0 pts/14   Z+   15:59   0:00 [crashreporter] <defunct>
+root     22642  0.0  0.0  88352  3800 ?        Ss   16:01   0:00 sshd: g2jieun [priv]
+g2jieun  22645  0.0  0.0  88352  1860 ?        S    16:01   0:00 sshd: g2jieun@pts/69
+g2jieun  22646  0.0  0.0  18256  2156 pts/69   Ss+  16:01   0:00 -tcsh
+root     22760  0.0  0.0  88352  3788 ?        Ss   16:01   0:00 sshd: g5shann [priv]
+g5shann  22776  0.0  0.0  88652  2020 ?        S    16:01   0:00 sshd: g5shann@pts/143
+g5shann  22777  0.0  0.0  18132  2092 pts/143  Ss+  16:01   0:00 -bash
+root     22928  0.0  0.0  88356  3808 ?        Ss   16:02   0:00 sshd: c5stephe [priv]
+c5stephe 23019  0.0  0.0  88356  1864 ?        S    16:02   0:00 sshd: c5stephe@pts/148
+c5stephe 23020  0.0  0.0  18116  2072 pts/148  Ss+  16:02   0:00 -bash
+root     23071  0.0  0.0      0     0 ?        S<   Jan31   0:00 [kworker/u136:1]
+root     23441  0.0  0.0  88352  3796 ?        Ss   16:05   0:00 sshd: g5zelin [priv]
+g5zelin  23446  0.0  0.0  88352  1864 ?        S    16:05   0:00 sshd: g5zelin@pts/109
+g5zelin  23448  0.0  0.0  18152  2136 pts/109  Ss+  16:05   0:00 -bash
+root     23523  0.0  0.0  86268  3828 ?        Ss   16:05   0:00 sshd: g3wkwan [priv]
+g3wkwan  23525  0.0  0.0  86400  1904 ?        S    16:05   0:00 sshd: g3wkwan@pts/57
+g3wkwan  23526  0.0  0.0  18152  2148 pts/57   Ss   16:05   0:00 -bash
+root     23619  0.0  0.0  88352  3828 ?        Ss   16:06   0:00 sshd: c5wangym [priv]
+c5wangym 23623  0.0  0.0  89040  2600 ?        S    16:06   0:00 sshd: c5wangym@pts/171
+c5wangym 23624  0.0  0.0  18260  2136 pts/171  Ss+  16:06   0:00 -tcsh
+root     23658  0.0  0.0  88352  3820 ?        Ss   16:06   0:00 sshd: g5ratnof [priv]
+g5ratnof 23667  0.0  0.0  88492  1856 ?        S    16:06   0:00 sshd: g5ratnof@pts/185
+g5ratnof 23668  0.0  0.0  18164  2156 pts/185  Ss+  16:06   0:00 -bash
+c4yuthom 23766  0.0  0.0  18116  2084 pts/71   Ss+  16:07   0:00 -bash
+root     23885  0.0  0.0  88352  3820 ?        Ss   16:07   0:00 sshd: c5tsangp [priv]
+c5tsangp 23907  0.0  0.0  88628  2248 ?        S    16:07   0:00 sshd: c5tsangp@pts/168
+c5tsangp 23908  0.0  0.0  18088  1976 pts/168  Ss+  16:07   0:00 -bash
+root     23958  0.0  0.0  88352  3804 ?        Ss   16:07   0:00 sshd: g5mcbrid [priv]
+g5mcbrid 23992  0.0  0.0  88492  1984 ?        S    16:08   0:00 sshd: g5mcbrid@pts/190
+g5mcbrid 23993  0.0  0.0  18148  2128 pts/190  Ss   16:08   0:00 -bash
+root     24032  0.0  0.0  88352  3760 ?        Ss   16:08   0:00 sshd: c5wangym [priv]
+c5wangym 24034  0.0  0.0  88352  2288 ?        S    16:08   0:00 sshd: c5wangym@notty
+c5wangym 24035  0.0  0.0  17776  1360 ?        Ss   16:08   0:00 tcsh -c /usr/lib/openssh/sftp-server
+c5wangym 24037  0.0  0.0  12776   900 ?        S    16:08   0:00 /usr/lib/openssh/sftp-server
+root     24158  0.0  0.0  88352  3756 ?        Ss   16:08   0:00 sshd: c5vijayv [priv]
+c5vijayv 24161  0.0  0.0  88352  1644 ?        S    16:08   0:00 sshd: c5vijayv
+root     24190  0.0  0.0  88352  3796 ?        Ss   16:08   0:00 sshd: c4leehee [priv]
+c4leehee 24305  0.0  0.0  88352  1848 ?        S    16:09   0:00 sshd: c4leehee@pts/97
+c4leehee 24306  0.0  0.0  18092  2056 pts/97   Ss   16:09   0:00 -bash
+c4leehee 24363  0.0  0.0  12920  3308 pts/97   S+   16:09   0:01 nano hogs.c
+root     24401  0.0  0.0  88352  3800 ?        Ss   16:09   0:00 sshd: g5vicli [priv]
+root     24403  0.0  0.0  88352  3772 ?        Ss   16:09   0:00 sshd: g4liange [priv]
+g4liange 24405  0.0  0.0  88492  1852 ?        S    16:09   0:00 sshd: g4liange@notty
+g4liange 24406  0.0  0.0  12776   740 ?        Ss   16:09   0:00 /usr/lib/openssh/sftp-server
+g5vicli  24631  0.0  0.0  89712  3376 ?        S    16:10   0:02 sshd: g5vicli@pts/92
+g5vicli  24632  0.0  0.0  18140  2120 pts/92   Ss   16:10   0:00 -bash
+root     25006  0.0  0.0  88352  3800 ?        Ss   16:11   0:00 sshd: c4kimseu [priv]
+root     25027  0.0  0.0  88352  3804 ?        Ss   Jan31   0:00 sshd: c6hallid [priv]
+c6hallid 25034  0.0  0.0  88484  2140 ?        S    Jan31   0:03 sshd: c6hallid@pts/146
+c6hallid 25035  0.0  0.0  18740  2552 pts/146  Ss   Jan31   0:00 -tcsh
+rtkit    25361  0.0  0.0 168872  1316 ?        SNl  Jan20   0:13 /usr/lib/rtkit/rtkit-daemon
+root     25365  0.0  0.0 4254188 3796 ?        Sl   Jan20   0:00 /usr/sbin/console-kit-daemon --no-daemon
+g5vicli  25546  0.0  0.0  15276  1184 pts/92   T    16:13   0:00 ps aux
+g5vicli  25547  0.0  0.0   4160   344 pts/92   T    16:13   0:00 asd
+root     25591  0.0  0.0  88352  3796 ?        Ss   11:16   0:00 sshd: c4yuthom [priv]
+c4yuthom 25621  0.0  0.0  88504  2220 ?        S    11:16   0:09 sshd: c4yuthom@pts/95
+c4yuthom 25623  0.0  0.0  18116  2088 pts/95   Ss+  11:16   0:00 -bash
+c4kimseu 25677  0.0  0.0  88492  1860 ?        S    16:13   0:00 sshd: c4kimseu@pts/111
+c4kimseu 25678  0.0  0.0  18100  2068 pts/111  Ss   16:13   0:00 -bash
+root     25926  0.0  0.0  88352  3800 ?        Ss   16:14   0:00 sshd: g5blazin [priv]
+g5blazin 25943  0.0  0.0  88352  1856 ?        S    16:14   0:00 sshd: g5blazin@pts/191
+g5blazin 25947  0.0  0.0  18096  1984 pts/191  Ss   16:14   0:00 -bash
+g5blazin 26086  0.0  0.0 170016  8136 pts/191  Sl+  16:15   0:00 vim hogs.c
+root     26120  0.0  0.0  88352  3784 ?        Ss   16:15   0:00 sshd: c4shimhy [priv]
+root     26127  0.0  0.0  88352  3816 ?        Ss   16:15   0:00 sshd: g5fangti [priv]
+c4shimhy 26130  0.0  0.0  88492  1856 ?        S    16:15   0:00 sshd: c4shimhy@pts/116
+c4shimhy 26131  0.0  0.0  18096  1984 pts/116  Ss+  16:15   0:00 -bash
+g5fangti 26140  0.0  0.0  88352  1860 ?        S    16:15   0:00 sshd: g5fangti@pts/156
+g5fangti 26142  0.0  0.0  18080  1980 pts/156  Ss+  16:15   0:00 -bash
+g5vicli  26154  0.0  0.0  15276  1184 pts/92   T    16:15   0:00 ps aux
+g5vicli  26155  0.0  0.0   4164   352 pts/92   T    16:15   0:00 asd
+root     26261  0.0  0.0  88352  3792 ?        Ss   16:16   0:00 sshd: g5q [priv]
+g5q      26285  0.0  0.0  88352  1860 ?        S    16:16   0:00 sshd: g5q@pts/193
+g5q      26286  0.0  0.0  18136  2096 pts/193  Ss+  16:16   0:00 -bash
+root     26666  0.0  0.0  88352  3792 ?        Ss   16:17   0:00 sshd: c3kaurgu [priv]
+c3kaurgu 26677  0.0  0.0  88352  1852 ?        S    16:18   0:00 sshd: c3kaurgu@pts/23
+c3kaurgu 26678  0.0  0.0  18152  2104 pts/23   Ss+  16:18   0:00 -bash
+root     26703  0.0  0.0  88352  3804 ?        Ss   Jan31   0:00 sshd: c6hallid [priv]
+c6hallid 26707  0.0  0.0  88484  2080 ?        S    Jan31   0:01 sshd: c6hallid@pts/194
+c6hallid 26708  0.0  0.0  18232  2092 pts/194  Ss+  Jan31   0:00 -tcsh
+root     26734  0.0  0.0      0     0 ?        S<   16:18   0:00 [kworker/u137:2]
+c6hallid 26800  0.0  0.0  12364  2692 pts/146  S+   Jan31   0:10 nano twtt.py
+root     26957  0.0  0.0  88352  3788 ?        Ss   16:19   0:00 sshd: g5aktran [priv]
+g5aktran 26961  0.0  0.0  88352  1856 ?        S    16:19   0:00 sshd: g5aktran@pts/165
+g5aktran 26962  0.0  0.0  18140  2116 pts/165  Ss+  16:19   0:00 -bash
+root     27003  0.0  0.0  88352  3804 ?        Ss   16:19   0:00 sshd: g4leungc [priv]
+root     27006  0.0  0.0  88352  3792 ?        Ss   16:19   0:00 sshd: c5grantj [priv]
+g4leungc 27013  0.0  0.0  88352  1860 ?        S    16:19   0:00 sshd: g4leungc@pts/195
+g4leungc 27014  0.0  0.0  18152  2136 pts/195  Ss+  16:19   0:00 -bash
+c5grantj 27021  0.0  0.0  88352  1864 ?        S    16:19   0:00 sshd: c5grantj@pts/198
+c5grantj 27025  0.0  0.0  18140  2096 pts/198  Ss+  16:19   0:00 -bash
+c4yuthom 27544  0.0  0.0   4168   352 pts/95   T    11:35   0:02 string
+root     27545  0.0  0.0      0     0 ?        S    11:35   0:02 [kworker/43:2]
+root     27650  0.0  0.0  88352  3796 ?        Ss   16:20   0:00 sshd: g5poenar [priv]
+g5poenar 27655  0.0  0.0  88352  1852 ?        S    16:20   0:00 sshd: g5poenar@pts/202
+g5poenar 27656  0.0  0.0  18108  2080 pts/202  Ss+  16:20   0:00 -bash
+g5aktran 27862  0.0  0.0 170004  8192 pts/165  Tl   16:22   0:00 vim hogs.c
+c5zhongs 27918  0.0  0.0  24280  1556 ?        Ss   Jan20   0:00 SCREEN -S main
+c5zhongs 27919  0.0  0.0  18400  2240 pts/60   Ss+  Jan20   0:00 -var/shell/tcsh
+c4macnei 28133  0.0  0.0  20180  2540 pts/54   SNs+ Jan30   0:00 -tcsh
+root     28206  0.0  0.0  86268  3824 ?        Ss   16:24   0:00 sshd: c5mamike [priv]
+c5mamike 28208  0.6  0.0  86572  2256 ?        S    16:24   0:37 sshd: c5mamike@pts/59
+c5mamike 28209  0.0  0.0  18348  2184 pts/59   Ss   16:24   0:00 -tcsh
+root     28230  0.0  0.0      0     0 ?        S    11:40   0:00 [kworker/u132:0]
+root     28320  0.0  0.0  88352  3800 ?        Ss   Jan31   0:00 sshd: c6hallid [priv]
+c6hallid 28336  0.0  0.0  88484  2112 ?        S    Jan31   0:02 sshd: c6hallid@pts/201
+c6hallid 28338  0.0  0.0  18248  2088 pts/201  Ss   Jan31   0:00 -tcsh
+root     28447  0.0  0.0  88352  3820 ?        Ss   16:25   0:00 sshd: c5kellyl [priv]
+root     28478  0.0  0.0  86268  3820 ?        Ss   16:25   0:00 sshd: g5alvian [priv]
+g5alvian 28480  4.8  0.0  91412  7136 ?        SN   16:25   4:32 sshd: g5alvian@pts/77
+g5alvian 28481  0.0  0.0  18336  2176 pts/77   Ss   16:25   0:00 -tcsh
+c5kellyl 28488  0.0  0.0  88352  1860 ?        S    16:25   0:00 sshd: c5kellyl@pts/117
+c5kellyl 28489  0.0  0.0  18228  2068 pts/117  Ss+  16:25   0:00 -tcsh
+g5alvian 28537  0.5  0.5 2478228 340368 pts/77 Tl   16:25   0:32 quartus
+g5alvian 28566  0.0  0.0      0     0 pts/77   Z    16:25   0:00 [crashreporter] <defunct>
+root     28568  0.0  0.0  88352  3788 ?        Ss   16:25   0:00 sshd: c5chenjk [priv]
+c5chenjk 28573  0.1  0.0  88628  2268 ?        S    16:25   0:06 sshd: c5chenjk@pts/123
+c5chenjk 28574  0.0  0.0  18068  2052 pts/123  Ss+  16:25   0:00 -bash
+c6hallid 28906  0.0  0.0  10892   924 pts/201  S+   16:26   0:00 less out.txt
+root     28949  0.0  0.0  88352  3800 ?        Ss   16:26   0:00 sshd: g5char [priv]
+g5char   28952  0.0  0.0  88492  1856 ?        S    16:26   0:00 sshd: g5char@pts/199
+g5char   28953  0.0  0.0  18132  2096 pts/199  Ss+  16:26   0:00 -bash
+myrto    29038  0.0  0.0  27580  1352 ?        S    Jan25   0:00 jtagd --user-start --config /u/myrto/.jtagd.conf
+root     29351  0.0  0.0  88352  3796 ?        Ss   16:29   0:00 sshd: g5auni [priv]
+root     29362  0.0  0.0      0     0 ?        S<   16:29   0:00 [kworker/u135:2]
+g5auni   29384  0.0  0.0  88352  1908 ?        S    16:29   0:00 sshd: g5auni@pts/209
+g5auni   29388  0.0  0.0  18220  2060 pts/209  Ss+  16:29   0:00 -tcsh
+root     29645  0.0  0.0  88352  3800 ?        Ss   16:30   0:00 sshd: c4kimseu [priv]
+c4kimseu 29648  0.0  0.0  88352  1860 ?        S    16:30   0:00 sshd: c4kimseu@pts/212
+c4kimseu 29649  0.0  0.0  18096  1984 pts/212  Ss   16:30   0:00 -bash
+c4kimseu 29668  0.0  0.0 170004  8188 pts/212  Sl+  16:30   0:00 vim hogs.c
+root     29711  0.0  0.0  88352  3792 ?        Ss   16:31   0:00 sshd: g5aliyev [priv]
+g5aliyev 29730  0.0  0.0  91804  5352 ?        S    16:31   0:00 sshd: g5aliyev@pts/213
+g5aliyev 29731  0.0  0.0  18140  1988 pts/213  Ss   16:31   0:00 -bash
+g5aliyev 29746  0.9  0.4 2440700 315012 pts/213 Sl+ 16:31   0:48 quartus
+g5aliyev 29769  0.0  0.0      0     0 pts/213  Z+   16:31   0:00 [crashreporter] <defunct>
+root     29813  0.0  0.0  88352  3752 ?        Ss   16:31   0:00 sshd: c5vijayv [priv]
+c5vijayv 29819  0.0  0.0  88352  1852 ?        S    16:31   0:00 sshd: c5vijayv
+c6ifemad 30765  0.0  0.0  15276  1184 pts/159  T    16:36   0:00 ps aux
+c6ifemad 30766  0.0  0.0   4160   344 pts/159  T    16:36   0:01 ./hogs
+root     30767  0.0  0.0      0     0 ?        S    16:36   0:00 [kworker/u130:0]
+root     30770  0.0  0.0      0     0 ?        S    16:36   0:01 [kworker/10:1]
+c4kimseu 30800  0.0  0.0 170088  8164 pts/111  Sl+  16:36   0:00 vim 2.c
+root     30823  0.0  0.0  88352  3792 ?        Ss   16:36   0:00 sshd: g5q [priv]
+g5q      30827  0.0  0.0  88492  1860 ?        S    16:36   0:00 sshd: g5q@pts/154
+g5q      30828  0.0  0.0  18136  2116 pts/154  Ss+  16:36   0:00 -bash
+c5nascim 31009  0.0  0.0 123860 15708 pts/7    S+   Jan26   0:00 python
+root     31031  0.0  0.0  88352  3816 ?        Ss   16:38   0:00 sshd: g5taiwon [priv]
+g5taiwon 31035  0.0  0.0  88352  1860 ?        S    16:38   0:00 sshd: g5taiwon@pts/47
+g5taiwon 31036  0.0  0.0  18140  2120 pts/47   Ss+  16:38   0:00 -bash
+root     31154  0.0  0.0  88352  3788 ?        Ss   16:39   0:00 sshd: g4yuzhou [priv]
+g4yuzhou 31168  0.0  0.0  88352  1860 ?        S    16:39   0:00 sshd: g4yuzhou@pts/90
+g4yuzhou 31169  0.0  0.0  18140  2092 pts/90   Ss+  16:39   0:00 -bash
+root     31228  0.0  0.0  88352  3792 ?        Ss   16:39   0:00 sshd: g5wanggu [priv]
+g5wanggu 31260  0.0  0.0  88352  1848 ?        S    16:39   0:00 sshd: g5wanggu@pts/181
+g5wanggu 31261  0.0  0.0  18092  2056 pts/181  Ss   16:39   0:00 -bash
+root     31268  0.0  0.0  86268  3832 ?        Ss   16:39   0:00 sshd: g5vicou [priv]
+g5vicou  31270  0.6  0.0  86572  2172 ?        S    16:39   0:32 sshd: g5vicou@pts/208
+g5vicou  31271  0.0  0.0  18076  2048 pts/208  Ss   16:39   0:00 -bash
+root     31700  0.0  0.0  86268  3832 ?        Ss   16:41   0:00 sshd: g5kgl [priv]
+g5kgl    31702  0.0  0.0  86268  1908 ?        S    16:41   0:00 sshd: g5kgl@pts/132
+g5kgl    31703  0.0  0.0  18104  1984 pts/132  Ss+  16:41   0:00 -bash
+root     31785  0.0  0.0  88352  3800 ?        Ss   16:42   0:00 sshd: g2hchang [priv]
+g2hchang 31806  0.0  0.0  88352  1856 ?        S    16:42   0:00 sshd: g2hchang@pts/221
+g2hchang 31807  0.0  0.0  18164  2144 pts/221  Ss+  16:42   0:00 -bash
+root     31886  0.0  0.0  88336  3812 ?        Ss   Jan21   0:00 sshd: iordan [priv]
+iordan   31888  0.0  0.0  88336  1852 ?        S    Jan21   0:00 sshd: iordan@pts/28
+iordan   31889  0.0  0.0  18176  2000 pts/28   Ss+  Jan21   0:00 -bash
+root     31905  0.0  0.0  88352  3796 ?        Ss   16:43   0:00 sshd: c3panwen [priv]
+c3panwen 31952  0.0  0.0  88352  1852 ?        S    16:43   0:00 sshd: c3panwen@pts/125
+c3panwen 31953  0.0  0.0  18220  2060 pts/125  Ss   16:43   0:00 -tcsh
+root     31994  0.0  0.0      0     0 ?        S    Jan31   0:00 [kworker/3:1]
+root     32062  0.0  0.0  88352  3788 ?        Ss   16:44   0:00 sshd: g5santje [priv]
+g5santje 32068  0.0  0.0  88492  1860 ?        S    16:44   0:00 sshd: g5santje@pts/45
+g5santje 32069  0.0  0.0  18156  2132 pts/45   Ss+  16:44   0:00 -bash
+root     32087  0.0  0.0  88352  3804 ?        Ss   16:44   0:00 sshd: c4jianha [priv]
+c4jianha 32122  0.0  0.0  88352  1860 ?        S    16:44   0:00 sshd: c4jianha@pts/110
+c4jianha 32123  0.0  0.0  18140  2092 pts/110  Ss+  16:44   0:00 -bash
+root     32168  0.0  0.0  88352  3788 ?        Ss   16:44   0:00 sshd: c5grantj [priv]
+c5grantj 32170  0.0  0.0  88492  1856 ?        S    16:44   0:00 sshd: c5grantj@pts/124
+c5grantj 32171  0.0  0.0  18140  2088 pts/124  Ss+  16:44   0:00 -bash
+root     32216  0.0  0.0  88352  3820 ?        Ss   16:44   0:00 sshd: g4wiszni [priv]
+g4wiszni 32219  0.0  0.0  88352  1860 ?        S    16:44   0:00 sshd: g4wiszni@pts/163
+g4wiszni 32220  0.0  0.0  18140  1976 pts/163  Ss   16:44   0:00 -tcsh
+root     32337  0.0  0.0      0     0 ?        S<   16:45   0:00 [kworker/u137:0]
+root     32616  0.0  0.0  88352  3792 ?        Ss   16:46   0:00 sshd: g5santje [priv]
+g5santje 32618  0.0  0.0  89104  2632 ?        S    16:46   0:00 sshd: g5santje@pts/223
+g5santje 32619  0.0  0.0  18152  2120 pts/223  Ss+  16:46   0:00 -bash
+root     32633  0.0  0.0      0     0 ?        S    Jan31   0:00 [kworker/u131:1]
+g4wiszni 32704  0.0  0.0  33196  2084 pts/163  S+   16:46   0:00 mail
+g4wiszni 32714  0.0  0.0  10784   796 pts/163  S+   16:46   0:00 pg
+g4rbage  33052  0.0  0.0  24532  1852 ?        Ss   Jan29   0:03 SCREEN
+g4rbage  33053  0.0  0.0  40724  5396 pts/17   Ss   Jan29   0:01 /var/shell/zsh
+root     33062  0.0  0.0      0     0 ?        S    16:48   0:00 [kworker/u129:1]
+root     33072  0.0  0.0  88352  3768 ?        Ss   16:48   0:00 sshd: g4liange [priv]
+g4liange 33074  0.0  0.0  88492  1852 ?        S    16:48   0:00 sshd: g4liange@notty
+g4liange 33075  0.0  0.0  12776   736 ?        Ss   16:48   0:00 /usr/lib/openssh/sftp-server
+g5alvian 33418  0.8  0.0  75884 55704 pts/77   T    16:49   0:33 /data/quartus/modelsim_ase/bin/../linux/vish -- -vsim
+g5alvian 33437  0.0  0.0   2528   384 pts/77   S    16:49   0:00 /data/quartus-15.0.0.145/modelsim_ase/linuxaloem/vlm 1053893014 679875456
+root     33469  0.0  0.0  88352  3800 ?        Ss   16:49   0:00 sshd: c4colter [priv]
+c4colter 33526  0.3  0.0  92976  4584 ?        S    16:49   0:14 sshd: c4colter@pts/229
+c4colter 33528  0.0  0.0  18112  2064 pts/229  Ss+  16:49   0:00 -bash
+root     33543  0.0  0.0  88352  3808 ?        Ss   Jan21   0:00 sshd: c5wongmi [priv]
+c5wongmi 33545  0.0  0.0  88488  1924 ?        S    Jan21   0:03 sshd: c5wongmi@pts/37
+c5wongmi 33546  0.0  0.0  18324  2200 pts/37   Ss+  Jan21   0:00 -tcsh
+c3panwen 33624  0.0  0.0 170100  8160 pts/125  Sl+  16:49   0:00 vim list_sync.c
+root     33829  0.0  0.0      0     0 ?        S    16:50   0:00 [kworker/u132:2]
+root     34095  0.0  0.0  88352  3788 ?        Ss   16:51   0:00 sshd: g5yungts [priv]
+g5yungts 34114  0.0  0.0  88492  1932 ?        S    16:51   0:01 sshd: g5yungts@pts/200
+g5yungts 34115  0.0  0.0  18144  2120 pts/200  Ss   16:51   0:00 -bash
+root     34211  0.0  0.0  88352  3772 ?        Ss   16:51   0:00 sshd: g4liange [priv]
+g4liange 34244  0.0  0.0  88492  2008 ?        S    16:51   0:00 sshd: g4liange@notty
+g4liange 34245  0.0  0.0  12908   948 ?        Ss   16:51   0:00 /usr/lib/openssh/sftp-server
+root     34365  0.0  0.0  88352  3800 ?        Ss   16:52   0:00 sshd: g3mmcs [priv]
+g3mmcs   34370  0.0  0.0  88352  1980 ?        S    16:52   0:00 sshd: g3mmcs@pts/16
+g3mmcs   34371  0.0  0.0  18152  2120 pts/16   Ss+  16:52   0:00 -bash
+root     34473  0.0  0.0  88352  3792 ?        Ss   16:53   0:00 sshd: g4liange [priv]
+g4liange 34482  0.0  0.0  88492  1848 ?        S    16:53   0:00 sshd: g4liange@pts/189
+g4liange 34483  0.0  0.0  18156  2128 pts/189  Ss+  16:53   0:00 -bash
+g5vicou  34694  1.8  0.0  75840 56352 pts/208  S+   16:54   1:12 /data/quartus/modelsim_ase/bin/../linux/vish -- -vsim
+g5vicou  34713  0.0  0.0   2528   380 pts/208  S    16:54   0:00 /data/quartus-15.0.0.145/modelsim_ase/linuxaloem/vlm 1792817701 2089486387
+root     34717  0.0  0.0  88352  3796 ?        Ss   16:54   0:00 sshd: g5hedwig [priv]
+g4rbage  34776  0.0  0.0  40664  5292 pts/12   Ss   Jan29   0:00 /var/shell/zsh
+g5hedwig 34826  0.0  0.0  88352  1856 ?        S    16:54   0:00 sshd: g5hedwig@pts/187
+g5hedwig 34827  0.0  0.0  18100  2064 pts/187  Ss   16:54   0:00 -bash
+root     34829  0.0  0.0  88352  3808 ?        Ss   Jan31   0:00 sshd: t6tamara [priv]
+t6tamara 34842  0.0  0.0  88352  1980 ?        S    Jan31   0:00 sshd: t6tamara@pts/100
+t6tamara 34843  0.0  0.0  18224  2056 pts/100  Ss+  Jan31   0:00 -tcsh
+tg       34900  0.0  0.0  43612  3024 pts/34   S+   Jan29   0:00 ssh utstat.toronto.edu
+tg       34902  0.0  0.0  43612  3024 pts/35   S+   Jan29   0:00 ssh -l sonilg utstat.toronto.edu
+g5hedwig 35217  0.0  0.0  12376  2724 pts/187  S+   16:56   0:00 nano hogs.c
+root     35218  0.0  0.0  88356  3800 ?        Ss   16:56   0:00 sshd: g5blazin [priv]
+root     35230  0.0  0.0  88352  3772 ?        Ss   16:56   0:00 sshd: g4liange [priv]
+g4liange 35233  0.0  0.0  88492  1856 ?        S    16:56   0:00 sshd: g4liange@notty
+g4liange 35234  0.0  0.0  12776   736 ?        Ss   16:56   0:00 /usr/lib/openssh/sftp-server
+g5blazin 35272  0.0  0.0  88356  1860 ?        S    16:56   0:00 sshd: g5blazin@pts/112
+g5blazin 35273  0.0  0.0  18092  1980 pts/112  Ss+  16:56   0:00 -bash
+c5nascim 35728  0.0  0.0  24440  1600 ?        Ss   Jan26   0:00 SCREEN
+c5nascim 35729  0.0  0.0  19224  3036 pts/7    Ss   Jan26   0:00 -var/shell/tcsh
+root     35914  0.0  0.0      0     0 ?        S    Jan30   0:29 [kworker/11:2]
+root     35935  0.0  0.0  88352  3800 ?        Ss   16:59   0:00 sshd: g2ek [priv]
+g2ek     35949  0.0  0.0  88352  1860 ?        S    16:59   0:00 sshd: g2ek@pts/133
+g2ek     35950  0.0  0.0  18140  2136 pts/133  Ss+  16:59   0:00 -bash
+root     35972  0.0  0.0  88352  3816 ?        Ss   16:59   0:00 sshd: g5taiwon [priv]
+g5taiwon 35977  0.0  0.0  88352  1860 ?        S    16:59   0:00 sshd: g5taiwon@pts/139
+g5taiwon 35978  0.0  0.0  18140  2120 pts/139  Ss+  16:59   0:00 -bash
+root     36009  0.0  0.0  86268  3828 ?        Ss   16:59   0:00 sshd: g3hoover [priv]
+g3hoover 36011  0.0  0.0  86400  1904 ?        S    16:59   0:00 sshd: g3hoover@pts/151
+g3hoover 36012  0.0  0.0  18140  1988 pts/151  Ss   16:59   0:00 -bash
+g3hoover 36022  0.0  0.0  24016  1096 pts/151  S+   16:59   0:00 screen -dR
+root     36107  0.0  0.0      0     0 ?        S    Jan30   0:24 [kworker/37:1]
+root     36132  0.0  0.0  88352  3796 ?        Ss   17:00   0:00 sshd: g3lain [priv]
+g3lain   36209  0.0  0.0  90244  3588 ?        S    17:00   0:00 sshd: g3lain@pts/144
+g3lain   36213  0.0  0.0  18140  2132 pts/144  Ss   17:00   0:00 -bash
+g3lain   36261  0.0  0.0 568680 26724 pts/144  Sl+  17:00   0:00 evince Project1.pdf
+g3lain   36267  0.0  0.0  26692   720 pts/144  S+   17:00   0:00 dbus-launch --autolaunch=afe13b75bb96936fb658a36f00000339 --binary-syntax --close-stderr
+g3lain   36268  0.0  0.0  23820   696 ?        Ss   17:00   0:00 //bin/dbus-daemon --fork --print-pid 5 --print-address 7 --session
+g3lain   36273  0.0  0.0 179804  2404 ?        Sl   17:00   0:00 /usr/lib/evince/evinced
+root     36418  0.0  0.0  88352  3820 ?        Ss   17:01   0:00 sshd: c4chongd [priv]
+c4chongd 36420  0.0  0.0  88352  1864 ?        S    17:01   0:00 sshd: c4chongd@pts/155
+c4chongd 36421  0.0  0.0  18232  2100 pts/155  Ss+  17:01   0:00 -tcsh
+root     36549  0.0  0.0  88352  3780 ?        Ss   17:02   0:00 sshd: g5khanhu [priv]
+root     36558  0.0  0.0  88352  3796 ?        Ss   17:02   0:00 sshd: g3lain [priv]
+g5khanhu 36567  0.0  0.0  88492  1864 ?        S    17:02   0:00 sshd: g5khanhu@pts/218
+g5khanhu 36568  0.0  0.0  18124  2088 pts/218  Ss+  17:02   0:00 -bash
+g3lain   36586  0.0  0.0  88496  2064 ?        S    17:02   0:00 sshd: g3lain@pts/204
+g3lain   36587  0.0  0.0  18140  2116 pts/204  Ss   17:02   0:00 -bash
+g3lain   36640  0.0  0.0 170140  8564 pts/204  Sl+  17:02   0:00 vim proposal.txt
+g0dbloem 36788  0.0  0.0  26720  2100 ?        Ss   Jan31   1:25 tmux new-session
+g0dbloem 36789  0.0  0.0  18172  2156 pts/5    Ss+  Jan31   0:00 /var/shell/bash
+root     36806  0.0  0.0  88356  3804 ?        Ss   17:03   0:00 sshd: g5razik [priv]
+g5razik  36910  0.0  0.0  88356  1860 ?        S    17:03   0:00 sshd: g5razik@pts/167
+g5razik  36911  0.0  0.0  18140  2120 pts/167  Ss+  17:03   0:00 -bash
+root     36924  0.0  0.0  88352  3792 ?        Ss   17:03   0:00 sshd: g5sici [priv]
+g5sici   36926  0.0  0.0  88352  1864 ?        S    17:03   0:00 sshd: g5sici@pts/222
+g5sici   36927  0.0  0.0  18116  2076 pts/222  Ss+  17:03   0:00 -bash
+g0dbloem 37022  0.0  0.0  18172  2168 pts/46   Ss+  Jan31   0:00 /var/shell/bash
+root     37036  0.0  0.0   4400   676 ?        S    Jan22   0:04 /bin/sh /var/cfengine/local/cfengine_scheduler.sh
+g5wanggu 37187  0.0  0.0  11836  2024 pts/181  S+   17:04   0:00 nano hogs.c
+root     37276  0.0  0.0  88352  3800 ?        Ss   17:04   0:00 sshd: g5tri [priv]
+g5tri    37341  0.0  0.0  88352  1856 ?        S    17:05   0:00 sshd: g5tri@pts/32
+g5tri    37342  0.0  0.0  18268  2124 pts/32   Ss+  17:05   0:00 -tcsh
+root     37371  0.0  0.0  50040  2760 ?        Ss   Jan22   0:11 /usr/sbin/sshd -D
+root     37478  0.0  0.0  88352  3792 ?        Ss   17:05   0:00 sshd: g5q [priv]
+g5q      37480  0.0  0.0  88352  1860 ?        S    17:05   0:00 sshd: g5q@pts/233
+g5q      37481  0.0  0.0  18136  2096 pts/233  Ss   17:05   0:00 -bash
+root     37491  0.0  0.0      0     0 ?        S    00:07   0:05 [kworker/30:1]
+g5q      37571  0.0  0.0  13156  3196 pts/233  S+   17:05   0:00 nano hogs.c
+root     37954  0.0  0.0  88356  3792 ?        Ss   17:06   0:00 sshd: c5tanmar [priv]
+c5tanmar 37983  0.0  0.0  88492  1860 ?        S    17:06   0:00 sshd: c5tanmar@pts/150
+c5tanmar 37984  0.0  0.0  18140  2116 pts/150  Ss   17:06   0:00 -bash
+root     38195  0.0  0.0  88352  3772 ?        Ss   17:07   0:00 sshd: g4liange [priv]
+g4liange 38201  0.0  0.0  88688  2256 ?        S    17:07   0:00 sshd: g4liange@notty
+g4liange 38202  0.0  0.0  12928   912 ?        Ss   17:07   0:00 /usr/lib/openssh/sftp-server
+c5tanmar 38210  0.0  0.0  12996  3320 pts/150  S+   17:07   0:00 nano hogs.c
+root     38245  0.0  0.0  86268  3828 ?        Ss   17:08   0:00 sshd: g5gilenk [priv]
+g5gilenk 38250  1.7  0.0  87760  3460 ?        S    17:08   0:54 sshd: g5gilenk@pts/113
+g5gilenk 38251  0.0  0.0  18084  1980 pts/113  Ss   17:08   0:00 -bash
+g5gilenk 38393  1.3  0.5 2475612 335988 pts/113 Sl+ 17:08   0:40 quartus
+g5gilenk 38454  0.0  0.0      0     0 pts/113  Z+   17:08   0:00 [crashreporter] <defunct>
+root     38575  0.0  0.0  88352  3792 ?        Ss   17:08   0:00 sshd: c5chenzk [priv]
+c5chenzk 38652  0.0  0.0  88352  1860 ?        S    17:08   0:00 sshd: c5chenzk@pts/128
+c5chenzk 38653  0.0  0.0  18100  2068 pts/128  Ss   17:08   0:00 -bash
+g5alvian 38733  2.2  0.5 2483712 346372 pts/77 Sl+  17:09   1:08 quartus
+g5alvian 38768  0.0  0.0      0     0 pts/77   Z+   17:09   0:00 [crashreporter] <defunct>
+root     38891  0.0  0.0  88356  3796 ?        Ss   17:09   0:00 sshd: g4yuzhou [priv]
+g4yuzhou 38957  0.0  0.0  88356  1864 ?        S    17:09   0:00 sshd: g4yuzhou@pts/141
+g4yuzhou 38958  0.0  0.0  18140  2104 pts/141  Ss+  17:09   0:00 -bash
+root     39049  0.0  0.0  86268  3824 ?        Ss   17:09   0:00 sshd: g5gilenk [priv]
+g5gilenk 39052  0.0  0.0  86572  2048 ?        S    17:09   0:00 sshd: g5gilenk@pts/188
+g5gilenk 39053  0.0  0.0  18084  1980 pts/188  Ss   17:09   0:00 -bash
+g5gilenk 39182  0.7  0.0  68624 50864 pts/188  S+   17:10   0:22 /data/quartus/modelsim_ase/bin/../linux/vish -- -vsim
+g5gilenk 39201  0.0  0.0   2528   380 pts/188  S    17:10   0:00 /data/quartus-15.0.0.145/modelsim_ase/linuxaloem/vlm 1159478235 1397426637
+root     39242  0.0  0.0  88352  3800 ?        Ss   17:10   0:00 sshd: c3panwen [priv]
+c3panwen 39314  0.0  0.0  88352  1852 ?        S    17:10   0:00 sshd: c3panwen@pts/76
+c3panwen 39315  0.0  0.0  18624  2492 pts/76   Ss+  17:10   0:00 -tcsh
+root     39322  0.0  0.0  88352  3796 ?        Ss   17:10   0:00 sshd: c4kimseu [priv]
+c4kimseu 39330  0.0  0.0  88352  1856 ?        S    17:10   0:00 sshd: c4kimseu@pts/203
+c4kimseu 39331  0.0  0.0  18100  2060 pts/203  Ss+  17:10   0:00 -bash
+root     39419  0.0  0.0  88352  3776 ?        Ss   17:11   0:00 sshd: g5khanhu [priv]
+g5khanhu 39432  0.0  0.0  88352  1856 ?        S    17:11   0:00 sshd: g5khanhu@pts/215
+g5khanhu 39433  0.0  0.0  18140  2124 pts/215  Ss   17:11   0:00 -bash
+g5vicli  39658  0.0  0.0 170020  8204 pts/92   Sl+  17:11   0:00 vim hogs.c
+root     39944  0.0  0.0  88352  3784 ?        Ss   17:12   0:00 sshd: g5aliyev [priv]
+g5aliyev 39987  2.9  0.0  91804  5412 ?        S    17:12   1:20 sshd: g5aliyev@pts/129
+g5aliyev 39988  0.0  0.0  18140  1988 pts/129  Ss   17:12   0:00 -bash
+g5aliyev 40023  1.4  0.5 2479768 339760 pts/129 Sl+ 17:13   0:40 quartus
+g5aliyev 40057  0.0  0.0      0     0 pts/129  Z+   17:13   0:00 [crashreporter] <defunct>
+root     40126  0.0  0.0  88352  3788 ?        Ss   17:13   0:00 sshd: c5chenjk [priv]
+c5chenjk 40132  0.0  0.0  88352  1856 ?        S    17:13   0:00 sshd: c5chenjk@pts/214
+c5chenjk 40133  0.0  0.0  18068  2052 pts/214  Ss+  17:13   0:00 -bash
+root     40187  0.0  0.0  88352  3792 ?        Ss   17:14   0:00 sshd: c4maricj [priv]
+c4maricj 40190  0.0  0.0  88352  1860 ?        S    17:14   0:00 sshd: c4maricj@pts/48
+c4maricj 40191  0.0  0.0  18072  2028 pts/48   Ss+  17:14   0:00 -bash
+root     40265  0.0  0.0  86268  3828 ?        Ss   17:14   0:00 sshd: c5tsangp [priv]
+c5tsangp 40268  3.3  0.0  88588  4328 ?        S    17:14   1:29 sshd: c5tsangp@pts/231
+c5tsangp 40269  0.0  0.0  18088  2044 pts/231  Ss+  17:14   0:00 -bash
+root     40520  0.0  0.0      0     0 ?        S    12:49   0:01 [kworker/4:0]
+root     40569  0.0  0.0  88352  3772 ?        Ss   17:15   0:00 sshd: g4liange [priv]
+g4liange 40589  0.0  0.0  88492  1856 ?        S    17:15   0:00 sshd: g4liange@notty
+g4liange 40590  0.0  0.0  12908   952 ?        Ss   17:15   0:00 /usr/lib/openssh/sftp-server
+root     40690  0.0  0.0  88352  3756 ?        Ss   17:16   0:00 sshd: g3kexin [priv]
+g3kexin  40693  0.0  0.0  88352  2284 ?        S    17:16   0:00 sshd: g3kexin@notty
+g3kexin  40694  0.0  0.0  12776   904 ?        Ss   17:16   0:00 /usr/lib/openssh/sftp-server
+root     40806  0.0  0.0      0     0 ?        S<   17:16   0:00 [kworker/u134:0]
+root     40847  0.0  0.0      0     0 ?        S    12:50   0:09 [kworker/3:2]
+root     40905  0.0  0.0  88352  3800 ?        Ss   17:17   0:00 sshd: g4liange [priv]
+g4liange 40907  0.0  0.0  88352  1856 ?        S    17:17   0:00 sshd: g4liange@pts/239
+g4liange 40913  0.0  0.0  18156  2124 pts/239  Ss+  17:17   0:00 -bash
+c4foppia 40950  0.0  0.0   4296   352 ?        Ss   Jan31   0:00 /tmp/VisualGDB-DisownTTY-r1
+c5chenzk 41168  0.0  0.0 170084  8160 pts/128  Sl+  17:19   0:00 vi hogs.c
+root     41662  0.0  0.0  88352  3816 ?        Ss   17:20   0:00 sshd: g5fangti [priv]
+g5fangti 41701  0.0  0.0  88352  1860 ?        S    17:21   0:00 sshd: g5fangti@pts/26
+g5fangti 41703  0.0  0.0  18084  2068 pts/26   Ss+  17:21   0:00 -bash
+root     41835  0.0  0.0  86268  3832 ?        Ss   17:22   0:00 sshd: g5timo [priv]
+g5timo   41837  3.2  0.0  87888  3588 ?        S    17:22   1:12 sshd: g5timo@pts/29
+g5timo   41838  0.0  0.0  18160  2108 pts/29   Ss   17:22   0:00 -bash
+c4foppia 41853  0.0  0.0   4296   348 ?        Ss   Jan31   0:00 /tmp/VisualGDB-DisownTTY-r1
+root     41863  0.0  0.0      0     0 ?        S    Jan31   0:00 [kworker/u131:0]
+g5timo   41873  1.8  0.5 2496728 351044 pts/29 Sl+  17:22   0:41 quartus
+g5timo   41898  0.0  0.0      0     0 pts/29   Z+   17:22   0:00 [crashreporter] <defunct>
+root     42132  0.0  0.0  88352  3752 ?        Ss   17:23   0:00 sshd: g3kexin [priv]
+g3kexin  42134  0.0  0.0  88352  2280 ?        S    17:23   0:00 sshd: g3kexin@notty
+g3kexin  42135  0.0  0.0  12776   900 ?        Ss   17:23   0:00 /usr/lib/openssh/sftp-server
+root     42263  0.0  0.0  88352  3796 ?        Ss   17:24   0:00 sshd: g5blazin [priv]
+g5blazin 42362  0.0  0.0  88352  1852 ?        S    17:25   0:00 sshd: g5blazin@pts/1
+g5blazin 42363  0.0  0.0  18092  1976 pts/1    Ss+  17:25   0:00 -bash
+root     42389  0.0  0.0  88352  3820 ?        Ss   17:25   0:00 sshd: c4sahebk [priv]
+c4sahebk 42396  0.0  0.0  88352  1860 ?        S    17:25   0:00 sshd: c4sahebk@pts/38
+c4sahebk 42397  0.0  0.0  18152  2144 pts/38   Ss+  17:25   0:00 -bash
+root     42558  0.0  0.0  88352  3800 ?        Ss   17:26   0:00 sshd: c5zhaojk [priv]
+c5zhaojk 42563  0.0  0.0  88492  2012 ?        S    17:26   0:00 sshd: c5zhaojk@pts/83
+c5zhaojk 42564  0.0  0.0  18140  2112 pts/83   Ss   17:26   0:00 -bash
+root     42740  0.0  0.0  88352  3776 ?        Ss   17:28   0:00 sshd: g3sherma [priv]
+root     42745  0.0  0.0  88352  3792 ?        Ss   17:28   0:00 sshd: c5chenjk [priv]
+g3sherma 42747  0.6  0.0  89552  3136 ?        S    17:28   0:12 sshd: g3sherma@notty
+g3sherma 42748  0.0  0.0  17776  1364 ?        Ss   17:28   0:00 tcsh -c scp -r -t ~
+g3sherma 42750  0.0  0.0  12772   776 ?        S    17:28   0:01 scp -r -t /h/u3/g3/00/g3sherma
+c5chenjk 42755  0.2  0.0  88628  2272 ?        S    17:28   0:03 sshd: c5chenjk@pts/13
+c5chenjk 42756  0.0  0.0  18068  2028 pts/13   Ss+  17:28   0:00 -bash
+root     42762  0.0  0.0  88352  3796 ?        Ss   17:28   0:00 sshd: g5mandoz [priv]
+root     42782  0.0  0.0  88352  3784 ?        Ss   17:28   0:00 sshd: c4maricj [priv]
+c4maricj 42785  0.0  0.0  88352  1860 ?        S    17:28   0:00 sshd: c4maricj@pts/67
+c4maricj 42786  0.0  0.0  18068  2028 pts/67   Ss+  17:28   0:00 -bash
+g5mandoz 42791  0.0  0.0  88352  1856 ?        S    17:28   0:00 sshd: g5mandoz@pts/87
+g5mandoz 42792  0.0  0.0  18116  2080 pts/87   Ss+  17:28   0:00 -bash
+root     43004  0.0  0.0  88352  3792 ?        Ss   17:29   0:00 sshd: c5chenjk [priv]
+c5chenjk 43008  0.7  0.0  88656  2284 ?        S    17:29   0:13 sshd: c5chenjk@pts/118
+c5chenjk 43009  0.0  0.0  18068  2032 pts/118  Ss   17:29   0:00 -bash
+root     43157  0.0  0.0  88352  3812 ?        Ss   17:30   0:00 sshd: g5taiwon [priv]
+g5taiwon 43160  0.0  0.0  88352  1852 ?        S    17:30   0:00 sshd: g5taiwon@pts/120
+g5taiwon 43161  0.0  0.0  18140  2124 pts/120  Ss+  17:30   0:00 -bash
+root     43484  0.0  0.0  86268  3828 ?        Ss   17:32   0:00 sshd: g5zhumin [priv]
+g5zhumin 43497  0.4  0.0  86572  2160 ?        S    17:33   0:06 sshd: g5zhumin@pts/89
+g5zhumin 43498  0.0  0.0  18080  1988 pts/89   Ss   17:33   0:00 -bash
+root     43520  0.0  0.0  88352  3780 ?        Ss   17:33   0:00 sshd: g2lev [priv]
+g2lev    43523  0.0  0.0  88500  1956 ?        S    17:33   0:00 sshd: g2lev@notty
+g2lev    43524  0.0  0.0  12916   956 ?        Ss   17:33   0:00 /usr/lib/openssh/sftp-server
+g2lev    43525  0.0  0.0  12776   736 ?        Ss   17:33   0:00 /usr/lib/openssh/sftp-server
+root     43553  0.0  0.0  88352  3788 ?        Ss   17:33   0:00 sshd: c5tanmar [priv]
+c5tanmar 43584  0.0  0.0  88352  1860 ?        S    17:33   0:00 sshd: c5tanmar@pts/55
+c5tanmar 43585  0.0  0.0  18140  2124 pts/55   Ss+  17:33   0:00 -bash
+root     43595  0.0  0.0  88352  3772 ?        Ss   17:34   0:00 sshd: g4liange [priv]
+g4liange 43597  0.0  0.0  88492  1852 ?        S    17:34   0:00 sshd: g4liange@notty
+g4liange 43599  0.0  0.0  12776   736 ?        Ss   17:34   0:00 /usr/lib/openssh/sftp-server
+root     43603  0.0  0.0      0     0 ?        S    13:05   0:12 [kworker/4:2]
+root     43609  0.0  0.0 193612  6140 ?        Sl   Jan20   0:33 /usr/lib/udisks/udisks-daemon
+root     43610  0.0  0.0  45516   804 ?        S    Jan20   0:00 udisks-daemon: not polling any devices
+root     43615  0.0  0.0 195484  4220 ?        Sl   Jan20   0:03 /usr/lib/policykit-1/polkitd --no-debug
+root     43647  0.0  0.0  88352  3804 ?        Ss   17:34   0:00 sshd: g5hedwig [priv]
+g5hedwig 43687  0.0  0.0  88352  1860 ?        S    17:34   0:00 sshd: g5hedwig@pts/130
+g5hedwig 43690  0.0  0.0  18100  1984 pts/130  Ss+  17:34   0:00 -bash
+root     43729  0.0  0.0  88352  3800 ?        Ss   17:34   0:00 sshd: g5poenar [priv]
+g5poenar 43734  0.0  0.0  88352  1856 ?        S    17:34   0:00 sshd: g5poenar@pts/140
+g5poenar 43735  0.0  0.0  18112  2092 pts/140  Ss+  17:34   0:00 -bash
+root     43857  0.0  0.0  88352  3796 ?        Ss   17:35   0:00 sshd: c4hongha [priv]
+g5zhumin 43862  2.5  0.0  76688 57232 pts/89   S+   17:35   0:36 /data/quartus/modelsim_ase/bin/../linux/vish -- -vsim
+g5zhumin 43881  0.0  0.0   2528   380 pts/89   S    17:35   0:00 /data/quartus-15.0.0.145/modelsim_ase/linuxaloem/vlm -1602098890 -1227433184
+c4hongha 43883  0.0  0.0  90772  4124 ?        S    17:35   0:00 sshd: c4hongha@pts/136
+c4hongha 43884  0.0  0.0  18212  2200 pts/136  Ss   17:35   0:00 -bash
+c5chenjk 43955  1.3  0.0  77504 58996 pts/118  S+   17:35   0:19 /data/quartus/modelsim_ase/bin/../linux/vish -- -vsim
+c5chenjk 43974  0.0  0.0   2528   380 pts/118  S    17:35   0:00 /data/quartus-15.0.0.145/modelsim_ase/linuxaloem/vlm -422966006 -258130148
+root     44037  0.0  0.0  86268  3820 ?        Ss   17:36   0:00 sshd: c5mamike [priv]
+c5mamike 44039  4.9  0.0  88720  4420 ?        S    17:36   1:07 sshd: c5mamike@pts/142
+c5mamike 44040  0.0  0.0  18340  2140 pts/142  Ss   17:36   0:00 -tcsh
+c4macnei 44049  0.0  0.0  20196  2520 pts/6    SNs+ Jan29   0:00 -tcsh
+root     44079  0.0  0.0  88352  3788 ?        Ss   17:36   0:00 sshd: c4gaoqia [priv]
+c4gaoqia 44091  0.0  0.0  88352  1864 ?        S    17:36   0:00 sshd: c4gaoqia@pts/147
+c4gaoqia 44092  0.0  0.0  18224  2060 pts/147  Ss+  17:36   0:00 -tcsh
+c5mamike 44171  2.6  0.5 2505792 364928 pts/142 Sl+ 17:36   0:35 quartus
+c5mamike 44195  0.0  0.0      0     0 pts/142  Z+   17:36   0:00 [crashreporter] <defunct>
+root     44243  0.0  0.0  88352  3804 ?        Ss   17:37   0:00 sshd: g2moran [priv]
+g2moran  44304  0.0  0.0  88352  1860 ?        S    17:37   0:00 sshd: g2moran@pts/149
+g2moran  44305  0.0  0.0  18136  2116 pts/149  Ss+  17:37   0:00 -bash
+root     44365  0.0  0.0  88352  3764 ?        Ss   17:37   0:00 sshd: c4gaoqia [priv]
+c4gaoqia 44367  0.0  0.0  88492  2292 ?        S    17:37   0:00 sshd: c4gaoqia@notty
+root     44407  0.0  0.0      0     0 ?        S    13:11   0:01 [kworker/6:1]
+root     44409  0.0  0.0  88352  3796 ?        Ss   17:37   0:00 sshd: c4bruner [priv]
+c4bruner 44414  0.0  0.0  88492  2028 ?        S    17:37   0:00 sshd: c4bruner@pts/152
+c4bruner 44415  0.0  0.0  18092  2052 pts/152  Ss   17:37   0:00 -bash
+root     44423  0.0  0.0  88352  3820 ?        Ss   17:37   0:00 sshd: c4sahebk [priv]
+c4sahebk 44440  0.0  0.0  88492  1860 ?        S    17:37   0:00 sshd: c4sahebk@pts/157
+c4sahebk 44441  0.0  0.0  18152  2152 pts/157  Ss+  17:37   0:00 -bash
+c4bruner 44617  0.0  0.0  18092  2028 pts/152  S+   17:38   0:00 bash
+g3hoover 44984  0.0  0.0  24664  2152 ?        Ss   Jan20   0:07 SCREEN -dR
+g3hoover 44985  0.0  0.0  18316  2348 pts/24   Ss+  Jan20   0:01 /var/shell/bash
+root     45045  0.0  0.0  86268  3828 ?        Ss   17:39   0:00 sshd: c3samirs [priv]
+c3samirs 45047  0.2  0.0  88144  3884 ?        S    17:39   0:03 sshd: c3samirs@pts/73
+c3samirs 45049  0.0  0.0  18824  2696 pts/73   Ss   17:39   0:00 -tcsh
+root     45256  0.0  0.0  86268  3824 ?        Ss   13:14   0:00 sshd: g5xyecs [priv]
+g5xyecs  45258  7.7  0.0  89328  5204 ?        SN   13:14  22:10 sshd: g5xyecs@pts/25
+g5xyecs  45259  0.0  0.0  18100  1988 pts/25   Ss   13:14   0:00 -bash
+g5xyecs  45269  1.8  0.5 2496720 349840 pts/25 RNl+ 13:14   5:24 quartus
+root     45284  0.0  0.0  88352  3788 ?        Ss   17:40   0:00 sshd: g5aliyev [priv]
+g5xyecs  45293  0.0  0.0      0     0 pts/25   Z+   13:14   0:00 [crashreporter] <defunct>
+g5aliyev 45297  0.5  0.0  88628  2188 ?        S    17:40   0:05 sshd: g5aliyev@pts/162
+g5aliyev 45298  0.0  0.0  18140  1992 pts/162  Ss   17:40   0:00 -bash
+root     45330  0.0  0.0  88352  3796 ?        Ss   17:40   0:00 sshd: c4kimseu [priv]
+root     45332  0.0  0.0  88352  3800 ?        Ss   17:40   0:00 sshd: c4younga [priv]
+c4kimseu 45339  0.0  0.0  88352  1856 ?        S    17:40   0:00 sshd: c4kimseu@pts/27
+c4kimseu 45340  0.0  0.0  18104  2076 pts/27   Ss+  17:40   0:00 -bash
+c4younga 45367  0.0  0.0  88352  1908 ?        S    17:41   0:00 sshd: c4younga@pts/164
+c4younga 45368  0.0  0.0  18116  2080 pts/164  Ss   17:41   0:00 -bash
+root     45383  0.0  0.0  88352  3796 ?        Ss   17:41   0:00 sshd: g5vicli [priv]
+g5vicli  45395  0.0  0.0  88352  1852 ?        S    17:41   0:00 sshd: g5vicli@pts/135
+g5vicli  45396  0.0  0.0  18128  2096 pts/135  Ss   17:41   0:00 -bash
+g5aliyev 45415  3.3  0.0  75508 55372 pts/162  S+   17:41   0:35 /data/quartus/modelsim_ase/bin/../linux/vish -- -vsim
+g5aliyev 45434  0.0  0.0   2528   380 pts/162  S    17:41   0:00 /data/quartus-15.0.0.145/modelsim_ase/linuxaloem/vlm -1425592251 -1118829997
+c4younga 45435  0.0  0.0 170184  9004 pts/164  Sl+  17:41   0:00 vim hogs.c
+root     45473  0.0  0.0  88352  3816 ?        Ss   17:41   0:00 sshd: g2lev [priv]
+root     45475  0.0  0.0  88352  3772 ?        Ss   17:41   0:00 sshd: g4liange [priv]
+g2lev    45478  0.0  0.0  88352  1848 ?        S    17:41   0:00 sshd: g2lev@pts/169
+g2lev    45480  0.0  0.0  18128  1936 pts/169  Ss+  17:41   0:00 -bash
+g4liange 45484  0.0  0.0  88492  1852 ?        S    17:41   0:00 sshd: g4liange@notty
+g4liange 45485  0.0  0.0  12776   740 ?        Ss   17:41   0:00 /usr/lib/openssh/sftp-server
+root     45504  0.0  0.0  88352  3820 ?        Ss   17:41   0:00 sshd: g5thijm [priv]
+g5thijm  45506  0.0  0.0  88492  1856 ?        S    17:41   0:00 sshd: g5thijm@pts/85
+g5thijm  45507  0.0  0.0  17784  1364 pts/85   Ss   17:41   0:00 -csh -c /bin/bash
+g5thijm  45509  0.0  0.0  18248  2220 pts/85   S    17:41   0:00 /bin/bash
+root     45618  0.0  0.0      0     0 ?        S    Jan31   0:56 [kworker/2:2]
+root     45619  0.0  0.0  88352  3800 ?        Ss   17:42   0:00 sshd: c3lichar [priv]
+c3lichar 45624  0.3  0.0  91124  4724 ?        S    17:42   0:03 sshd: c3lichar@pts/107
+c3lichar 45625  0.0  0.0  18136  2092 pts/107  Ss   17:42   0:00 -bash
+c3samirs 45649  1.2  0.4 2439148 310988 pts/73 Sl   17:42   0:12 quartus
+c3samirs 45684  0.0  0.0      0     0 pts/73   Z    17:42   0:00 [crashreporter] <defunct>
+root     45789  0.0  0.0  88352  3808 ?        Ss   Jan21   0:00 sshd: c5wongmi [priv]
+c5wongmi 45791  0.0  0.0  88488  2044 ?        S    Jan21   0:04 sshd: c5wongmi@pts/41
+c5wongmi 45792  0.0  0.0  18404  2284 pts/41   Ss+  Jan21   0:00 -tcsh
+c3lichar 45831  1.3  0.4 2466444 327400 pts/107 Sl+ 17:42   0:13 quartus
+c3lichar 45917  0.0  0.0      0     0 pts/107  Z+   17:42   0:00 [crashreporter] <defunct>
+root     45991  0.0  0.0  88352  3816 ?        Ss   17:42   0:00 sshd: c3xiaoyu [priv]
+c3xiaoyu 46047  0.0  0.0  88352  1860 ?        S    17:42   0:00 sshd: c3xiaoyu@pts/122
+c3xiaoyu 46048  0.0  0.0  18140  2116 pts/122  Ss+  17:42   0:00 -bash
+g4rbage  46161  0.0  0.0 170168  8752 pts/12   Sl+  Jan29   0:06 vim src/compiler488/parser/csc488.cup
+root     46314  0.0  0.0  88352  3800 ?        Ss   17:44   0:00 sshd: g5nikita [priv]
+root     46320  0.0  0.0  88352  3772 ?        Ss   17:44   0:00 sshd: g4liange [priv]
+g5nikita 46322  0.0  0.0  88352  1860 ?        S    17:44   0:00 sshd: g5nikita@pts/42
+g5nikita 46323  0.0  0.0  18152  2116 pts/42   Ss   17:44   0:00 -bash
+g4liange 46332  0.0  0.0  88752  2288 ?        S    17:44   0:00 sshd: g4liange@notty
+g4liange 46333  0.0  0.0  12928   912 ?        Ss   17:44   0:00 /usr/lib/openssh/sftp-server
+root     46342  0.0  0.0  88352  3784 ?        Ss   17:44   0:00 sshd: c2luhuiy [priv]
+root     46366  0.0  0.0  86268  3820 ?        Ss   13:18   0:00 sshd: g5xyecs [priv]
+g5xyecs  46368  0.1  0.0  86572  2256 ?        S    13:18   0:21 sshd: g5xyecs@pts/61
+g5xyecs  46369  0.0  0.0  18100  2060 pts/61   Ss+  13:18   0:00 -bash
+c2luhuiy 46410  0.0  0.0  88352  1852 ?        S    17:45   0:00 sshd: c2luhuiy@pts/127
+c2luhuiy 46411  0.0  0.0  18132  2080 pts/127  Ss   17:45   0:00 -bash
+root     46419  0.0  0.0  88352  3796 ?        Ss   17:45   0:00 sshd: g5aliyev [priv]
+g5aliyev 46467  0.0  0.0  88352  1912 ?        S    17:45   0:00 sshd: g5aliyev@pts/166
+g5aliyev 46468  0.0  0.0  18140  2100 pts/166  Ss+  17:45   0:00 -bash
+c2luhuiy 46568  0.4  0.0 170004  8528 pts/127  Sl+  17:45   0:03 vi hogs.c
+c5mamike 46607  2.4  0.1  89088 73156 pts/59   S+   17:46   0:19 /data/quartus/modelsim_ase/bin/../linux/vish -- -vsim
+c5mamike 46627  0.0  0.0   2528   384 pts/59   S    17:46   0:00 /data/quartus-15.0.0.145/modelsim_ase/linuxaloem/vlm -1826840757 -2058637987
+c2konomi 46720  3.7  0.0  24728  3992 pts/20   SN+  Jan31  50:48 htop
+c4foppia 46778  0.0  0.0   4296   352 ?        Ss   Jan31   0:00 /tmp/VisualGDB-DisownTTY-r1
+root     46871  0.0  0.0  88352  3792 ?        Ss   17:47   0:00 sshd: g2moran [priv]
+g5mcbrid 46873  0.0  0.0  12640  2728 pts/190  S+   17:47   0:00 nano hogs.c
+g2moran  46888  0.0  0.0  88352  1848 ?        S    17:47   0:00 sshd: g2moran@pts/158
+g2moran  46889  0.0  0.0  18136  2120 pts/158  Ss+  17:47   0:00 -bash
+root     47002  0.0  0.0      0     0 ?        S<   17:48   0:00 [kworker/u134:2]
+g3wkwan  47129  0.0  0.0  11308  1500 pts/57   S+   17:48   0:00 nano data.txt
+g5khanhu 47423  0.0  0.0 170016  8240 pts/215  Sl+  17:50   0:00 vim hog.c
+root     47475  0.0  0.0  88352  3796 ?        Ss   17:50   0:00 sshd: g5wanggu [priv]
+g5wanggu 47578  0.0  0.0  88352  1852 ?        S    17:51   0:00 sshd: g5wanggu@pts/21
+g5wanggu 47579  0.0  0.0  18088  1980 pts/21   Ss+  17:51   0:00 -bash
+root     47683  0.0  0.0  88352  3812 ?        Ss   17:51   0:00 sshd: g5taiwon [priv]
+root     47685  0.0  0.0  88352  3784 ?        Ss   17:51   0:00 sshd: c5tanmar [priv]
+g5taiwon 47690  0.0  0.0  88352  1856 ?        S    17:51   0:00 sshd: g5taiwon@pts/121
+g5taiwon 47691  0.0  0.0  18140  2124 pts/121  Ss+  17:51   0:00 -bash
+c5tanmar 47701  0.0  0.0  88352  1852 ?        S    17:51   0:00 sshd: c5tanmar@pts/126
+c5tanmar 47702  0.0  0.0  18140  1988 pts/126  Ss+  17:51   0:00 -bash
+root     47745  0.0  0.0      0     0 ?        S    17:52   0:00 [kworker/u129:2]
+root     47750  0.0  0.0  88352  3800 ?        Ss   17:52   0:00 sshd: g5wanggu [priv]
+g5wanggu 47752  0.0  0.0  88352  1856 ?        S    17:52   0:00 sshd: g5wanggu@pts/160
+g5wanggu 47753  0.0  0.0  18088  2052 pts/160  Ss+  17:52   0:00 -bash
+root     47909  0.0  0.0  86268  3820 ?        Ss   17:53   0:00 sshd: g5kylin [priv]
+g5kylin  47911  0.9  0.0  86572  2156 ?        S    17:53   0:03 sshd: g5kylin@pts/115
+g5kylin  47912  0.0  0.0  18080  1980 pts/115  Ss+  17:53   0:00 -bash
+root     47971  0.0  0.0  88352  3792 ?        Ss   17:54   0:00 sshd: c3panwen [priv]
+root     47980  0.0  0.0      0     0 ?        S<   Jan31   0:00 [kworker/u136:2]
+c3samirs 48029  1.6  0.0  69400 52496 pts/73   S+   17:54   0:04 ./../linux/vish -- -vsim
+c3samirs 48048  0.0  0.0   2528   384 pts/73   S    17:54   0:00 /data/quartus-15.0.0.145/modelsim_ase/linuxaloem/vlm 806700699 641889421
+root     48108  0.0  0.0  86268  3824 ?        Ss   17:54   0:00 sshd: g5lisaye [priv]
+g5lisaye 48110  2.3  0.0  86572  2160 ?        S    17:54   0:06 sshd: g5lisaye@pts/62
+g5lisaye 48111  0.0  0.0  18104  2072 pts/62   Ss   17:54   0:00 -bash
+g5lisaye 48134  5.3  0.0  77128 58484 pts/62   S+   17:54   0:13 /data/quartus/modelsim_ase/bin/../linux/vish -- -vsim
+g5lisaye 48156  0.0  0.0   2528   380 pts/62   S    17:54   0:00 /data/quartus-15.0.0.145/modelsim_ase/linuxaloem/vlm 811173912 638499342
+c3panwen 48168  0.0  0.0  88352  1848 ?        S    17:54   0:00 sshd: c3panwen@pts/145
+c3panwen 48169  0.0  0.0  18228  2068 pts/145  Ss+  17:54   0:00 -tcsh
+root     48180  0.0  0.0      0     0 ?        S<   17:54   0:00 [kworker/u134:1]
+c4hongha 48352  0.0  0.0  12100  2156 pts/136  S+   17:55   0:00 nano prac.c
+root     48361  0.0  0.0  88352  3788 ?        Ss   17:55   0:00 sshd: c5chenjk [priv]
+c5chenjk 48368  0.0  0.0  88352  1904 ?        S    17:55   0:00 sshd: c5chenjk@pts/56
+c5chenjk 48369  0.0  0.0  18068  2052 pts/56   Ss+  17:55   0:00 -bash
+root     48410  0.0  0.0  88352  3768 ?        Ss   17:56   0:00 sshd: g4liange [priv]
+g4liange 48443  0.0  0.0  88688  2252 ?        S    17:56   0:00 sshd: g4liange@notty
+g4liange 48444  0.0  0.0  12920   976 ?        Ss   17:56   0:00 /usr/lib/openssh/sftp-server
+root     48457  0.0  0.0  88352  3820 ?        Ss   17:56   0:00 sshd: c3xiaoyu [priv]
+c3xiaoyu 48460  0.0  0.0  88352  1860 ?        S    17:56   0:00 sshd: c3xiaoyu@pts/161
+c3xiaoyu 48461  0.0  0.0  18140  2104 pts/161  Ss+  17:56   0:00 -bash
+root     48501  0.0  0.0  88352  3788 ?        Ss   17:56   0:00 sshd: c2luhuiy [priv]
+c2luhuiy 48505  0.0  0.0  88352  1864 ?        S    17:56   0:00 sshd: c2luhuiy@pts/64
+c2luhuiy 48506  0.0  0.0  18132  2076 pts/64   Ss   17:56   0:00 -bash
+c2luhuiy 48513  1.2  0.0 170012  8472 pts/64   Sl+  17:56   0:01 vi hogs.c
+g5vicli  48541  0.0  0.0 170100  8164 pts/135  Sl+  17:57   0:00 vim hogs.c
+root     48548  0.0  0.0  88352  3824 ?        Ss   17:57   0:00 sshd: c4sahebk [priv]
+c4sahebk 48550  0.0  0.0  88352  1860 ?        S    17:57   0:00 sshd: c4sahebk@pts/58
+c4sahebk 48551  0.0  0.0  18152  2140 pts/58   Ss+  17:57   0:00 -bash
+root     48556  0.1  0.0  88352  3756 ?        Ss   17:57   0:00 sshd: g2hhaaoo [priv]
+g2hhaaoo 48558  0.0  0.0  88492  2280 ?        S    17:57   0:00 sshd: g2hhaaoo@notty
+g2hhaaoo 48559  0.0  0.0  12908   932 ?        Ss   17:57   0:00 /usr/lib/openssh/sftp-server
+g5nikita 48578  0.3  0.0 170008  8188 pts/42   Sl+  17:57   0:00 vim hogs.c
+root     48645  0.1  0.0  88352  3788 ?        Ss   17:58   0:00 sshd: c5wangry [priv]
+c5mamike 48647  0.7  0.0  66668 25156 pts/59   Sl+  17:58   0:00 /data/quartus-15.0.0.145/modelsim_ase/linuxaloem/vsimk -port 49619 -stdoutfilename /tmp/VSOUTrz4TZP
+g5thijm  48658  0.7  0.0 170692  9032 pts/85   Sl+  17:58   0:00 vim twtt.py
+c5wangry 48663  0.0  0.0  88352  1856 ?        S    17:58   0:00 sshd: c5wangry@pts/65
+c5wangry 48664  0.0  0.0  18084  1980 pts/65   Ss+  17:58   0:00 -bash
+root     48675  0.3  0.0  88352  3804 ?        Ss   17:58   0:00 sshd: c4limjae [priv]
+c4limjae 48677  0.0  0.0  88352  1860 ?        S    17:58   0:00 sshd: c4limjae@pts/72
+c4limjae 48678  0.0  0.0  18064  1968 pts/72   Ss+  17:58   0:00 -bash
+root     48687  0.0  0.0   4400   612 ?        S    17:58   0:00 /bin/sh /var/cfengine/local/run_cfengine.sh
+c5zhaojk 48695  0.0  0.0  11240  1384 pts/83   S+   17:58   0:00 editor hogs.c
+root     48702  0.5  0.0  88352  3820 ?        Ss   17:58   0:00 sshd: c4peetco [priv]
+c4peetco 48704  0.0  0.0  88352  1852 ?        S    17:58   0:00 sshd: c4peetco@pts/84
+c4peetco 48705  0.1  0.0  18136  2116 pts/84   Ss   17:58   0:00 -bash
+root     48753  0.0  0.0   2000   284 ?        S    17:58   0:00 alarm -t 6000 -k 60 -- cfagent --define 
+cdfbasic.network.dhcpc.ntp.nonis.boot.mbr.ubuntu.ubuntu_precise.ubuntu_12.ubuntu_12_04.fulldiskraid.manualpartition.cdf_compute_server.unique_fstab.static_ip.wolves.grub2.xfree.smallmem 
+--file /var/cfengine/inputs/cfagent.conf
+root     48754  1.6  0.0  38028  4376 ?        Ss   17:58   0:00 cfagent --define 
+cdfbasic.network.dhcpc.ntp.nonis.boot.mbr.ubuntu.ubuntu_precise.ubuntu_12.ubuntu_12_04.fulldiskraid.manualpartition.cdf_compute_server.unique_fstab.static_ip.wolves.grub2.xfree.smallmem 
+--file /var/cfengine/inputs/cfagent.conf
+root     48761  1.3  0.0  88352  3800 ?        Ss   17:58   0:00 sshd: g5joeljc [priv]
+g5yungts 48763  0.2  0.0  12232  2292 pts/200  S+   17:58   0:00 nano hogs.c
+g5joeljc 48767  0.0  0.0  88352  1856 ?        S    17:58   0:00 sshd: g5joeljc@pts/172
+g5joeljc 48768  0.4  0.0  18220  2032 pts/172  Ss+  17:58   0:00 -tcsh
+c4peetco 48776  0.0  0.0  15280  1180 pts/84   R+   17:59   0:00 ps aux
+root     48777  0.0  0.0  53868  2172 ?        R    17:59   0:00 CRON
+root     48891  0.0  0.0      0     0 ?        S    Jan30   0:05 [kworker/0:2]
+root     49140  0.0  0.0      0     0 ?        S    Jan31   0:07 [kworker/41:2]
+root     49146  0.1  0.0      0     0 ?        S    Jan31   2:51 [kworker/7:2]
+root     49149  0.0  0.0      0     0 ?        S    Jan31   0:02 [kworker/39:0]
+root     49172  0.0  0.0      0     0 ?        S    Jan31   0:20 [kworker/46:1]
+root     49213  0.0  0.0      0     0 ?        S    Jan31   0:17 [kworker/44:0]
+root     49214  0.0  0.0      0     0 ?        S    Jan31   1:00 [kworker/8:2]
+root     49218  0.0  0.0      0     0 ?        S    Jan31   0:02 [kworker/38:1]
+c5nascim 50392  0.0  0.0   4400   612 ?        S    Jan24   0:00 /bin/sh -c python part4.py jpg 0
+c5nascim 50393  0.0  0.0 529204 53400 ?        Sl   Jan24   0:05 python part4.py jpg 0
+c5nascim 50411  0.0  0.0 531312 42924 ?        S    Jan24   0:00 python part4.py jpg 0
+c5nascim 50412  0.0  0.0 531312 42912 ?        S    Jan24   0:00 python part4.py jpg 0
+c5nascim 50413  0.0  0.0 531312 42912 ?        S    Jan24   0:00 python part4.py jpg 0
+c5nascim 50414  0.0  0.0 531312 42908 ?        S    Jan24   0:00 python part4.py jpg 0
+c5nascim 50415  0.0  0.0 531312 42908 ?        S    Jan24   0:00 python part4.py jpg 0
+c5nascim 50416  0.0  0.0 531312 42940 ?        S    Jan24   0:00 python part4.py jpg 0
+c5nascim 50417  0.0  0.0 531312 42912 ?        S    Jan24   0:00 python part4.py jpg 0
+c5nascim 50418  0.0  0.0 531312 42928 ?        S    Jan24   0:00 python part4.py jpg 0
+c5nascim 50419  0.0  0.0 531312 42928 ?        S    Jan24   0:00 python part4.py jpg 0
+c5nascim 50420  0.0  0.0 531312 42932 ?        S    Jan24   0:00 python part4.py jpg 0
+root     50525  0.0  0.0      0     0 ?        S    Jan31   0:10 [kworker/38:2]
+root     50527  0.0  0.0      0     0 ?        S    Jan31   0:07 [kworker/39:2]
+c6hetail 50645  0.0  0.0  24148  1376 ?        Ss   Jan26   0:00 SCREEN
+c6hetail 50646  0.0  0.0  18144  2128 pts/10   Ss+  Jan26   0:00 /var/shell/bash
+c5nascim 50872  0.0  0.0   4400   608 ?        S    Jan24   0:00 /bin/sh -c python part4.py jpg 0
+c5nascim 50873  0.0  0.0 529204 53388 ?        Sl   Jan24   0:11 python part4.py jpg 0
+c5nascim 50942  0.0  0.0 531312 42916 ?        S    Jan24   0:00 python part4.py jpg 0
+c5nascim 50943  0.0  0.0 531312 42900 ?        S    Jan24   0:00 python part4.py jpg 0
+c5nascim 50944  0.0  0.0 529204 40812 ?        S    Jan24   0:00 python part4.py jpg 0
+c5nascim 50945  0.0  0.0 529204 40812 ?        S    Jan24   0:00 python part4.py jpg 0
+c5nascim 50946  0.0  0.0 529204 40812 ?        S    Jan24   0:00 python part4.py jpg 0
+c5nascim 50947  0.0  0.0 529204 40816 ?        S    Jan24   0:00 python part4.py jpg 0
+c5nascim 50948  0.0  0.0 529204 40816 ?        S    Jan24   0:00 python part4.py jpg 0
+c5nascim 50949  0.0  0.0 529204 40816 ?        S    Jan24   0:00 python part4.py jpg 0
+c5nascim 50950  0.0  0.0 529204 40816 ?        S    Jan24   0:00 python part4.py jpg 0
+c5nascim 50951  0.0  0.0 529204 40820 ?        S    Jan24   0:00 python part4.py jpg 0
+root     51229  0.0  0.0      0     0 ?        S    Jan31   0:34 [kworker/42:0]
+c4foppia 52152  0.0  0.0   4296   348 ?        Ss   Jan31   0:00 /tmp/VisualGDB-DisownTTY-r1
+c4foppia 52922  0.0  0.0   4292   344 ?        Ss   Jan31   0:00 /tmp/VisualGDB-DisownTTY-r1
+root     53056  0.0  0.0      0     0 ?        S    13:35   0:00 [kworker/25:1]
+root     53057  0.0  0.0      0     0 ?        S    13:35   0:01 [kworker/24:2]
+c4foppia 53407  0.0  0.0   4296   348 ?        Ss   Jan31   0:00 /tmp/VisualGDB-DisownTTY-r1
+root     53511  0.0  0.0      0     0 ?        S    Jan27   0:24 [kworker/14:1]
+c4kangch 53900  0.0  0.0 170168  8372 ?        Tl   03:06   0:00 vim .bashrc
+c2konomi 55384  0.0  0.0  25076  2420 ?        Ss   Jan26   0:33 SCREEN
+c2konomi 55385  0.0  0.0  18148  2092 pts/20   Ss   Jan26   0:00 /var/shell/bash
+root     55640  0.0  0.0      0     0 ?        S    13:43   0:09 [kworker/6:2]
+root     55713  0.1  0.0      0     0 ?        S    Jan31   2:00 [kworker/1:2]
+root     55744  0.0  0.0      0     0 ?        S    Jan31   0:00 [kworker/7:0]
+root     55921  0.2  0.0      0     0 ?        S    Jan31   3:01 [kworker/0:0]
+c5nascim 55964  0.0  0.0   4400   608 ?        S    Jan24   0:00 /bin/sh -c python part1.py eps 0
+c5nascim 55965  0.6  0.1 1407776 78292 ?       SNl  Jan24  79:08 python part1.py eps 0
+root     56029  0.0  0.0      0     0 ?        S    13:44   0:11 [kworker/2:0]
+c5nascim 56033  0.0  0.1 1406876 66372 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56034  0.0  0.1 1406876 66372 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56035  0.0  0.1 1406876 66384 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56036  0.0  0.1 1406876 66388 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56037  0.0  0.1 1406876 66384 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56040  0.0  0.1 1406876 66392 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56041  0.0  0.1 1406876 66408 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56042  0.0  0.1 1406876 66432 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56043  0.0  0.1 1406876 66444 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56044  0.0  0.1 1406876 66408 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56045  0.0  0.1 1406876 66416 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56046  0.0  0.1 1406876 66452 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56047  0.0  0.1 1406876 66444 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56048  0.0  0.1 1406876 66448 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56049  0.0  0.1 1406876 66448 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56050  0.0  0.1 1406876 66420 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56051  0.0  0.1 1406876 66416 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56052  0.0  0.1 1406876 66448 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56053  0.0  0.1 1406876 66448 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56054  0.0  0.1 1406876 66416 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56055  0.0  0.1 1406876 66420 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56056  0.0  0.1 1406876 66452 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56057  0.0  0.1 1406876 66424 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56058  0.0  0.1 1406876 66412 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56059  0.0  0.1 1406876 66460 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56060  0.0  0.1 1406876 66428 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56061  0.0  0.1 1406876 66460 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56062  0.0  0.1 1406876 66436 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56063  0.0  0.1 1406876 66464 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56064  0.0  0.1 1406876 66460 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56065  0.0  0.1 1406876 66472 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56066  0.0  0.1 1406876 66472 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56067  0.0  0.1 1406876 66468 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56068  0.0  0.1 1406876 66472 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56069  0.0  0.1 1406876 66444 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56070  0.0  0.1 1406876 66472 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56071  0.0  0.1 1406876 66472 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56072  0.0  0.1 1406876 66476 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56073  0.0  0.1 1406876 66444 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56074  0.0  0.1 1406876 66444 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56075  0.0  0.1 1406876 66484 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56076  0.0  0.1 1406876 66484 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56077  0.0  0.1 1406876 66480 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56078  0.0  0.1 1406876 66456 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56079  0.0  0.1 1406876 66456 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56080  0.0  0.1 1406876 66480 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56081  0.0  0.1 1406876 66488 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56082  0.0  0.1 1406876 66496 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56083  0.0  0.1 1406876 66492 ?       S    Jan24   0:00 python part1.py eps 0
+c5nascim 56084  0.0  0.1 1406876 66496 ?       S    Jan24   0:00 python part1.py eps 0
+root     56427  0.0  0.0      0     0 ?        S    Jan24   1:38 [kworker/12:0]
+ntp      56775  0.0  0.0  33544  2684 ?        S    Jan25   0:32 ntpd -u ntp:ntp -n -g -c /etc/ntp.conf -p /var/run/ntpd.pid
+g4rbage  56830  0.0  0.0  10892   928 pts/17   S+   Jan29   0:00 less -S
+root     56843  0.0  0.0      0     0 ?        S    13:47   0:03 [kworker/10:0]
+root     56844  0.0  0.0      0     0 ?        S    13:47   0:02 [kworker/11:0]
+root     56951  0.0  0.0      0     0 ?        S    13:47   0:00 [kworker/8:1]
+root     57022  0.0  0.0      0     0 ?        S    13:47   0:06 [kworker/5:1]
+root     57338  0.0  0.0      0     0 ?        S<   04:10   0:00 [kworker/u135:1]
+c4foppia 57450  0.0  0.0   4296   352 ?        Ss   Jan31   0:00 /tmp/VisualGDB-DisownTTY-r1
+root     57709  0.0  0.0  88352  3752 ?        Ss   13:49   0:00 sshd: g4brzuzy [priv]
+g4brzuzy 57711  0.0  0.0  88352  1848 ?        S    13:49   0:00 sshd: g4brzuzy
+g5ms     57839  0.0  0.0   4156   348 ?        S    Jan30   0:02 adir/longproc
+c5martin 58763  0.0  0.0  41872  4476 ?        Ss   Jan29   0:00 -zsh
+c4macnei 58882  0.0  0.0  20392  2668 pts/52   SNs+ Jan29   0:00 -tcsh
+c4foppia 61200  0.0  0.0   4292   340 ?        Ss   Jan31   0:00 /tmp/VisualGDB-DisownTTY-r1
+root     62011  0.0  0.0      0     0 ?        S    Jan22   0:36 [kworker/23:2]
+root     63704  0.0  0.0  88352  3760 ?        Ss   14:19   0:00 sshd: g4gentoo [priv]
+g4gentoo 63787  0.0  0.0  88352  1864 ?        S    14:19   0:00 sshd: g4gentoo
+root     63812  0.0  0.0  88356  3764 ?        Ss   14:19   0:00 sshd: g4gentoo [priv]
+c4macnei 63924  0.1  0.5 362268 339948 ?       SNs  Jan21  28:48 tmux -2
+c4macnei 63927  0.0  0.0  20236  2552 pts/15   Ss+  Jan21   0:00 -tcsh
+c4macnei 63941  0.0  0.0  91124 10932 ?        SN   Jan21   9:09 /local/bin/X11/python /h/u8/c4/00/c4macnei/.local/bin/powerline-daemon -q
+g4gentoo 63986  0.0  0.0  88516  1864 ?        S    14:20   0:00 sshd: g4gentoo
+root     64042  0.0  0.0  86268  3828 ?        Ss   Jan29   0:00 sshd: g2zhousi [priv]
+g2zhousi 64044  0.0  0.0  86572  2292 ?        S    Jan29   0:00 sshd: g2zhousi@pts/8
+g2zhousi 64045  0.0  0.0  18160  2144 pts/8    Ss+  Jan29   0:00 -bash
+root     64683  0.0  0.0  88336  3796 ?        Ss   14:23   0:00 sshd: lloyd [priv]
+lloyd    64720  0.0  0.0  88336  1968 ?        S    14:23   0:00 sshd: lloyd@pts/138
+lloyd    64721  0.0  0.0  18252  2124 pts/138  Ss+  14:23   0:00 -tcsh
+root     64803  0.0  0.0  88352  3784 ?        Ss   14:24   0:00 sshd: g2lev [priv]
+g2lev    64805  0.0  0.0  88488  2004 ?        S    14:24   0:00 sshd: g2lev@notty
+g2lev    64806  0.0  0.0  12916   948 ?        Ss   14:24   0:00 /usr/lib/openssh/sftp-server
+g2lev    64814  0.0  0.0  12776   740 ?        Ss   14:24   0:00 /usr/lib/openssh/sftp-server
