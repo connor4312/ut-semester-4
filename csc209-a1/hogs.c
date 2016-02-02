@@ -29,11 +29,11 @@ bool parse_args(int argc, char *argv[], Target *target, char **username) {
 }
 
 typedef struct {
-    char *user;
+    char user[1024];
     int pid;
     float cpu;
     float memory;
-    char *process;
+    char process[1024];
 } Line;
 
 bool extract_line(Line *self) {
@@ -48,9 +48,9 @@ bool extract_line(Line *self) {
         case 3: output = scanf("%f ", &self->memory); break;
         case 4:
             // skip over several columns
-            for (k = 0; k < 6; k++) output = scanf("%s", self->process);
+            for (k = 0; k < 6; k++) output = scanf("%s ", self->process);
         break;
-        case 5: output = scanf("%s", self->process); break;
+        case 5: output = scanf("%[^\n]", self->process); break;
         }
 
         if (output == EOF) {
@@ -71,20 +71,21 @@ float target_stat(Line *self, Target target) {
 
 bool extract_max(Target target, char *username, int *max_pid, float *max_stat) {
     bool found = false;
-    char *max_name = NULL;
+    char max_name[32];
     float stat;
     Line l;
 
     while (extract_line(&l)) {
-        if (!strcmp((&l)->user, username)) {
+        if (strcmp(l.user, username) != 0) {
             continue;
         }
 
         stat = target_stat(&l, target);
-        if (stat > *max_stat || (stat == *max_stat && strcasecmp(max_name, (&l)->process) > 0)) {
+        if (stat > *max_stat || (stat == *max_stat && strcasecmp(max_name, l.process) > 0)) {
             found = true;
             *max_stat = stat;
-            strcpy(max_name, (&l)->process);
+            *max_pid = l.pid;
+            strncpy(max_name, l.process, 32);
         }
     }
 
@@ -104,7 +105,7 @@ int main(int argc, char *argv[])
     }
 
     if (extract_max(target, username, &max_pid, &max_stat)) {
-        printf("%d\t%f.1", max_pid, max_stat);
+        printf("%d\t%.1f\n", max_pid, max_stat);
     }
 
     return 0;
