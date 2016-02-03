@@ -19,7 +19,7 @@ bool parse_args(int argc, char *argv[], Target *target, char **username) {
     }
 
     *username = argv[2];
-    if (strcmp(argv[1], "-c")) {
+    if (strcmp(argv[1], "-c") == 0) {
         *target = CPU;
     } else {
         *target = RAM;
@@ -69,9 +69,8 @@ float target_stat(Line *self, Target target) {
     }
 }
 
-bool extract_max(Target target, char *username, int *max_pid, float *max_stat) {
+bool extract_max(Target target, char *username, int *max_pid, float *max_stat, char *process) {
     bool found = false;
-    char max_name[32];
     float stat;
     Line l;
 
@@ -81,11 +80,11 @@ bool extract_max(Target target, char *username, int *max_pid, float *max_stat) {
         }
 
         stat = target_stat(&l, target);
-        if (stat > *max_stat || (stat == *max_stat && strcasecmp(max_name, l.process) > 0)) {
+        if (stat > *max_stat || (stat == *max_stat && strcasecmp(process, l.process) > 0)) {
             found = true;
             *max_stat = stat;
             *max_pid = l.pid;
-            strncpy(max_name, l.process, 32);
+            strncpy(process, l.process, 32);
         }
     }
 
@@ -96,6 +95,7 @@ int main(int argc, char *argv[])
 {
     Target target;
     char *username;
+    char max_process[32];
     float max_stat;
     int max_pid;
 
@@ -104,8 +104,8 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    if (extract_max(target, username, &max_pid, &max_stat)) {
-        printf("%d\t%.1f\n", max_pid, max_stat);
+    if (extract_max(target, username, &max_pid, &max_stat, max_process)) {
+        printf("%d\t%.1f\t%s\n", max_pid, max_stat, max_process);
     }
 
     return 0;
