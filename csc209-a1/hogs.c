@@ -74,6 +74,7 @@ bool extract_max(Target target, char *username, int *max_pid, float *max_stat, c
     float stat;
     Line l;
 
+    *max_stat = 0;
     while (extract_line(&l)) {
         if (strcmp(l.user, username) != 0) {
             continue;
