@@ -123,5 +123,24 @@ def merge(B1, B2):
 
     The maximum height change occurs when the removed leaf was not the single deepest node out of both trees. When this occurs, the height of the new tree $T$ is $max\{h_1, h_2\} + 1$ as the result of inserting a new root above the subtrees. If this is not the case, then height of $T$ will equal $max\{h_1, h_2\}$.
 
+\item To create this `rolling median' I'll use not one, but two augmented heaps. The first heap, $H_1$ is a max-heap and the second $H_2$ is a min-heap. The augmentation is simple: the root of each heap will record its total size. The following algorithms can be used to insert and find the median of heaps $H_1$ and $H_2$. For conciseness, algorithms already defined in the textbook (heap insert and extraction) are not shown, nor the trivial modification to the insert function to maintain the heap sizes.
+\begin{lstlisting}
+def median(H1, H2):
+    if H1.size > H2.size:
+        return H1.root
+    else:
+        return (H1.root + H2.root) / 2
+
+def insert(H1, H2, x):
+    if H1.size == 0 or x <= median(H1, H2):
+        H1.insert(x)
+    else:
+        H2.insert(x)
+
+    while H2.size > H1.size:
+        H1.insert(H2.extract_root())
+    while H1.size > H2.size + 1:
+        H2.insert(H1.extract_root())
+\end{lstlisting}
 \end{enumerate}
 \end{document}
