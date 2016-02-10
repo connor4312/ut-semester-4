@@ -123,7 +123,7 @@ def merge(B1, B2):
 
     The maximum height change occurs when the removed leaf was not the single deepest node out of both trees. When this occurs, the height of the new tree $T$ is $max\{h_1, h_2\} + 1$ as the result of inserting a new root above the subtrees. If this is not the case, then height of $T$ will equal $max\{h_1, h_2\}$.
 
-\item To create this `rolling median' I'll use not one, but two augmented heaps. The first heap, $H_1$ is a max-heap and the second $H_2$ is a min-heap. The augmentation is simple: the root of each heap will record its total size. The following algorithms can be used to insert and find the median of heaps $H_1$ and $H_2$. For conciseness, algorithms already defined in the textbook (heap insert and extraction) are not shown, nor the trivial modification to the insert function to maintain the heap sizes.
+\item [3.] To create this `rolling median' I'll use not one, but two augmented heaps. The first heap, $H_1$ is a max-heap and the second $H_2$ is a min-heap. The augmentation is simple: the root of each heap will record its total size. The following algorithms can be used to insert and find the median of heaps $H_1$ and $H_2$. For conciseness, algorithms already defined in the textbook (heap insert and extraction) are not shown, nor the trivial modification to the insert function to maintain the heap sizes.
 \begin{lstlisting}
 def median(H1, H2):
     if H1.size > H2.size:
@@ -132,7 +132,7 @@ def median(H1, H2):
         return (H1.root + H2.root) / 2
 
 def insert(H1, H2, x):
-    if H1.size == 0 or x <= median(H1, H2):
+    if H1.size == 0 or x <= H1.root:
         H1.insert(x)
     else:
         H2.insert(x)
@@ -142,5 +142,21 @@ def insert(H1, H2, x):
     while H1.size > H2.size + 1:
         H2.insert(H1.extract_root())
 \end{lstlisting}
+    Notes on correctness of \texttt{median}:
+    \begin{enumerate}
+        \item It's invariant that $H_1$ always has either $H_2.size$ or $H_2.size + 1$ items. This is maintained in lines 13 through 16 of \texttt{insert}; items are rebalanced to ensure this is the case.
+        \item It's also invariant that all items in $H_1$ are less than or equal to $H_2$.
+            \begin{itemize}
+            \item The first item is inserted in $H_1$, so the invariant holds.
+            \item The \textit{i}th item is inserted in $H_1$ iff it's less than or equal to the root, which is greater than all its other elements due to the max-heap property. Otherwise, it's inserted into $H_2$, as it's greater than the largest element in $H_1$.
+            \item When a rebalance happens (lines 13 to 16), either the largest element from $H_1$ is moved to $H_2$, or the smallest element is moved from $H_2$ to $H_1$. In both cases, the invariant holds.
+            \end{itemize}
+        \item Also, by (a), $H_1.size$ is larger than $H_2.size$ only if there is an odd number of items in the tree.
+        \item Then two heaps' roots are two of the numbers closest to the median.
+            \begin{itemize}
+            \item If $n$ is odd, we return the $H_1.root$, which is the median.
+            \item If $n$ is even, we return the average of the roots, which is correct.
+            \end{itemize}
+    \end{enumerate}
 \end{enumerate}
 \end{document}
