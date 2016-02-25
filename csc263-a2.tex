@@ -5,6 +5,7 @@
 \usepackage{amsfonts}
 \usepackage{amsmath}
 \usepackage{listings}
+\usetikzlibrary{fit}
 
 \title{CSC263 Winter 2016, Assignment 2}
 \author{Connor Peet \#1001088208}
@@ -123,7 +124,7 @@ def merge(B1, B2):
 
     The maximum height change occurs when the removed leaf was not the single deepest node out of both trees. When this occurs, the height of the new tree $T$ is $max\{h_1, h_2\} + 1$ as the result of inserting a new root above the subtrees. If this is not the case, then height of $T$ will equal $max\{h_1, h_2\}$.
 
-\item [3.] To create this `rolling median' I'll use not one, but two augmented heaps. The first heap, $H_1$ is a max-heap and the second $H_2$ is a min-heap. The augmentation is simple: the root of each heap will record its total size. The following algorithms can be used to insert and find the median of heaps $H_1$ and $H_2$. For conciseness, algorithms already defined in the textbook (heap insert and extraction) are not shown, nor the trivial modification to the insert function to maintain the heap sizes.
+\item [3.] To create this `rolling median' I'll use two heaps. The first heap, $H_1$ is a max-heap and the second $H_2$ is a min-heap. The following algorithms can be used to insert and find the median of heaps $H_1$ and $H_2$. For conciseness, algorithms already defined in the textbook (heap insert and extraction) are not shown.
 \begin{lstlisting}
 def median(H1, H2):
     if H1.size > H2.size:
@@ -137,26 +138,43 @@ def insert(H1, H2, x):
     else:
         H2.insert(x)
 
-    while H2.size > H1.size:
+    if H2.size > H1.size:
         H1.insert(H2.extract_root())
-    while H1.size > H2.size + 1:
+    elif H1.size > H2.size + 1:
         H2.insert(H1.extract_root())
+
+def median_list(A):
+    H1 = new Heap()
+    H2 = new Heap()
+
+    M = []
+    for i in [1..n]:
+        insert(H1, H2, A[i])
+        M[i] = median(H1, H2)
+
+    return M
+
 \end{lstlisting}
-    Notes on correctness of \texttt{median}:
+    Notes on correctness of \texttt{median}, keeping in mind min and max heap properties:
     \begin{enumerate}
         \item It's invariant that $H_1$ always has either $H_2.size$ or $H_2.size + 1$ items. This is maintained in lines 13 through 16 of \texttt{insert}; items are rebalanced to ensure this is the case.
-        \item It's also invariant that all items in $H_1$ are less than or equal to $H_2$.
+        \item By (a), $H_1.size$ is larger than $H_2.size$ only if $i$ is odd.
+        \item It's also invariant that all items in $H_1$ are less than or equal to all items in $H_2$:
             \begin{itemize}
             \item The first item is inserted in $H_1$, so the invariant holds.
-            \item The \textit{i}th item is inserted in $H_1$ iff it's less than or equal to the root, which is greater than all its other elements due to the max-heap property. Otherwise, it's inserted into $H_2$, as it's greater than the largest element in $H_1$.
+            \item For $i > 1$, the \textit{i}th item is inserted in $H_1$ iff it's less than or equal to the root, which is greater than all its other elements due to the max-heap property. Otherwise, it's inserted into $H_2$, as it's greater than the largest element in $H_1$.
             \item When a rebalance happens (lines 13 to 16), either the largest element from $H_1$ is moved to $H_2$, or the smallest element is moved from $H_2$ to $H_1$. In both cases, the invariant holds.
             \end{itemize}
-        \item Also, by (a), $H_1.size$ is larger than $H_2.size$ only if there is an odd number of items in the tree.
-        \item Then two heaps' roots are two of the numbers closest to the median.
+        \item $H_1.size + H_2.size = i$
+        \item By the above, when looking at $A[1..i]$ in sorted order:
             \begin{itemize}
-            \item If $n$ is odd, we return the $H_1.root$, which is the median.
-            \item If $n$ is even, we return the average of the roots, which is correct.
+            \item If $i$ is odd, the root of $H_1$ is preceded by the $(i - 1) / 2$ children in $H_1$ and proceeded by the remaining $(i - 1) / 2$ nodes in $H_2$. Then it is of rank $(i + 1) / 2$, so we return it correctly as the median.
+            \item If $i$ is even, the two roots are preceded by the $i / 2 - 1$ children in $H_1$ and proceeded by the $i / 2 - 1$ children in $H_2$. Then they are of rank $i / 2$ and $i / 2 + 1$, so their average is returned correctly as the median.
             \end{itemize}
     \end{enumerate}
+    The median is called as items are sequentially inserted into the heaps by \texttt{median\_list} and appended to $M$. From the above reasoning and pseudo-code, it's evident that $M[i]$ is the correct median of $A[1..i]$, so the output will be correct. \\
+
+    From the textbook, we know that the running time of heap extraction and insertion is in $O(\log n)$. Each call to \texttt{insert} runs at most two insertions and one extraction, and calls to \texttt{median} run in constant time. We call \texttt{median} and \texttt{insert} $n$ times in lines 24 and 25 of \texttt{median\_list}, which otherwise runs in constant time. Therefore the algorithm runs in $O(n \log n)$ time.
+
 \end{enumerate}
 \end{document}

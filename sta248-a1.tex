@@ -65,9 +65,10 @@
         f(x) &= (1 + \theta)x^\theta \\
         f(x) &= x^\theta + \theta x^\theta \\
         \int_{0}^1 f(x) dx &= \int_{0}^1 (x^\theta + \theta x^\theta) dx \\[10pt]
-        H(x) &= \frac{1}{\theta + 1}x^{\theta + 1} + \frac{\theta}{\theta + 1} x^{\theta + 1} \\
-             &= \frac{\theta + 1}{\theta + 1}x^{\theta + 1} = x^{\theta + 1} \\[10pt]
-        \int_{0}^1 f(x) dx &= H(1) - H(0) \\
+        F(x) &= \frac{1}{\theta + 1}x^{\theta + 1} + \frac{\theta}{\theta + 1} x^{\theta + 1} + c \\
+             &= \frac{\theta + 1}{\theta + 1}x^{\theta + 1} + c \\
+             &= x^{\theta + 1} + c \\[10pt]
+        \int_{0}^1 f(x) dx &= F(1) - F(0) \\
                            &= 1^{\theta + 1} - 0^{\theta + 1} = 1
         \end{aligned}
         \end{equation*}
