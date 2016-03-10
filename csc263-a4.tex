@@ -1,0 +1,118 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb,graphicx,tikz}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{listings}
+
+\title{CSC263 Winter 2016, Assignment 4}
+\author{Connor Peet \#1001088208}
+\renewcommand{\today}{~}
+\hypersetup{pdfpagemode=Fullscreen,
+  colorlinks=true,
+  linkfileprefix={}}
+\begin{document}
+\maketitle
+
+\lstset{
+    numbers=left
+}
+
+\begin{enumerate}
+\item
+    \begin{enumerate}
+    \item Each individual $x_i$ value can only be chosen if there is nothing chosen after it. It's easiest thinking about it looking backwards from $n$ to $1$.
+        \begin{itemize}
+            \item $x = n$ has a $(1 / 2)$ chance of being chosen.
+            \item $x = n - 1$ has a $(1 / 2)$ chance of being chosen but can only persist if $x = n$ isn't chosen. These are independent events, so the probability is $(1/2) \times (1 - Pr[X = n])$.
+            \item $x = n - i$ by the same reasoning has a probability $(1 / 2) \times \prod_{k = i + 1}^n (1 - P[X = k])$, or $(1 / 2) \times (1 - 1/2)^{n - i}$.
+            \item $x = 1$ \textit{will} always be chosen, so the probability of it persisting is just the probability of none of the other $n - 1$ elements being chosen: $1 \times \prod_{k = 2}^n (1 - P[X = k]) = (1 - (1 / 2))^{n - 1}$.
+        \end{itemize}
+        Based on this, we can derive that $Pr[X = i] = 0.5^{n - i}$
+        \begin{equation*}
+            Pr[X = i] = \begin{cases}
+                0.5^{n - 1} & i = 1 \\
+                0.5^{n - i + 1} & i > 1 \\
+                0 & \text{otherwise}
+            \end{cases}
+        \end{equation*}
+        We can verify that this gives logical outputs using a quick table:
+        \begin{center}
+        \begin{tabular}{ r || c | c | c | c }
+            n & $Pr[x = 4]$ & $Pr[x = 3]$ & $Pr[x = 2]$ & $Pr[x = 1]$ \\
+            \hline
+            \hline
+            1 &       &       &       & $1$   \\ \hline
+            2 &       &       & $1/2$ & $1/2$ \\ \hline
+            3 &       & $1/2$ & $1/4$ & $1/4$ \\ \hline
+            4 & $1/2$ & $1/4$ & $1/8$ & $1/8$ \\
+        \end{tabular}
+        \end{center}
+    \item At this point it's easier to look at the problem from a somewhat more formal recursive point of view, for a given value $i$ of $x$.
+        \begin{itemize}
+        \item Base case: for $i = n$, $p_n$ must always be equal to $\frac{1}{n}$.
+        \item Take an $3 < i < n$ such that $Pr[X = i] = 1 / n$ and $p_i = \frac{1}{i}$.
+            \begin{itemize}
+            \item Then we know that $\frac{1}{n} = p_i \times \prod_{k = i + 1}^n (1 - P[X = k])$. Let's represent that product by $w$.
+            \item Then $p_i = \frac{1}{i} = \frac{1}{nw}$. Therefore $i = nw$.
+            \item Also $\frac{1}{n} = p_{i - 1} \times (1 - p_i) \times q$
+            \item Then $\frac{1}{nq(1 - 1 / i)} = p_{i - 1}$.
+            \item Then $\frac{1}{i(1 - 1 / i)} = p_{i - 1}$.
+            \item Then $p_{i - 1} = \frac{1}{i - 1}$.
+            \end{itemize}
+        \item Then $\forall i \in \mathbb{N}, 1 < i \leq n, p_i = \frac{1}{i}$.
+        \end{itemize}
+    \end{enumerate}
+
+\item
+    \begin{enumerate}
+    \item To generate an unbiased toss, we'll use the \textit{order} rather than the values of the results. We'll look at pairs of tosses; if a pair of tosses comes up heads then tails, we'll count that as a 1. If it comes up tails then heads, we'll count it as a 0. Otherwise we'll retoss. The probabilities can easily be determined. Critically, the probability of tails then heads equals the probability of heads then tails:
+        \begin{itemize}
+        \item $P(HH) = p \times p = p^2$
+        \item $P(TT) = (1 - p) \times (1 - p) = (1 - p)^2$
+        \item $P(HT) = p \times (1 - p) = p - p^2$
+        \item $P(TH) = (1 - p) \times p = p - p^2$
+        \end{itemize}
+    \item Each flip of the coin is counted as a step, and we'll keep flipping until we get to a `mismatched' pair of results. The probability of this is $2(p - p^2)$. The geometric distribution models this well--we do trails until we get a success. Then $X \sim \text{Geometric}(2(p - p^2))$.
+        \begin{equation*}
+        \begin{aligned}
+        & Y \sim \text{Geometric}(q) \\
+            E[Y] &= \frac{1}{q} \\
+        & X \sim \text{Geometric}(2(p - p^2)) \\
+            \text{E}[X] &= \frac{1}{2(p - p^2)} \\
+            &> \frac{1}{p - p^2} \\
+            &> \frac{1}{p} \\
+        \end{aligned}
+        \end{equation*}
+        The expected running time, therefore, is in $\Theta(1 / p)$.
+    \end{enumerate}
+
+\item
+    \begin{enumerate}
+    \item Initialize $C$ to be an empty array. Define a data structure \texttt{Components} to be a collection of disjoint sets. Per the textbook, the following algorithms properties are defined:
+        \begin{itemize}
+        \item We have the methods \texttt{Make-Set(x)}, \texttt{Union(x, y)}, and \texttt{Find-Set(x)}.
+        \item \texttt{Make-Set} and \texttt{Find-Set} runs in $O(1)$, and the amortized time of \texttt{Union} is $O(n)$.
+        \item The collection of sets, \texttt{Components}, is ordered by set size.
+        \end{itemize}
+    \item For every edge $e_i = (j, k)$:
+        \begin{itemize}
+        \item If $j$ or $k$ are not in sets, call \texttt{Make-Set} on them as necessary.
+        \item If $j$ and $k$ aren't in the same set ($\texttt{Find-Set}(j) \neq \texttt{Find-Set}(k)$) run a weighted union on the sets: $\texttt{Union}(j, k)$.
+        \item Set $C[i]$ equal to the size of the largest set in \texttt{Components}.
+        \end{itemize}
+    \item Set $C[i]$ to be the size of the largest set in \texttt{Components}.
+    \item If $i = m$, return C, we're done! Otherwise increment $i$ and go to (b).
+    \end{enumerate}
+
+    We can then examine the running time of this algorithm. Steps (c) and (d) will run in $O(m)$ time, and there's additional time incurred by set operations in (b):
+        \begin{itemize}
+        \item There are at most $\texttt{min}(2m, n)$ make-set operations, which run in constant time. We only make sets of nodes when we see an edge to them; each of the $m$ edge touches two nodes, and there are at most $n$ nodes in total that can be operated on.
+        \item There are then $2m$ Find-Set operations, which also run in constant time.
+        \item There are $m$ union operations. Using the weighted union as described in theorem 21.1, we can expect the total time spent in union operations to be in $O(m \log m)$. In this case, however, we know the size of the largest possible set, $n$, so then we know each object's pointer is updated at most $\lceil \log n \rceil$ times rather than $\lceil \log m \rceil$. Therefore, the running time for our particular use case is in $O(m \log n)$
+        \end{itemize}
+
+    Based off the above, we can expect that this algorithm will run in $O(n + m \log n)$ time.
+\end{enumerate}
+\end{document}
