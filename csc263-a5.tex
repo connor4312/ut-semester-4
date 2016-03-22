@@ -1,0 +1,118 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb,graphicx,tikz}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{listings}
+\usetikzlibrary{positioning}
+
+\title{CSC263 Winter 2016, Assignment 5}
+\author{Connor Peet \#1001088208}
+\renewcommand{\today}{~}
+\hypersetup{pdfpagemode=Fullscreen,
+  colorlinks=true,
+  linkfileprefix={}}
+\begin{document}
+\maketitle
+
+\lstset{
+    numbers=left
+}
+\tikzset{
+node of list/.style = {
+             draw,
+             minimum height=6mm,
+             minimum width=6mm,
+             node distance=6mm
+   },
+link/.style = {
+     -stealth,
+     shorten >=1pt
+     },
+array element/.style = {
+    draw, fill=white,
+    minimum width = 6mm,
+    minimum height = 10mm
+  }
+}
+
+\def\LinkedList#1{%
+  \foreach \element in \list {
+     \node[node of list, right = of aux, name=\element] {\element};
+     \draw[link] (aux) -- (\element);
+     \coordinate (aux) at (\element.east);
+  }
+}
+
+
+\begin{enumerate}
+\item See page 571 of the CLRS textbook as a reference for the functions used in the following explanation. Charge every node one dollar for updating its parent pointer $p$ or its $rank$. Each time we call \textsc{Union(x, y)}, give each node two dollars, distributing $4k$ dollars in total.
+    \begin{itemize}
+    \item One dollar will be used in \textsc{Find-Set(x)} if the node is not already a representative.
+    \item One dollar will be used in \textsc{Link(x.p, y.p)} to either update $y.p$'s parent or to update its rank.
+    \end{itemize}
+
+    In the worst case, we call \textsc{Union} on the representatives of a set and a single node every time and end up with, essentially, a linked list of $k + 1$ elements. In this case, every node has one dollar attached to it which was not used in \textsc{Find-Set(x)}. \\
+
+    We then start making our $k'$ calls to \textsc{Find-Set(x)}. In the worst case, we'll end up running the function on the deepest node in that big ugly linked list. Each node will be charged one dollar to update its parent to the root of the tree as \textsc{Find-Set(x)} unwinds--a process described in the CLRS textbook. Subsequent calls to \textsc{Find-Set(x)} in total, will not require pointer updates and will run in constant time. \\
+
+    From the accounting of $4k$ dollars and adding on our $k'$ eventually-constant-time calls to \textsc{Find-Set(x)}, we can see that the algorithm runs in O(k + k') time.
+
+\item
+    \begin{enumerate}
+    \item See below: \\
+        \begin{figure}[h]
+        \begin{tikzpicture}
+        \foreach \index/\list in {1/{3}, 2/{1,5,10,17}} {
+           \node[array element] (aux) at (0,-\index) {\index};
+           \LinkedList{\list}
+        }
+        \end{tikzpicture}
+        \end{figure}
+    \item Each list in this data structure--let's call it $S$ with size $n$--needs to be searched. There are $\lceil \log_2 n \rceil$ of them, and each search takes roughly $\log n$ steps relative to the number of elements in that list. Then there's roughly $\sum_{k = 1}^{\log n} \log k$ steps which need to be taken. $\sum_{k = 1}^{\log n} \log k < \log n \times \log n$, so it's in $O((\log n)^2)$.
+    \item In the worse case, $\exists k \in \mathbb{I}$ such that $n = 2^k - 1$. In this case, the data set will already be fully `saturated' with $k - 1$ lists and we'll have to run \texttt{(c)} $k - 1$ times to merge them all. It's known that MergeSort's \textsc{Merge} function runs in $O(n)$ relative to the number of list elements, so the insertion takes about $\sum_{i = 0}^{k - 1} 2 \times 2^i$ steps to merge the two lists at every level. $\sum_{i = 0}^{k - 1} 2 \times 2^i = 4(2^{k - 1} - 1) \approx 4(2^{\log_2 n} - 1) = 4n - 4$. So the running time is in $O(n)$.
+    \item \begin{itemize}
+        \item \underline{Accounting Method}: Each time you have to merge list with another list, charge each node in the list you're merging one dollar. Initially credit each node you insert with $\lfloor \log_2 n' \rfloor + 1$ dollars, where $n'$ is the current size of the list. This corresponds to the number of linked lists currently in $S$ and will pay for it to be merged into the 1st, 2nd, 3rd... through $\lceil \log_2 n' \rceil$th list. At the point when two lists of size $(\log_2 n') / 2$ are merged, each node in one list will have two dollars, and each node in the the other list will have zero. This will create a new list that contains zero dollars, at the process can continue.
+
+            \begin{equation*}
+            \begin{aligned}
+                \{1^1\} \rightarrow& \big\{\big\} = \big\{\{1^1\}\big\} \\
+                \{2^1\} \rightarrow& \big\{1^1\big\} = \big\{\{1^1\}, \{2^1\}\big\} = \big\{\{1^0, 2^0\}\big\} \\
+                \{3^2\} \rightarrow& \big\{\{1^0, 2^0\}\big\} = \big\{\{3^2\}, \{1^0, 2^0\}\big\} \\
+                \{4^2\} \rightarrow& \big\{\{3^2\}, \{1^0, 2^0\}\big\} = \big\{\{3^1, 4^1\}, \{1^0, 2^0\}\big\} = \big\{\{1^0, 2^0, 3^0, 4^0\}\big\} \\
+                \{5^3\} \rightarrow& \quad \cdots
+            \end{aligned}
+            \end{equation*}
+
+            The cost of inserting $n$ items, then, is $\sum_{i = 1}^n \lfloor \log_2 i \rfloor + 1$ which for large values of $n$ is bounded by $n \log n$. So the amortized insertion time is in $O(n \log n)$
+
+            \item \underline{Aggregate Analysis}: Define the cost of \textsc{Merge} to be the number of nodes involved in the merge. The first list will be merged about $n / 2$ times, second $n / 4$ times, and so on. Generally, each $i$th list (where $i \in [1, \cdots, \log_2{n}]$) will be merged about $1 / 2^i$ times, and each merge involves $2 \times 2^i$ nodes. So the average cost of a merge in a sequence of insertions is $(2 \times 2^i) / 2^i = 2$. It's clear that we make a total of $n$ insertions which involve $n \log n$ average-constant-time merges, so the runtime is in $O(n \log n)$.
+        \end{itemize}
+    \item The algorithm is as follows:
+        \begin{enumerate}
+        \item Remove $x$ from the set that contains it.
+        \item While the data structure contains a list with a number of nodes one less than but not equal to a power of 2, search backwards from that list and `pull` the head node from next smaller list to balance this list.
+        \item If there is no such smaller list, decompose this list into its component powers of 2.
+        \end{enumerate}
+
+         For example:
+            \begin{equation*}
+            \begin{aligned}
+                \textsc{Del}(1, \big\{\{1, 2, 3, 4\}\big\}) \rightarrow
+                    & \text{No smaller lists to pull from} \\
+                    & \text{Decompose into} \{\{2\}, \{3, 4\}\big\} \\
+                \textsc{Del}(1, \big\{\{5\}, \big\{\{1, 2, 3, 4\}\big\}) \rightarrow
+                    & \text{Pull up 5 to form} \big\{\{2, 3, 5\}\big\} \\
+                    & \text{No decomposition necessary} \\
+                \textsc{Del}(1, \big\{\{5\}, \{6, 7\}, \big\{\{1, 2, 3, 4\}\big\}) \rightarrow
+                    & \text{Pull up 6 to form} \big\{\{5\}, \{7\}, \big\{\{2, 3, 4, 6\}\big\} \\
+                    & \text{Pull up 5 to form} \big\{\{5, 7\}, \big\{\{2, 3, 4, 6\}\big\} \\
+                    & \text{No decomposition necessary}
+            \end{aligned}
+            \end{equation*}
+
+        The `pull' step is unidirectional down the list. There can be at most about $\log n$ pulls in a fully saturated list, and each pull requires an insertion of the new node which takes a linear time relative to the number of node the target list contains. At most that number will be $\log n$, so this step runs in $(\log n)^2$ time. Decomposition takes place at most one time, and involves breaking one list up into multiple smaller lists. This split can happen in a single iteration of the $< \log n$ elements, since the numbers are already sorted. In total, we expect to take up to $(\log n)^2 + \log n$ steps, which is in $O(n)$.
+    \end{enumerate}
+\end{enumerate}
+\end{document}

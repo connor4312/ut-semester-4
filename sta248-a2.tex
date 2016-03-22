@@ -1,0 +1,134 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb,graphicx,tikz}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{pgfplots}
+\usepgfplotslibrary{statistics}
+
+\title{STA248 Winter 2016, Assignment 1}
+\author{Connor Peet \#1001088208}
+\renewcommand{\today}{~}
+\hypersetup{pdfpagemode=Fullscreen,
+  colorlinks=true,
+  linkfileprefix={}}
+\begin{document}
+\maketitle
+
+\lstset{
+    numbers=left
+}
+
+\newcommand{\overbar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
+
+\begin{enumerate}
+\item [1.]
+    \begin{enumerate}
+    \item [(a)] $\overbar{X} \sim \mathcal{N}(20, \sqrt{\frac{25}{9}}) = \overbar{X} \sim \mathcal{N}(20, \frac{5}{3})$
+    \item [(b)] \vspace{3cm}
+    \item [(c)] $\alpha = P(\overbar{X} > 25 | \mu = 20) = P(Z > \frac{25 - 20}{5 / 3}) \approx 0.001350$
+    \item [(d)] $\overbar{X} \sim \mathcal{N}(28, \sqrt{\frac{25}{9}}) = \overbar{X} \sim \mathcal{N}(28, \frac{5}{3})$
+    \item [(e)] \vspace{3cm}
+    \item [(f)] $\beta = P(\overbar{X} < 25 | \mu = 28) = P(Z < \frac{25 - 28}{5 / 3}) \approx 0.03593$
+    \item [(g)] $\text{Power} = 1 - \beta = 0.9641$
+    \item [(h)] When the same size is increased, the standard deviation will increase in a squared relationship. This will cause the two curves to become `skinnier' and more centralized close to their mean.
+    \item [(i)] If the size is increased but the critical point is not changed, $\alpha$ and $\beta$ will decrease.
+    \end{enumerate}
+\item [2.]
+    \begin{enumerate}
+    \item [(a)] $\hat{p} = \frac{75}{193} \approx 0.3887 $
+    \item [(b)]
+        \begin{equation*}
+        \begin{aligned}
+        \text{Interval} =& (\hat{p} - z_{\alpha / 2} \sqrt{\hat{p} (1 - \hat{p}) / n}, \hat{p} + z_{\alpha / 2} \sqrt{\hat{p} (1 - \hat{p}) / n} \\
+            =& (0.3887 - 1.96 \sqrt{0.3887 (1 - 0.3887) / 193}, 0.3887 + \\
+            & \qquad 1.96 \sqrt{0.3887 (1 - 0.3887) / 193} \\
+            =& (0.3199, 0.4575)
+        \end{aligned}
+        \end{equation*}
+    \item [(c)]
+        \begin{equation*}
+        \begin{aligned}
+        d =& z_{\alpha / 2} \sqrt{\hat{p} (1 - \hat{p}) / n} \\
+        0.3 =& 2.575 \sqrt{0.3887 (1 - 0.3887) / n} \\
+        n =& 17.51
+        \end{aligned}
+        \end{equation*}
+    \end{enumerate}
+\item [3.]
+    \begin{enumerate}
+        \item
+            \begin{equation*}
+            \begin{aligned}
+                & H_0: \sigma_1^2 = \sigma_2^2, H_1: \sigma_1^2 \neq \sigma_2^2,  \\
+                & S_1^2 / S_2^2 \approx 1.0969 \\
+                & P(F_{60, 60} > 1.395) = 0.10 \\
+                & \text{Then we cannot reject }H_0\text{, their variances may be equal}.
+            \end{aligned}
+            \end{equation*}
+        \item $S^2_p = \frac{(n_1 - 1)S^2_1 + (n_2 - 1)S^2_2}{n_1 + n_2 - 2} = \frac{(61 - 1)24.9 + (61 - 1)22.7}{61 + 61 - 2} = 23.8$
+        \item
+            \begin{equation*}
+            \begin{aligned}
+            \Delta =& t_{\alpha / 2} \sqrt{S^2_p(1 / n_1 + 1 / n_2)} \\
+                =& 1.658 \sqrt{23.8 (1 / 61 + 1 / 61)} = 1.465\\
+            \text{Interval} =& ((\overbar{x_1} - \overbar{x_2}) - \Delta, (\overbar{x_1} - \overbar{x_2}) + \Delta) \\
+                =& (11 - 1.465, 11 + 1.465) \\
+                =& (9.535, 12.465)
+            \end{aligned}
+            \end{equation*}
+        \item The new laser definitely reads more barcodes than the old one. We're 95\% certain that it reads more than nine barcodes per second more.
+        \item The central limit theorem.
+    \end{enumerate}
+\item [4.]
+    \begin{itemize}
+    \item Let $X_1 \cdots X_i$ be samples from $X$ and $Y_1 \cdots Y_i$ be samples from $Y$. $X$ and $Y$ have means and variances of $\sigma_x^2, \mu_x$ and $\sigma_y^2, \mu_y$ respectively.
+    \item We already know that $S_x^2$ and $S_y^2$ are unbiased estimators for $\sigma_x^2$ and $\sigma_y^2$.
+    \item Also let $Z$ be made up of samples $\overbar{X_i} - \overbar{Y_j}$. The estimator of samples from this distribution is $S_p^2 = $.
+    \item Then assuming the variables are independent:
+
+        \begin{equation*}
+        \begin{aligned}
+            Var(S_x^2 - S_y^2) =& S_x^2 - S_y^2 \\
+                =& \frac{1}{n_x - 1} \sum_{i = 1}^{n_x} (X_i - \overbar{X})^2 + \frac{1}{n_y - 1} \sum_{i = 1}^{n_y} (Y_i - \overbar{Y})^2 \\
+                =& (\frac{1}{n_x - 1} \sum_{i = 1}^{n_x} (X_i - \overbar{X})^2
+                    + \frac{1}{n_y - 1} \sum_{i = 1}^{n_y} (Y_i - \overbar{Y})^2)
+                    \times \frac{(n_x - 1) + (n_y - 1)}{n_x + n_y - 2} \\
+                =& \frac{1}{n_x + n_y - 2} \sum_{i = 1}^{n_x} (X_i - \overbar{X})^2
+                    + \frac{n_y - 1}{n_x + n_y - 2} \sum_{i = 1}^{n_x} (X_i - \overbar{X})^2 \\
+                &\quad + \frac{n_x - 1}{n_x + n_y - 2} \sum_{i = 1}^{n_y} (y_i - \overbar{y})^2
+                    + \frac{1}{n_x + n_y - 2} \sum_{i = 1}^{n_y} (Y_i - \overbar{Y})^2 \\
+                =& \frac{\sum_{i = 1}^{n_x} (X_i - \overbar{X})^2 +  \sum_{i = 1}^{n_y} (Y_i - \overbar{Y})^2}{n_x + n_y - 2} \\
+                &\quad + \frac{(n_y - 1)\sum_{i = 1}^{n_x} (X_i - \overbar{X})^2 + (n_x - 1) \sum_{i = 1}^{n_y} (Y_i - \overbar{Y})^2)}{n_x + n_y - 2}\\
+        \end{aligned}
+        \end{equation*}
+    \end{itemize}
+\item [5.]
+    \begin{enumerate}
+    \item Differences: \\
+        \begin{lstlisting}
+[1] -0.03 -0.08  0.02 -0.11 -0.03 -0.04
+[7] -0.07 -0.01 -0.14 -0.08 -0.04 -0.03
+[13] -0.07 -0.04 -0.07
+        \end{lstlisting}
+    \item $\overbar{d} = -0.05467$, $s_d = 0.03998$.
+    \item
+        \begin{equation*}
+        \begin{aligned}
+        \text{Interval} =& (\overbar{d} - t_{\alpha / 2} s_d / \sqrt n, \overbar{d} + t_{\alpha / 2} s_d / \sqrt n) \\
+            =& (-0.05467 - 1.761 \times 0.03998 / \sqrt{15}, -0.05467 + 1.761 \times 0.03998 / \sqrt{15}) \\
+            =& (-0.07285, -0.03649)
+        \end{aligned}
+        \end{equation*}
+    \end{enumerate}
+\end{enumerate}
+
+
+\newpage
+\appendix
+\section{Code for Question 5(a) and 5(b)}
+\lstinputlisting[language=R, breaklines=true]{sta248-a2-q5.r}
+
+\end{document}
