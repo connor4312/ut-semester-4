@@ -1,0 +1,68 @@
+\documentclass{article}
+\usepackage[american]{babel}
+\usepackage[backend=bibtex, style=mla, annotation=true]{biblatex}
+\bibliography{lin200}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{tipa}
+\usepackage{csquotes}
+
+\title{What is a Word?}
+\author{Connor Peet \#1001088208}
+\renewcommand{\today}{~}
+\hypersetup{pdfpagemode=Fullscreen,
+  colorlinks=false,
+  linkfileprefix={}}
+\begin{document}
+\maketitle
+
+In this paper, I will argue that there is no universal definition of a word and that, while definitions can be developed which satisfy a narrow context, there does not seem to be a suitable translingual qualification for `wordhood'. Particularly, I will focus on the definitions presented by Heidi Harley in her similarly titled paper \textit{What is a Word?}. These rather fragile definitions are shattered when attempting to apply them to languages syntactically different than English, such as Chinese \cite{wheatley2010learning}. Harley proposes that a word is a sequence of letters written consecutively without spaces, but Chinese is logographic and does not use spaces \cite{wheatley2010learning}. She alternately asserts that a word is ``a sequence of sounds which \textit{can} be pronounced on its own, with space on either side,'' (emphasis original), but that does not require them to be meaningful and is problematic when dealing with compound words. Finally, she proposes a longer definition which states that a word is a combination of sounds that expresses an idea, but this is ambiguous when inspecting words which are not standalone, clitics, and morphemes \cite{tieu2007transitivity}.
+
+\section{Orthographic Words}
+
+\begin{displayquote}
+``A word is a sequence of letters that we write consecutively, with no spaces.'' \cite{words}
+\end{displayquote}
+
+The qualification of a word as a sequence of letters seems, at first glance, to fit well for English, but it does not translate into logographic languages. In English, where the idea of a word is formed from groups of syllables represented by letters and separated by spaces. This differs from logographic languages, in which the characters themselves represent ideas. In such languages, spaces are not used--there's no need for the grouping that they provide \cite{wheatley2010learning}. For example, in English, the sentence ``It is sunny today'' translates into ``今天是晴天'' in simplified Chinese.
+
+At a more fundamental level, however, this definition demands that languages have a writing system, and does not require the sequence of letters have meaning. Spoken languages that lack writing systems are excluded from the definition, and the definition would also consider ``wjgtrl'' to be a word since it was written consecutively. This qualification clearly lacks the ability to reliability identify words of a language \cite{trask}.
+
+
+\section{Phonological Words}
+
+\begin{displayquote}
+``A word is a sequence of sounds which can be pronounced on its own, with [pauses] on either side.'' \cite{words}
+\end{displayquote}
+
+This definition is more plausible. However it doesn't require meaning, and there are examples where a pause does not necessarily indicate a word. For example, in the phrase ``...if you retry it,'' a Canadian English speaker would likely add a longer pause after the morpheme \textit{re--} than they would between ``if you.'' The morpheme, however, is not a standalone work. Stops within compound words like ``backburner'', which are intuitively distinct words, also become problematic, as are initialisms. A speaker could refer to the British Broadcasting Company as the BBC \textipa{[bi(.)bi(.)si]}, but the letters themselves may not necessarily be considered words \cite{trask}.
+
+An additional rebuttal of this proposal can be found in words that permit injections in spoken language, like ``abso-bloody-lutely''. While this is not prescriptively correct English, interruptions such as these are used to lend emphasis to a phrase. A pause is added on either side of the interjected word to distinguish it and provide emphasis \cite{allwood}. By the provided phonological criteria, ``abso'' and ``lutely'' would then be considered words.
+
+\section{The Expression of an Idea}
+
+\begin{displayquote}
+``A [word is] combination of vocal sounds, or one such sound, used in a language to express an idea (e.g. to denote a thing, attribute, or relation), and constituting an ultimate minimal element of speech having a meaning as such; a vocable.'' \cite{words}
+\end{displayquote}
+
+This definition that Harley cites here originates from the Oxford English Dictionary and is the one most commonly referred to in introductory-level linguistics texts.
+
+There are a couple of cases where it can be muddled. Clitics are a feature common to English and other languages, including French and Turkish \cite{trask}. In English they're featured in contractions, such as the \textit{--`t} in ``can't'' or the \textit{--`ll} in ``we'll''. In both cases, these clitics express an external relation that's independent of the meaning of the host and is portable between different host words \cite{nevis1994clitics}. It would seem that it is a minimal element of meaning, but intuitively classifying \textit{`t} or \textit{`ll} as a word is unacceptable.
+
+By the same reasoning, the definition does not rule out morphemes. In some languages such as Yup'ik, a large number of morphemes on a single word can turn it into a sentence. For example, \textit{Kaipiallrulliniuk} means, ``The two of them were apparently really hungry,'' in Yup'ik. This phrase is formed of a sequence of suffixes on the stem \textit{kaip--}, which means ``to be hungry,'' \cite{allwood}. It becomes quite clear in this example that merely qualifying a word as a minimal element of meaning is not sufficient to exclude affixes, which an English speaker would generally not consider to be words.
+
+If one argues that clitics do not count as words because they do not solely and completely express an idea, one must concede that transitive verbs are not words, either. It's incorrect in most dialects of English and other Romance languages to use a transitive verb without including an object; one cannot say ``I bought'', but ``I bought a coffee'' is correct. The (debatable) word ``bought'' does not carry a more significant meaning that a clitic does without its target \cite{trask}. In Mandarin, otherwise transitive verbs become present continuous verbs when the predicate is excluded. For example, the phrase ``I read the book'' (``wo zai du shu'') becomes ``I am reading'' when ``shu'' is excluded \cite{tieu2007transitivity}. In this case, the addition of another set of syllables changes the meaning of a set of the same set syllables. Together they form the minimal element of speech that conveys the action taking place, but the phrase would not be considered a single word.
+
+Indeed, in Chinese modifier-noun combinations such as ``big cat'' have been considered themselves as compound words. In Chinese, there is distinct metric and tonal shifts that words from phrases which are not present in modifier-noun combinations \cite{duanmu1997recursive}. Additionally, these combinations have the inseparability property that Allwood proposed as a wordhood qualification previously \cite{allwood}. Critically, these combinations form compound words which do not alter the meaning of either component. This implies that and wordhood definition based solely on combinations of sounds and meaning \textit{cannot} correctly qualify a word. Neither of the component word sounds or meanings is changed when forming a modifier-noun combination, but a new word is still formed \cite{duanmu1997recursive}.
+
+\bigskip
+
+Thus, we are left to conclude that there may be no universal, translingual definition of a word. Lexical definitions of a word--such as requiring spaces around a word--cannot work as languages are not necessarily written, and those that are written may have entirely divergent writing systems. Nor can we posit that a word is a sequence of sounds without spaces; in English alone, it is simple to demonstrate that this can neither grant nor deny wordhood. Finally, we examined a concept-based definition of a word, a definition formally accepted in the Oxford English Dictionary. However, if one accepts that definition, it appears that one much either accept clitics or morphemes as standalone words, both actions a native speaker would scoff at. Finally, it was demonstrated in Chinese that an infinite number of words can be formed via a union of two standalone words without changing the meaning of either source word in the slightest. This rebuffs the notion that wordhood may be concept-oriented at all, rather requiring a phonological definition such as the one we eliminated previously.
+
+I cannot, of course, definitively prove that there is no true rite that propels a sequence of sounds into wordhood. However, from the material provided in lecture and the information accessible to me, I have found definitions which seem to satisfy a narrow context, but have found no global definition. Other authors have suggested more elaborate and formal definitions of a word which I've not examined here. Most promisingly, authors have proposed that words are units of syllables recognizable by pitch and tone \cite{driver1989music}. While I remain doubtful as to whether this can provide a single translingual qualification, based on the research conducted here I am hopeful that definitions \textit{based} on pitch and tone may provide acceptable results.
+
+\medskip
+
+\printbibliography
+\end{document}

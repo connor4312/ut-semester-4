@@ -87,7 +87,7 @@ array element/.style = {
 
             The cost of inserting $n$ items, then, is $\sum_{i = 1}^n \lfloor \log_2 i \rfloor + 1$ which for large values of $n$ is bounded by $n \log n$. So the amortized insertion time is in $O(n \log n)$
 
-            \item \underline{Aggregate Analysis}: Define the cost of \textsc{Merge} to be the number of nodes involved in the merge. The first list will be merged about $n / 2$ times, second $n / 4$ times, and so on. Generally, each $i$th list (where $i \in [1, \cdots, \log_2{n}]$) will be merged about $1 / 2^i$ times, and each merge involves $2 \times 2^i$ nodes. So the average cost of a merge in a sequence of insertions is $(2 \times 2^i) / 2^i = 2$. It's clear that we make a total of $n$ insertions which involve $n \log n$ average-constant-time merges, so the runtime is in $O(n \log n)$.
+            \item \underline{Aggregate Analysis}: Define the cost of \textsc{Merge} to be the number of nodes involved in the merge. The first list will be merged about $n / 2$ times, second $n / 4$ times, and so on. Generally, each $i$th list (where $i \in [1, \cdots, \log_2{n}]$) will be merged about $1 / 2^i$ times, and each merge involves $2 \times 2^i$ nodes. So the average cost of a merge in a sequence of insertions is $(2 \times 2^i) / 2^i = 2$. It's clear that we make a total of $n$ insertions which involve $\log n$ average-constant-time merges, so the runtime is in $O(n \log n)$.
         \end{itemize}
     \item The algorithm is as follows:
         \begin{enumerate}
@@ -103,7 +103,7 @@ array element/.style = {
                     & \text{No smaller lists to pull from} \\
                     & \text{Decompose into} \{\{2\}, \{3, 4\}\big\} \\
                 \textsc{Del}(1, \big\{\{5\}, \big\{\{1, 2, 3, 4\}\big\}) \rightarrow
-                    & \text{Pull up 5 to form} \big\{\{2, 3, 5\}\big\} \\
+                    & \text{Pull up 5 to form} \big\{\{2, 3, 4, 5\}\big\} \\
                     & \text{No decomposition necessary} \\
                 \textsc{Del}(1, \big\{\{5\}, \{6, 7\}, \big\{\{1, 2, 3, 4\}\big\}) \rightarrow
                     & \text{Pull up 6 to form} \big\{\{5\}, \{7\}, \big\{\{2, 3, 4, 6\}\big\} \\
@@ -112,7 +112,7 @@ array element/.style = {
             \end{aligned}
             \end{equation*}
 
-        The `pull' step is unidirectional down the list. There can be at most about $\log n$ pulls in a fully saturated list, and each pull requires an insertion of the new node which takes a linear time relative to the number of node the target list contains. At most that number will be $\log n$, so this step runs in $(\log n)^2$ time. Decomposition takes place at most one time, and involves breaking one list up into multiple smaller lists. This split can happen in a single iteration of the $< \log n$ elements, since the numbers are already sorted. In total, we expect to take up to $(\log n)^2 + \log n$ steps, which is in $O(n)$.
+        The `pull' step is unidirectional down the list. There can be at most about $\log n$ pulls in a fully saturated list, and each pull requires an insertion of the new node which takes a linear time relative to the number of nodes the target list contains. At most that number will be $\log n$, so this step runs in $(\log n)^2$ time. Decomposition takes place at most one time, and involves breaking one list up into multiple smaller lists. This split can happen in a single iteration of the $< \log n$ elements, since the numbers are already sorted. In total, we expect to take up to $(\log n)^2 + \log n$ steps, which is in $O(n)$.
     \end{enumerate}
 \end{enumerate}
 \end{document}

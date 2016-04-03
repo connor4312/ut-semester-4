@@ -82,29 +82,16 @@
         \item The new laser definitely reads more barcodes than the old one. We're 95\% certain that it reads more than nine barcodes per second more.
         \item The central limit theorem.
     \end{enumerate}
-\item [4.]
-    \begin{itemize}
-    \item Let $X_1 \cdots X_i$ be samples from $X$ and $Y_1 \cdots Y_i$ be samples from $Y$. $X$ and $Y$ have means and variances of $\sigma_x^2, \mu_x$ and $\sigma_y^2, \mu_y$ respectively.
-    \item We already know that $S_x^2$ and $S_y^2$ are unbiased estimators for $\sigma_x^2$ and $\sigma_y^2$.
-    \item Also let $Z$ be made up of samples $\overbar{X_i} - \overbar{Y_j}$. The estimator of samples from this distribution is $S_p^2 = $.
-    \item Then assuming the variables are independent:
-
-        \begin{equation*}
+\item [4.] \begin{equation*}
         \begin{aligned}
-            Var(S_x^2 - S_y^2) =& S_x^2 - S_y^2 \\
-                =& \frac{1}{n_x - 1} \sum_{i = 1}^{n_x} (X_i - \overbar{X})^2 + \frac{1}{n_y - 1} \sum_{i = 1}^{n_y} (Y_i - \overbar{Y})^2 \\
-                =& (\frac{1}{n_x - 1} \sum_{i = 1}^{n_x} (X_i - \overbar{X})^2
-                    + \frac{1}{n_y - 1} \sum_{i = 1}^{n_y} (Y_i - \overbar{Y})^2)
-                    \times \frac{(n_x - 1) + (n_y - 1)}{n_x + n_y - 2} \\
-                =& \frac{1}{n_x + n_y - 2} \sum_{i = 1}^{n_x} (X_i - \overbar{X})^2
-                    + \frac{n_y - 1}{n_x + n_y - 2} \sum_{i = 1}^{n_x} (X_i - \overbar{X})^2 \\
-                &\quad + \frac{n_x - 1}{n_x + n_y - 2} \sum_{i = 1}^{n_y} (y_i - \overbar{y})^2
-                    + \frac{1}{n_x + n_y - 2} \sum_{i = 1}^{n_y} (Y_i - \overbar{Y})^2 \\
-                =& \frac{\sum_{i = 1}^{n_x} (X_i - \overbar{X})^2 +  \sum_{i = 1}^{n_y} (Y_i - \overbar{Y})^2}{n_x + n_y - 2} \\
-                &\quad + \frac{(n_y - 1)\sum_{i = 1}^{n_x} (X_i - \overbar{X})^2 + (n_x - 1) \sum_{i = 1}^{n_y} (Y_i - \overbar{Y})^2)}{n_x + n_y - 2}\\
+            S^2_p =& \frac{(n_1 - 1) S_1^2 + (n_2 - 1) S_2^2}{n_1 + n_2 - 2} \\
+                & \text{But, we know the underlying deviation }\sigma\text{ is equal, so:} \\
+            S^2_p =& \frac{(n_1 - 1) \sigma^2 + (n_2 - 1) \sigma^2}{n_1 + n_2 - 2} \\
+            S^2_p =& \frac{\sigma^2(n_1 - 1 + n_2 - 1)}{n_1 + n_2 - 2} \\
+            S^2_p =& \frac{\sigma^2(n_1 + n_2 - 2)}{n_1 + n_2 - 2} \\
+            S^2_p =& \sigma^2 \\
         \end{aligned}
         \end{equation*}
-    \end{itemize}
 \item [5.]
     \begin{enumerate}
     \item Differences: \\
