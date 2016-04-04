@@ -1,0 +1,110 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb,graphicx,tikz}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{forest}
+\usepackage{listings}
+\usetikzlibrary{fit}
+
+\title{CSC263 Winter 2016, Assignment 2}
+\author{Connor Peet \#1001088208}
+\renewcommand{\today}{~}
+\hypersetup{pdfpagemode=Fullscreen,
+  colorlinks=true,
+  linkfileprefix={}}
+\begin{document}
+\maketitle
+
+\lstset{
+    numbers=left
+}
+
+\begin{enumerate}
+\item [1.]
+    \begin{enumerate}
+    \item See Figure 1 below.
+        \begin{figure}[p]
+        \centering
+        \begin{forest}
+        for tree={
+            align=center,
+            edge path={
+                \noexpand\path [draw, \forestoption{edge}] (!u.parent anchor) -- +(0,-15pt) -| (.child anchor)\forestoption{edge label};
+            },
+            if n=2{
+                if ={equal(n_children("!u"),3)}{calign with current}{}}{},
+        }
+        [BFS
+            [{p\\\scriptsize{$d[p] = 1$}}
+                [{o\\\scriptsize{$d[o] = 2$}}
+                    [{r\\\scriptsize{$d[r] = 5$}}
+                        [{u\\\scriptsize{$d[u] = 7$}}
+                            [{t\\\scriptsize{$d[t] = 11$}}]
+                        ]
+                        [{y\\\scriptsize{$d[y] = 8$}}]
+                    ]
+                    [{v\\\scriptsize{$d[v] = 6$}}
+                        [{w\\\scriptsize{$d[w] = 9$}}]
+                        [{x\\\scriptsize{$d[x] = 10$}}]
+                    ]
+                ]
+                [{s\\\scriptsize{$d[s] = 3$}}]
+                [{z\\\scriptsize{$d[z] = 4$}}]
+            ]
+            [{m\\\scriptsize{$d[m] = 12$}} [{q\\\scriptsize{$d[q] = 13$}}]]
+            [{n\\\scriptsize{$d[n] = 14$}}]
+        ]
+        \end{forest}
+        \caption{The resulting BFS tree $T$.}
+        \end{figure}
+
+
+    \item See Figure 2 below.
+        \begin{figure}[p]
+        \centering
+        \begin{forest}
+        for tree={
+            align=center,
+            edge path={
+                \noexpand\path [draw, \forestoption{edge}] (!u.parent anchor) -- +(0,-20pt) -| (.child anchor)\forestoption{edge label};
+            },
+            if n=2{
+                if ={equal(n_children("!u"),3)}{calign with current}{}}{},
+        }
+        [DFS
+            [{m\\\scriptsize{$d[m] = 1$}\\\scriptsize{$f[m] = 20$}}
+                [{q\\\scriptsize{$d[q] = 2$}\\\scriptsize{$f[q] = 5$}}
+                    [{t\\\scriptsize{$d[t] = 3$}\\\scriptsize{$f[t] = 4$}}]
+                ]
+                [{r\\\scriptsize{$d[r] = 6$}\\\scriptsize{$f[r] = 19$}}
+                    [{u\\\scriptsize{$d[u] = 7$}\\\scriptsize{$f[u] = 8$}}]
+                    [{y\\\scriptsize{$d[y] = 9$}\\\scriptsize{$f[y] = 18$}}
+                        [{v\\\scriptsize{$d[v] = 10$}\\\scriptsize{$f[v] = 17$}}
+                            [{w\\\scriptsize{$d[w] = 11$}\\\scriptsize{$f[w] = 14$}}
+                                [{z\\\scriptsize{$d[z] = 12$}\\\scriptsize{$f[z] = 13$}}]
+                            ]
+                            [{x\\\scriptsize{$d[x] = 15$}\\\scriptsize{$f[x] = 16$}}]
+                        ]
+                    ]
+                ]
+            ]
+            [{n\\\scriptsize{$d[n] = 21$}\\\scriptsize{$f[n] = 26$}}
+                [{o\\\scriptsize{$d[o] = 22$}\\\scriptsize{$f[o] = 25$}}
+                    [{s\\\scriptsize{$d[s] = 23$}\\\scriptsize{$f[s] = 24$}}]
+                ]
+            ]
+            [{p\\\scriptsize{$d[p] = 27$}\\\scriptsize{$f[p] = 28$}}]
+        ]
+        \end{forest}
+        \caption{The resulting DFS tree $T$.}
+        \end{figure}
+    \item There are a couple cases:
+        \begin{itemize}
+        \item $d[a] < d[b]$: then $a$ or one of its children will have discovered $b$. There will either be a tree edge or a forward edge between them. $d[b]$ and $f[b]$ will be bounded between $d[a]$ and $f[a]$.
+        \item $d[a] > d[b]$: then there will be a back edge between them if and only if $f[a] < f[b]$.
+        \end{itemize}
+    \end{enumerate}
+\end{enumerate}
+\end{document}
